@@ -8,14 +8,16 @@ nav img {
 }
 
 #games {
-	columns: 5;
-	column-gap: 5px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 5px;
 }
 
 #games div {
 	background: black;
 	padding: 5px;
 	margin-bottom: 5px;
+	break-inside: avoid-column;
 }
 
 #games div img {

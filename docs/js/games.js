@@ -40,7 +40,9 @@ var GAMES = [
 	new Game("Darksiders 3").tag("Action", "Aventure", "Fantasy"),
 	new Game("Everspace").tag("Action", "Simulation", "SF"),
 	new Game("Fantasy General").tag("Stratégie", "Tour par tour", "Fantasy"),
-	new Game("Timberborn").tag("Simulation", "Building", "Survival")
+	new Game("Ori and the Blind Forest").tag("Action", "Aventure", "Plateforme"),
+	new Game("The Witness").tag("Aventure", "Réflexion", "Monde ouvert"),
+	new Game("Timberborn").tag("Simulation", "Building", "Survival"),
 ]
 
 q(function() {
