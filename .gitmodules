@@ -1,3 +1,6 @@
 [submodule "src/QueryJs"]
 	path = src/QueryJs
 	url = git@github.com:shionn/QueryJs.git
+[submodule "src/mvp"]
+	path = src/mvp
+	url = git@github.com:andybrewer/mvp.git
