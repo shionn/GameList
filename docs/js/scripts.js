@@ -1,5 +1,5 @@
 'use strict';
-// version 1.8
+// version 1.9
 
 let _q = function(obj) {
 	this.obj = obj;
@@ -25,10 +25,22 @@ _q.prototype.size = function() {
 	return this.obj.length;
 }
 
+/* Attributes */
+
+_q.prototype.attr = function(attr, value) {
+	if (!value) return this.obj[0].getAttribute(attr);
+	this._each(o => o.setAttribute(attr, value));
+	return this;
+}
+
 _q.prototype.css = function(attr, value) {
 	if (!value) return this.obj[0].style[attr];
 	this._each(o => o.style[attr] = value);
 	return this;
+}
+
+_q.prototype.src = function(src) {
+	return this.attr("src", src);
 }
 
 _q.prototype.addClass = function(clazz) {
@@ -43,12 +55,6 @@ _q.prototype.rmClass = function(clazz) {
 
 _q.prototype.toggleClass = function(clazz) {
 	this._each(o => o.classList.toggle(clazz));
-	return this;
-}
-
-_q.prototype.attr = function(attr, value) {
-	if (!value) return this.obj[0].getAttribute(attr);
-	this._each(o => o.setAttribute(attr, value));
 	return this;
 }
 
@@ -67,6 +73,8 @@ _q.prototype.value = function(val) {
 	}
 	return this.obj[0].value;
 }
+
+/* Navigation */
 
 _q.prototype.find = function(selector) {
 	let objs = new Array();
@@ -89,6 +97,8 @@ _q.prototype.parent = function(selector) {
 	return q(objs);
 }
 
+/* Event */
+
 _q.prototype.on = function(type, selector, callback) {
 	if (!callback) {
 		callback = selector;
@@ -109,6 +119,8 @@ _q.prototype.fire = function(type) {
 	this._each(o => o.dispatchEvent(new Event(type)));
 	return this;
 }
+
+/* tree manipulation */
 
 _q.prototype.replaceWith = function(elems) {
 	for (let i = 0; i < Math.min(this.obj.length, elems.obj.length); i++) {

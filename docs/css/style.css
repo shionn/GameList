@@ -1,0 +1,28 @@
+nav {
+	margin-bottom: 0;
+}
+
+nav img {
+	image-rendering: pixelated;
+	width: 300%;
+}
+
+#games {
+	columns: 5;
+	column-gap: 5px;
+}
+
+#games div {
+	background: black;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+#games div img {
+	width: 100%;
+}
+
+#games div span {
+	display: block;
+	text-align: center;
+}
