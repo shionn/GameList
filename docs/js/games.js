@@ -15,9 +15,17 @@ class Game {
 		return this;
 	}
 
+	isTag(tag) {
+		return this.tags.includes(tag);
+	}
+
 	genre(...genres) {
 		this.genres = this.genres.concat(genres);
 		return this;
+	}
+
+	isGenre(genre) {
+		return this.genres.includes(genre);
 	}
 
 	dlc(dlc) {
@@ -41,6 +49,50 @@ class Game {
 	get displayName() {
 		return this.fullname || this.name;
 	}
+
+}
+
+class Form {
+	constructor() {
+		this.genres = new Set();
+		this.tags = new Set();
+	}
+
+	toggleGenre(genre) {
+		if (this.genres.has(genre)) {
+			this.genres.delete(genre);
+		} else {
+			this.genres.add(genre);
+		}
+		return this;
+	}
+
+	isGenreSelected(genre) {
+		return this.genres.has(genre);
+	}
+
+	toggleTag(tag) {
+		if (this.tags.has(tag)) {
+			this.tags.delete(tag);
+		} else {
+			this.tags.add(tag);
+		}
+		return this;
+	}
+
+	isTagSelected(tag) {
+		return this.tags.has(tag);
+	}
+
+	get games() {
+		var games = GAMES;
+		return games.filter(g=>this._isSelected(g));
+	}
+
+	_isSelected(game) {
+		return (this.genres.size == 0 || Array.from(this.genres).every(g=>game.isGenre(g)))
+			&& (this.tags.size   == 0 || Array.from(this.tags).every(t=>game.isTag(t)));
+	}
 }
 
 var GAMES = [
@@ -49,7 +101,7 @@ var GAMES = [
 	new Game("Brigador").setFullname("Brigador: Up-Armored Edition").genre("Action","Combat","Tactique")
 		.tag("Action", "Indé", "Science", "Tactique", "Difficile", "Isométrique", "Vue du dessus", "Roguelite", "Combat", "Cyberpunk", "Dystopique", "Tir à deux joysticks", "Chars d'assaut"),
 	new Game("Cyberpunk 2077").genre("Jeu de rôle","Action","SF")
-		.tag("Action, Histoire Riche, Atmosphère, Jeu de rôle, Science fiction, Science, Première personne, Superbe bande-son, Choix multiples, Monde Ouvert, Mature, Nudité, Violent, Fins multiples, FPS, Cyberpunk"),
+		.tag("Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Science", "Première personne", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Mature", "Nudité", "Violent", "Fins multiples", "FPS", "Cyberpunk"),
 	new Game("D").setFullname("D: Résoudre le Mystére... Explorer le Côté Noir de Votre âme").genre("Horreur", "Aventure", "Réflexion")
 		.tag("Aventure", "Atmosphère", "Classique", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Horreur", "Fins multiples", "Logique", "Horreur psychologique", "FMV"),
 	new Game("Darksiders").setFullname("Darksiders Warmastered Edition").genre("Action", "Fantasy", "Jeu de rôle")
@@ -70,26 +122,72 @@ var GAMES = [
 
 q(function() {
 
-	let genres = GAMES.flatMap(g=>g.genres);
-	genres = [...new Set(genres)];
-	genres.sort();
+	let form = new Form();
 
-	genres.forEach(g => {
-		let a = q("<a>").href("#"+g).data("genre", g).text(g);
-		q("#genres").append(a);
+	function display() {
+		// construction des genres
+		let genres = GAMES.flatMap(g=>g.genres);
+		genres = [...new Set(genres)];
+		genres.sort();
+		q("#genres").clearChildren().append(q("<strong>").text("Genre : "));
+		genres.forEach(genre => {
+			let a = q("<a>").href("#"+genre).data("genre", genre).text(genre);
+			if (form.isGenreSelected(genre)) {
+				a.addClass("selected");
+			}
+			q("#genres").append(a);
+		});
+
+		let tags = GAMES.flatMap(g=>g.tags);
+		tags = [...new Set(tags)];
+		tags.sort();
+		q("#tags").clearChildren().append(q("<strong>").text("Tag : "));
+		tags.forEach(tag => {
+			let a = q("<a>").href("#"+tag).data("tag", tag).text(tag);
+			if (form.isTagSelected(tag)) {
+				a.addClass("selected");
+			}
+			q("#tags").append(a);
+		});
+
+
+		// construction des jeux
+		q("#games").clearChildren();
+		form.games.forEach((game) => {
+			let div = q("<div>").data("name", game.name);
+			div.append(q("<img>").src(game.img)).append(q("<span>").text(game.name));
+			q("#games").append(div);
+		});
+	}
+
+	display();
+
+	// clic sur les genres
+	q("main").on("click", "a[data-genre]", (e)=> {
+		e.preventDefault();
+		let a = q(e.target);
+		let genre = a.data("genre");
+		form.toggleGenre(genre);
+		q("#game").rmClass("open");
+		display();
 	});
 
-
-	GAMES.forEach((game) => {
-		let div = q("<div>").data("name", game.name);
-		div.append(q("<img>").src(game.img)).append(q("<span>").text(game.name));
-		q("#games").append(div);
+	// clic sur les tags
+	q("main").on("click", "a[data-tag]", (e)=> {
+		e.preventDefault();
+		let a = q(e.target);
+		let tag = a.data("tag");
+		form.toggleTag(tag);
+		q("#game").rmClass("open");
+		display();
 	});
 
+	// fermeture de la popin
 	q("#game").on("click", (e)=>{
 		q(e.target).rmClass("open");
 	})
 
+	// ouvrir la popin
 	q("main").on("click", "#games > div", (e) => {
 		let name = q(e.target).parent("div[data-name]").data("name");
 		let game = GAMES.find(g=>g.name === name);
@@ -99,10 +197,10 @@ q(function() {
 		div.append(q("<h1>").text(game.displayName));
 
 		let genre = q("<p>").append(q("<strong>").text("Genre : "));
-		game.genres.forEach(g=>genre.append(q("<a>").text(g)));
+		game.genres.forEach(g=>genre.append(q("<a>").href("#"+g).data("genre", g).text(g)));
 
 		let tag = q("<p>").append(q("<strong>").text("Tags : "));
-		game.tags.forEach(t=>tag.append(q("<a>").text(t)));
+		game.tags.forEach(t=>tag.append(q("<a>").href("#"+t).data("tag", t).text(t)));
 
 		div.append(genre).append(tag);
 		q("#game").clearChildren().append(div).addClass("open");

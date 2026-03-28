@@ -7,15 +7,20 @@ nav img {
 	width: 300%;
 }
 
+a, a:visited {
+	color: var(--color-link);
+}
+
+a:not(.selected) {
+	text-decoration: none;
+}
+
 #genres {
 	margin-bottom: 10px;
 }
 
-#genres a {
-	text-decoration: none;
-}
-
-#genres a:not(:nth-last-of-type(1)):after {
+#genres a:not(:nth-last-of-type(1)):after,
+#tags a:not(:nth-last-of-type(1)):after {
 	content: ',';
 	margin-right: 4px;
 }
