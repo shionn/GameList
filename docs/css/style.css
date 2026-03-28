@@ -15,11 +15,12 @@ a:not(.selected) {
 	text-decoration: none;
 }
 
-#genres {
-	margin-bottom: 10px;
+#genres, #collections {
+	margin-bottom: 15px;
 }
 
 #genres a:not(:nth-last-of-type(1)):after,
+#collections a:not(:nth-last-of-type(1)):after,
 #tags a:not(:nth-last-of-type(1)):after {
 	content: ',';
 	margin-right: 4px;

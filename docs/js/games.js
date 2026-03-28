@@ -8,6 +8,7 @@ class Game {
 		this.genres = [];
 		this.tags = [];
 		this.dlcs = [];
+		this.collection = undefined;
 	}
 
 	tag(...tags) {
@@ -41,6 +42,11 @@ class Game {
 		return this;
 	}
 
+	setCollection(collection) {
+		this.collection = collection;
+		return this;
+	}
+
 	get img() {
 		let img = this.name.toLowerCase();
 		img = img.replaceAll(":", "");
@@ -52,12 +58,14 @@ class Game {
 		return this.fullname || this.name;
 	}
 
+
 }
 
 class Form {
 	constructor() {
 		this.genres = new Set();
 		this.tags = new Set();
+		this.collection = undefined;
 	}
 
 	toggleGenre(genre) {
@@ -86,6 +94,19 @@ class Form {
 		return this.tags.has(tag);
 	}
 
+	toggleCollection(collection) {
+		if (this.collection == collection) {
+			this.collection = undefined;
+		} else {
+			this.collection = collection;
+		}
+		return this;
+	}
+
+	isCollectionSelected(collection) {
+		return this.collection == collection;
+	}
+
 	get games() {
 		var games = GAMES;
 		return games.filter(g => this._isSelected(g));
@@ -93,7 +114,8 @@ class Form {
 
 	_isSelected(game) {
 		return (this.genres.size == 0 || Array.from(this.genres).every(g => game.isGenre(g)))
-			&& (this.tags.size == 0 || Array.from(this.tags).every(t => game.isTag(t)));
+			&& (this.tags.size == 0 || Array.from(this.tags).every(t => game.isTag(t)))
+			&& (this.collection == undefined || this.collection === game.collection);
 	}
 }
 
@@ -119,13 +141,13 @@ var GAMES = [
 	new Game("D").setFullname("D: Résoudre le Mystére... Explorer le Côté Noir de Votre âme")
 		.genre("Horreur", "Aventure", "Réflexion")
 		.tag("Aventure", "Atmosphère", "Classique", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Horreur", "Fins multiples", "Logique", "Horreur psychologique", "FMV"),
-	new Game("Darksiders").setFullname("Darksiders Warmastered Edition")
+	new Game("Darksiders").setFullname("Darksiders Warmastered Edition").setCollection("Darksiders")
 		.genre("Action", "Fantasy", "Jeu de rôle")
 		.tag("Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Classique", "Casse-tête", "Monde Ouvert", "Troisième personne", "Multijoueur", "Violent", "Difficile", "Gore", "Hack and Slash", "Post-apocalyptique", "Metroidvania", "Remake"),
-	new Game("Darksiders 2")
+	new Game("Darksiders 2").setCollection("Darksiders")
 		.genre("Action", "Fantasy", "Jeu de rôle")
 		.tag("Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Gore", "Hack and Slash", "Metroidvania"),
-	new Game("Darksiders 3")
+	new Game("Darksiders 3").setCollection("Darksiders")
 		.genre("Action", "Aventure", "Fantasy")
 		.tag("Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Casse-tête", "Protagoniste féminine", "Sombre", "Troisième personne", "Violent", "Gore", "Hack and Slash", "Post-apocalyptique", "Souls-like"),
 
@@ -157,22 +179,31 @@ var GAMES = [
 		.genre("Action", "Aventure", "SF")
 		.tag("Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Science", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Remake"),
 
-	new Game("Prince of Persia 2003").setFullname("Prince of Persia : Les Sables du temps")
+	new Game("Prince of Persia 2003").setFullname("Prince of Persia : Les Sables du temps").setCollection("Prince of Persia")
 		.genre("Action", "Aventure", "Fantasy")
 		.tag("Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Troisième personne", "Plateformes", "Hack and Slash", "Casse-tête et plateformes", "Manipulation temporelle"),
-	new Game("Prince of Persia 2004").setFullname("Prince of Persia : L'Âme du guerrier")
+	new Game("Prince of Persia 2004").setFullname("Prince of Persia : L'Âme du guerrier").setCollection("Prince of Persia")
 		.genre("Action", "TPP", "Fantasy")
 		.tag("Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Casse-tête", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Gore", "Hack and Slash", "Manipulation temporelle"),
-	new Game("Prince of Persia 2005").setFullname("Prince of Persia : Les Deux Royaumes")
+	new Game("Prince of Persia 2005").setFullname("Prince of Persia : Les Deux Royaumes").setCollection("Prince of Persia")
 		.genre("Action", "TPP", "Fantasy")
 		.tag("Action, Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Troisième personne", "Plateformes", "Hack and Slash", "Infiltration", "Manipulation temporelle"),
-	new Game("Prince of Persia 2008").setFullname("Prince of Persia")
+	new Game("Prince of Persia 2008").setFullname("Prince of Persia").setCollection("Prince of Persia")
 		.genre("Action", "TPP", "Fantasy")
 		.tag("Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Relaxant", "Hack and Slash", "Romance"),
 
 	new Game("Return of the Obra Dinn")
 		.genre("FPP", "Aventure", "Mystère")
 		.tag("Aventure", "Indé", "Histoire Riche", "Atmosphère", "Casse-tête", "Première personne", "Superbe bande-son", "Horreur", "Mystère", "Historique", "Violent", "Difficile", "Fins multiples", "FPS", "Simulation de marche", "Noir", "Pirates", "Naval"),
+	new Game("Runaway: A Road Adventure").setCollection("Runaway")
+		.genre("Action", "Aventure", "Enquête-mystère")
+		.tag("Aventure", "Action", "Classique", "Enquête", "Enquête-mystère"),
+	new Game("Runaway 2: The Dream of the Turtle").setCollection("Runaway")
+		.genre("Action", "Aventure", "Enquête-mystère")
+		.tag("Aventure", "Action", "Histoire Riche", "2D", "Classique", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Point&Click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère"),
+	new Game("Runaway 3: A Twist of Fate").setCollection("Runaway")
+		.genre("Action", "Aventure", "Enquête-mystère")
+		.tag("Aventure", "Action", "Classique", "Enquête", "Enquête-mystère"),
 
 	new Game("SOMA")
 		.genre("FPP", "Horreur", "Aventure")
@@ -181,18 +212,18 @@ var GAMES = [
 		.genre("Stratégie", "Temps réel", "Fantasy")
 		.tag("Fantasy", "Stratégie", "Classique", "Temps réél"),
 
-	new Game("The Elder Scrolls: Arena")
+	new Game("The Elder Scrolls: Arena").setCollection("The Elder Scrolls")
 		.genre("Jeu de rôle", "Action", "Monde ouvert")
 		.tag("Action", "Jeu de rôle", "Classique", "Monde Ouvert"),
-	new Game("The Elder Scrolls II: Daggerfall")
+	new Game("The Elder Scrolls II: Daggerfall").setCollection("The Elder Scrolls")
 		.genre("Jeu de rôle", "Aventure", " Monde ouvert")
 		.tag("Aventure", "Jeu de rôle", "Classique", "Monde Ouvert"),
-	new Game("The Elder Scrolls III: Morrowind").setFullname("The Elder Scrolls III: Morrowind - GOTY Edition"),
-	new Game("The Elder Scrolls IV: Oblivion").setFullname("The Elder Scrolls IV: Oblivion - GOTY Deluxe"),
-	new Game("The Witcher").setFullname("The Witcher: Enhanced Edition")
+	new Game("The Elder Scrolls III: Morrowind").setFullname("The Elder Scrolls III: Morrowind - GOTY Edition").setCollection("The Elder Scrolls"),
+	new Game("The Elder Scrolls IV: Oblivion").setFullname("The Elder Scrolls IV: Oblivion - GOTY Deluxe").setCollection("The Elder Scrolls"),
+	new Game("The Witcher").setFullname("The Witcher: Enhanced Edition").setCollection("The Witcher")
 		.genre("Jeu de rôle", "Action", "Fantasy")
 		.tag("Action", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Nudité", "Fins multiples", "Magie", "Médieval"),
-	new Game("The Witcher 3").setFullname("The Witcher 3: Wild Hunt - Complete Edition")
+	new Game("The Witcher 3").setFullname("The Witcher 3: Wild Hunt - Complete Edition").setCollection("The Witcher")
 		.genre("Jeu de rôle", "Aventure", "Fantasy")
 		.tag("Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Exploration", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Fins multiples", "Gore", "Magie", "Médieval", "Vampire", "Loups-garous"),
 	new Game("The Witness")
@@ -207,28 +238,28 @@ var GAMES = [
 	new Game("Timberborn")
 		.genre("Simulation", "Building", "Survival")
 		.tag("Science fiction", "Simulation", "Gestion", "Bac-à-sable", "Survie", "Gestion des resources", "Vue du dessus", "Construction", "Construction de base", "Post-apocalyptique", "Construction de villes", "Editeur de niveaux"),
-	new Game("Tomb Raider 1/2/3").setFullname("Tomb Raider I-III Remastered Starring Lara Croft")
+	new Game("Tomb Raider 1/2/3").setFullname("Tomb Raider I-III Remastered Starring Lara Croft").setCollection("Tomb Raider")
 		.genre("Action", "Aventure", "Exploration")
 		.tag("Aventure", "Action", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Violent", "Remake"),
-	new Game("Tomb Raider 4/5/6").setFullname("Tomb Raider IV-VI Remastered")
+	new Game("Tomb Raider 4/5/6").setFullname("Tomb Raider IV-VI Remastered").setCollection("Tomb Raider")
 		.genre("Action", "Aventure", "Exploration")
 		.tag("Aventure", "Action", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Violent", "Remake"),
-	new Game("Tomb Raider 10").setFullname("Tomb Raider GOTY")
+	new Game("Tomb Raider 10").setFullname("Tomb Raider GOTY").setCollection("Tomb Raider")
 		.genre("Action", "Aventure", "Survie")
 		.tag("Aventure", "Action", "Classique", "Survie", "Horreur et survie"),
-	new Game("Tomb Raider 11").setFullname("Rise of the Tomb Raider: 20 Year Celebration")
+	new Game("Tomb Raider 11").setFullname("Rise of the Tomb Raider: 20 Year Celebration").setCollection("Tomb Raider")
 		.genre("Action", "Aventure", "Survie")
 		.tag("Aventure", "Action", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Survie", "Violent", "Gore", "Infiltration"),
-	new Game("Tomb Raider 12").setFullname("Shadow of the Tomb Raider: Definitive Edition")
+	new Game("Tomb Raider 12").setFullname("Shadow of the Tomb Raider: Definitive Edition").setCollection("Tomb Raider")
 		.genre("Action", "Aventure", "Survie")
 		.tag("Aventure", "Action", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Survie", "Violent", "Gore", "Infiltration"),
 	new Game("Toonstruck")
 		.genre("Aventure", "Point-and-click", "Réflexion")
 		.tag("Aventure", "Histoire Riche", "2D", "Classique", "Exploration", "Casse-tête", "Amusant", "Troisième personne", "Point&Click", "Logique", "Cartoonesque", "Humour noir", "Objets cachés", "FMV"),
-	new Game("Torchlight")
+	new Game("Torchlight").setCollection("Torchlight")
 		.genre("Jeu de rôle", "Action", "Fantasy")
 		.tag("Action", "Indé", "Fantasy", "Jeu de rôle", "Classique", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Isométrique", "Magie", "Vue du dessus", "Hack and Slash", "Dungeon Crawler", "Steampunk"),
-	new Game("Torchlight 2").setFullname("Torchlight II")
+	new Game("Torchlight 2").setFullname("Torchlight II").setCollection("Torchlight")
 		.genre("Jeu de rôle", "Action", "Fantasy")
 		.tag("Action", "Indé", "Fantasy", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Isométrique", "Hack and Slash", "Dungeon Crawler", "Steampunk"),
 	new Game("Tower Hunter: Erza's Trial").setFullname("Tower Hunter: Erza's Trial")
@@ -243,6 +274,7 @@ var GAMES = [
 	new Game("Wavetale")
 		.genre("Action", "Aventure", "Exploration")
 		.tag("Aventure", "Action", "Histoire Riche", "Exploration", "Protagoniste féminine", "Troisième personne", "Plateformes", "Relaxant", "Cartoonesque", "Nature"),
+
 
 
 
@@ -266,6 +298,7 @@ q(function() {
 			q("#genres").append(a);
 		});
 
+		// des tags
 		let tags = GAMES.flatMap(g => g.tags);
 		tags = [...new Set(tags)];
 		tags.sort();
@@ -276,6 +309,19 @@ q(function() {
 				a.addClass("selected");
 			}
 			q("#tags").append(a);
+		});
+
+		// des collections
+		let collections = GAMES.map(g => g.collection).filter(c=>c!==undefined);
+		collections = [...new Set(collections)];
+		collections.sort();
+		q("#collections").clearChildren().append(q("<strong>").text("Collections : "));
+		collections.forEach(collection => {
+			let a = q("<a>").href("#" + collection).data("collection", collection).text(collection);
+			if (form.isCollectionSelected(collection)) {
+				a.addClass("selected");
+			}
+			q("#collections").append(a);
 		});
 
 
@@ -310,6 +356,16 @@ q(function() {
 		display();
 	});
 
+	// clic sur les collections
+	q("main").on("click", "a[data-collection]", (e) => {
+		e.preventDefault();
+		let a = q(e.target);
+		let collection = a.data("collection");
+		form.toggleCollection(collection);
+		q("#game").rmClass("open");
+		display();
+	});
+
 	// fermeture de la popin
 	q("#game").on("click", (e) => {
 		q(e.target).rmClass("open");
@@ -323,6 +379,11 @@ q(function() {
 		let div = q("<div>");
 		div.append(q("<img>").src(game.img));
 		div.append(q("<h1>").text(game.displayName));
+
+		if (game.collection) {
+			let collection = q("<p>").append(q("<strong>").text("Collection : ")).append(q("<a>").href("#" + game.collection).data("collection", game.collection).text(game.collection));
+			div.append(collection);
+		}
 
 		let genre = q("<p>").append(q("<strong>").text("Genre : "));
 		game.genres.forEach(g => genre.append(q("<a>").href("#" + g).data("genre", g).text(g)));
