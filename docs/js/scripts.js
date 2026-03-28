@@ -1,5 +1,5 @@
 'use strict';
-// version 1.9
+// version 1.10
 
 let _q = function(obj) {
 	this.obj = obj;
@@ -26,7 +26,6 @@ _q.prototype.size = function() {
 }
 
 /* Attributes */
-
 _q.prototype.attr = function(attr, value) {
 	if (!value) return this.obj[0].getAttribute(attr);
 	this._each(o => o.setAttribute(attr, value));
@@ -41,6 +40,14 @@ _q.prototype.css = function(attr, value) {
 
 _q.prototype.src = function(src) {
 	return this.attr("src", src);
+}
+
+_q.prototype.href = function(href) {
+	return this.attr("href", href);
+}
+
+_q.prototype.data = function(attr, value) {
+	return this.attr("data-"+attr, value);
 }
 
 _q.prototype.addClass = function(clazz) {
@@ -75,7 +82,6 @@ _q.prototype.value = function(val) {
 }
 
 /* Navigation */
-
 _q.prototype.find = function(selector) {
 	let objs = new Array();
 	this._each(o => Array.prototype.push.apply(objs, o.querySelectorAll(selector)));
@@ -98,7 +104,6 @@ _q.prototype.parent = function(selector) {
 }
 
 /* Event */
-
 _q.prototype.on = function(type, selector, callback) {
 	if (!callback) {
 		callback = selector;
@@ -121,7 +126,6 @@ _q.prototype.fire = function(type) {
 }
 
 /* tree manipulation */
-
 _q.prototype.replaceWith = function(elems) {
 	for (let i = 0; i < Math.min(this.obj.length, elems.obj.length); i++) {
 		this.obj[i].replaceWith(elems.obj[i]);
@@ -149,6 +153,12 @@ _q.prototype.text = function(txt) {
 	return this;
 }
 
+_q.prototype.clearChildren = function() {
+	this._each(o => o.innerHTML='');
+	return this;
+}
+
+/* point d'entrée */
 let q = function(selector) {
 	if (!selector) return this;
 	if (typeof selector === "function") {
