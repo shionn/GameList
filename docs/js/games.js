@@ -114,6 +114,10 @@ var GAMES = [
 		.tag("Action", "Science fiction", "Classique", "Exploration", "Simulation", "Science", "Première personne", "Superbe bande-son", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Vol", "Réalité virtuelle"),
 	new Game("Fantasy General").genre("Stratégie", "Tour par tour", "Fantasy")
 		.tag("Fantasy", "Stratégie", "2D", "Classique", "Tour par tour", "Magie", "Guerre", "Good Old Game"),
+	new Game("Full Throttle").setFullname("Full Throttle Remastered").genre("Aventure","Point-and-click","Enquête-mystère")
+		.tag("Aventure", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point&Click", "Enquête", "Enquête-mystère", "Court", "Remake"),
+	new Game("Grandia 2").setFullname("Grandia II Anniversary Edition").genre("Aventure","RPG"),
+
 	new Game("The Witness").genre("Aventure", "Réflexion", "Monde ouvert")
 		.tag("Aventure", "Indé", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Casual", "Première personne", "Superbe bande-son", "Monde Ouvert", "Mystère", "Bac-à-sable", "Difficile", "Logique", "Relaxant", "Surréaliste", "Simulation de marche", "Cozy", "Philosophique"),
 	new Game("Timberborn").genre("Simulation", "Building", "Survival")
