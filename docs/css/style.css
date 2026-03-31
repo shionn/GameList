@@ -43,7 +43,7 @@ a:not(.selected) {
 }
 
 #games div {
-	background: black;
+	background: var(--color-bg-secondary);
 	padding: 5px;
 	margin-bottom: 5px;
 	break-inside: avoid-column;
