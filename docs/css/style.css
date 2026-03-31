@@ -30,6 +30,16 @@ a:not(.selected) {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 5px;
+	@media (max-width: 800px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	@media (max-width: 600px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	@media (max-width: 400px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+		
 }
 
 #games div {
