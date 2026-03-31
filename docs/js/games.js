@@ -169,7 +169,7 @@ var GAMES = [
 
 	new Game("Grandia 2").setFullname("Grandia II Anniversary Edition").onDisk().genre("Aventure", "RPG"),
 
-	new Game("Leisure Suit Larry 7").setFullname("Leisure Suit Larry : Drague en Haute Mer !")
+	new Game("Leisure Suit Larry 7").setFullname("Leisure Suit Larry : Drague en Haute Mer !").onDisk()
 		.genre("Aventure", "Point-and-click", "Réflexion")
 		.tag("Aventure", "Classique", "Casse-tête", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Logique", "Adulte"),
 
@@ -197,7 +197,7 @@ var GAMES = [
 		.genre("Action", "TPP", "Fantasy")
 		.tag("Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Relaxant", "Hack and Slash", "Romance"),
 
-	new Game("Return of the Obra Dinn")
+	new Game("Return of the Obra Dinn").onDisk()
 		.genre("FPP", "Aventure", "Mystère")
 		.tag("Aventure", "Indé", "Histoire Riche", "Atmosphère", "Casse-tête", "Première personne", "Superbe bande-son", "Horreur", "Mystère", "Historique", "Violent", "Difficile", "Fins multiples", "FPS", "Simulation de marche", "Noir", "Pirates", "Naval"),
 	new Game("Runaway: A Road Adventure").setCollection("Runaway")
@@ -225,15 +225,16 @@ var GAMES = [
 		.tag("Aventure", "Jeu de rôle", "Classique", "Monde Ouvert"),
 	new Game("The Elder Scrolls III: Morrowind").setFullname("The Elder Scrolls III: Morrowind - GOTY Edition").setCollection("The Elder Scrolls"),
 	new Game("The Elder Scrolls IV: Oblivion").setFullname("The Elder Scrolls IV: Oblivion - GOTY Deluxe").setCollection("The Elder Scrolls"),
-	new Game("The Witcher").setFullname("The Witcher: Enhanced Edition").setCollection("The Witcher")
-		.genre("Jeu de rôle", "Action", "Fantasy")
-		.tag("Action", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Nudité", "Fins multiples", "Magie", "Médieval"),
+	new Game("The Gunk")
+		.genre("Action", "Adventure", "Exploration")
+		.tag("Adventure", "Action", "Story Rich", "Atmospheric", "Sci-fi", "Exploration", "Female Protagonist", "Third Person", "Family Friendly", "Relaxing", "LGBTQ+", "Metroidvania", "Nature"),
 	new Game("The Witcher 3").setFullname("The Witcher 3: Wild Hunt - Complete Edition").setCollection("The Witcher")
 		.genre("Jeu de rôle", "Aventure", "Fantasy")
 		.tag("Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Exploration", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Fins multiples", "Gore", "Magie", "Médieval", "Vampire", "Loups-garous"),
 	new Game("The Witness").onDisk()
 		.genre("Aventure", "Réflexion", "Monde ouvert")
 		.tag("Aventure", "Indé", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Casual", "Première personne", "Superbe bande-son", "Monde Ouvert", "Mystère", "Bac-à-sable", "Difficile", "Logique", "Relaxant", "Surréaliste", "Simulation de marche", "Cozy", "Philosophique"),
+
 	new Game("Theme Hospital").onDisk()
 		.genre("Stratégie", "Construction", "Gestion")
 		.tag("Stratégie", "Classique", "Casual", "Amusant", "Gestion", "Construction", "Gestion", "Humour noir"),
@@ -273,12 +274,18 @@ var GAMES = [
 	new Game("Two Point Hospital").genre("Simulation", "Construction", "Gestion")
 		.tag("Simulation", "Casual", "Tactique", "Amusant", "Gestion", "Bac-à-sable", "Isométrique", "Familial", "Rétro", "Construction", "Cartoonesque", "Gestion"),
 
+	new Game("Ultima 4").setFullname("Ultima IV: Quest of the Avatar ").setCollection("Ultima").onDisk()
+		.genre("Role-playing", "Adventure", "Fantasy")
+		.tag("Adventure", "Fantasy", "Role-playing", "Classic"),
 	new Game("Unreal").setFullname("Unreal Gold")
 		.genre("Action"),
 
 	new Game("Wavetale")
 		.genre("Action", "Aventure", "Exploration")
 		.tag("Aventure", "Action", "Histoire Riche", "Exploration", "Protagoniste féminine", "Troisième personne", "Plateformes", "Relaxant", "Cartoonesque", "Nature"),
+	new Game("Worlds of Ultima : The Savage Empire").setCollection("Ultima").onDisk()
+		.genre("Role-playing", "Adventure", "Fantasy")
+		.tag("Adventure", "Fantasy", "Role-playing", "Classic"),
 
 
 
@@ -317,7 +324,7 @@ q(function() {
 		});
 
 		// des collections
-		let collections = GAMES.map(g => g.collection).filter(c=>c!==undefined);
+		let collections = GAMES.map(g => g.collection).filter(c => c !== undefined);
 		collections = [...new Set(collections)];
 		collections.sort();
 		q("#collections").clearChildren().append(q("<strong>").text("Collections : "));
