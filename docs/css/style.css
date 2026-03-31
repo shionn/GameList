@@ -48,10 +48,12 @@ a:not(.selected) {
 	margin-bottom: 5px;
 	break-inside: avoid-column;
 	cursor: pointer;
+	border-radius: var(--border-radius);
 }
 
 #games div img {
 	width: 100%;
+	border-radius: var(--border-radius);
 }
 
 #games div span {
@@ -86,10 +88,12 @@ a:not(.selected) {
 	margin: auto;
 	background: var(--color-bg);
 	padding: 10px;
+	border-radius: var(--border-radius);
 }
 
 #game > div img {
 	width: 100%;
+	border-radius: var(--border-radius);
 }
 
 #game > div > p a:not(:nth-last-of-type(1)):after {
