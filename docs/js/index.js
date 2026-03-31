@@ -73,7 +73,7 @@ q(function() {
 				a.addClass("selected");
 			}
 			q("#genres").append(a);
-		});
+		});//*/
 
 		// des tags
 		let tags = GAMES.flatMap(g => g.tags);
