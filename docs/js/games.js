@@ -139,17 +139,17 @@ var GAMES = [
 		.genre("Action", "Combat", "Tactique")
 		.tag("Action", "Indé", "Science", "Tactique", "Difficile", "Isométrique", "Vue du dessus", "Roguelite", "Combat", "Cyberpunk", "Dystopique", "Tir à deux joysticks", "Chars d'assaut"),
 
-	new Game("Cyberpunk 2077")
+	new Game("Cyberpunk 2077").onDisk()
 		.genre("Jeu de rôle", "Action", "SF")
 		.tag("Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Science", "Première personne", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Mature", "Nudité", "Violent", "Fins multiples", "FPS", "Cyberpunk"),
 
 	new Game("D").setFullname("D: Résoudre le Mystére... Explorer le Côté Noir de Votre âme").onDisk()
 		.genre("Horreur", "Aventure", "Réflexion")
 		.tag("Aventure", "Atmosphère", "Classique", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Horreur", "Fins multiples", "Logique", "Horreur psychologique", "FMV"),
-	new Game("Darksiders").setFullname("Darksiders Warmastered Edition").setCollection("Darksiders")
+	new Game("Darksiders").setFullname("Darksiders Warmastered Edition").setCollection("Darksiders").onDisk()
 		.genre("Action", "Fantasy", "Jeu de rôle")
 		.tag("Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Classique", "Casse-tête", "Monde Ouvert", "Troisième personne", "Multijoueur", "Violent", "Difficile", "Gore", "Hack and Slash", "Post-apocalyptique", "Metroidvania", "Remake"),
-	new Game("Darksiders 2").setCollection("Darksiders")
+	new Game("Darksiders 2").setCollection("Darksiders").onDisk()
 		.genre("Action", "Fantasy", "Jeu de rôle")
 		.tag("Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Gore", "Hack and Slash", "Metroidvania"),
 	new Game("Darksiders 3").setCollection("Darksiders").onDisk()
@@ -228,7 +228,7 @@ var GAMES = [
 	new Game("The Gunk")
 		.genre("Action", "Adventure", "Exploration")
 		.tag("Adventure", "Action", "Story Rich", "Atmospheric", "Sci-fi", "Exploration", "Female Protagonist", "Third Person", "Family Friendly", "Relaxing", "LGBTQ+", "Metroidvania", "Nature"),
-	new Game("The Witcher 3").setFullname("The Witcher 3: Wild Hunt - Complete Edition").setCollection("The Witcher")
+	new Game("The Witcher 3").setFullname("The Witcher 3: Wild Hunt - Complete Edition").setCollection("The Witcher").onDisk()
 		.genre("Jeu de rôle", "Aventure", "Fantasy")
 		.tag("Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Exploration", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Fins multiples", "Gore", "Magie", "Médieval", "Vampire", "Loups-garous"),
 	new Game("The Witness").onDisk()
@@ -250,7 +250,7 @@ var GAMES = [
 	new Game("Tomb Raider 4/5/6").setFullname("Tomb Raider IV-VI Remastered").setCollection("Tomb Raider")
 		.genre("Action", "Aventure", "Exploration")
 		.tag("Aventure", "Action", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Violent", "Remake"),
-	new Game("Tomb Raider 10").setFullname("Tomb Raider GOTY").setCollection("Tomb Raider")
+	new Game("Tomb Raider 10").setFullname("Tomb Raider GOTY").setCollection("Tomb Raider").onDisk()
 		.genre("Action", "Aventure", "Survie")
 		.tag("Aventure", "Action", "Classique", "Survie", "Horreur et survie"),
 	new Game("Tomb Raider 11").setFullname("Rise of the Tomb Raider: 20 Year Celebration").setCollection("Tomb Raider")
@@ -268,7 +268,7 @@ var GAMES = [
 	new Game("Torchlight 2").setFullname("Torchlight II").setCollection("Torchlight")
 		.genre("Jeu de rôle", "Action", "Fantasy")
 		.tag("Action", "Indé", "Fantasy", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Isométrique", "Hack and Slash", "Dungeon Crawler", "Steampunk"),
-	new Game("Tower Hunter: Erza's Trial").setFullname("Tower Hunter: Erza's Trial")
+	new Game("Tower Hunter: Erza's Trial").setFullname("Tower Hunter: Erza's Trial").onDisk()
 		.genre("Action", "Roguelike", "Metroidvania")
 		.tag("Action", "2D", "Casual", "Protagoniste féminine", "Superbe bande-son", "Nudité", "Difficile", "Roguelike", "Roguelite", "Hack and Slash", "Metroidvania", "Souls-like", "Perma Death"),
 	new Game("Two Point Hospital").genre("Simulation", "Construction", "Gestion")
