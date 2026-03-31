@@ -129,6 +129,9 @@ var GAMES = [
 		.genre("Simulation", "Historique", "Stratégie")
 		.tag("Stratégie", "Classique", "Simulation", "Superbe bande-son", "Gestion", "Bac-à-sable", "Historique", "Temps réél", "Gestion des resources", "Relaxant", "Médieval", "Construction de villes", "Commerce", "Transport"),
 
+	new Game("Beneath a Steel Sky").setFullname("Beneath a Steel Sky (1994)")
+		.genre("SF", "Aventure", "Point-and-click")
+		.tag("Aventure", "Science fiction", "Classique", "Casse-tête", "Science", "Choix multiples", "Point&Click", "Post-apocalyptique", "Cyberpunk", "Dystopique", "Robots"),
 	new Game("Beyond Good & Evil").onDisk()
 		.genre("Action", "TPP", "SF")
 		.tag("Action", "Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Exploration", "Science", "Protagoniste féminine", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Émotionnel", "Infiltration", "Dystopique"),
@@ -180,7 +183,7 @@ var GAMES = [
 	new Game("Ori and the Blind Forest").setFullname("Ori and the Blind Forest: Definitive Edition").onDisk()
 		.genre("Action", "Aventure", "Plateforme")
 		.tag("Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Plateformes", "Difficile", "Familial", "Metroidvania"),
-	new Game("Outcast").setFullname("Outcast - Second Contact")
+	new Game("Outcast").setFullname("Outcast : Second Contact")
 		.genre("Action", "Aventure", "SF")
 		.tag("Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Science", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Remake"),
 
@@ -223,7 +226,7 @@ var GAMES = [
 	new Game("The Elder Scrolls II: Daggerfall").setCollection("The Elder Scrolls").onDisk()
 		.genre("Jeu de rôle", "Aventure", " Monde ouvert")
 		.tag("Aventure", "Jeu de rôle", "Classique", "Monde Ouvert"),
-	new Game("The Elder Scrolls III: Morrowind").setFullname("The Elder Scrolls III: Morrowind - GOTY Edition").setCollection("The Elder Scrolls"),
+	new Game("The Elder Scrolls III: Morrowind").setFullname("The Elder Scrolls III: Morrowind : GOTY Edition").setCollection("The Elder Scrolls"),
 	new Game("The Elder Scrolls IV: Oblivion").setFullname("The Elder Scrolls IV: Oblivion - GOTY Deluxe").setCollection("The Elder Scrolls"),
 	new Game("The Gunk")
 		.genre("Action", "Adventure", "Exploration")
@@ -271,8 +274,12 @@ var GAMES = [
 	new Game("Tower Hunter: Erza's Trial").setFullname("Tower Hunter: Erza's Trial").onDisk()
 		.genre("Action", "Roguelike", "Metroidvania")
 		.tag("Action", "2D", "Casual", "Protagoniste féminine", "Superbe bande-son", "Nudité", "Difficile", "Roguelike", "Roguelite", "Hack and Slash", "Metroidvania", "Souls-like", "Perma Death"),
+	new Game("Treasure Adventure Game").genre("Plateforme", "Aventure", "Jeu de rôle")
+		.tag("Aventure", "Indé", "Fantasy", "Jeu de rôle", "2D", "Classique", "Plateformes", "Familial", "Cartoonesque", "Casse-tête et plateformes", "Metroidvania"),
 	new Game("Two Point Hospital").genre("Simulation", "Construction", "Gestion")
 		.tag("Simulation", "Casual", "Tactique", "Amusant", "Gestion", "Bac-à-sable", "Isométrique", "Familial", "Rétro", "Construction", "Cartoonesque", "Gestion"),
+	new Game("Tyrian 2000").genre("Tir", "Action", "SF")
+		.tag("Action", "Science fiction", "Classique", "Science", "Tir"),
 
 	new Game("Ultima 4").setFullname("Ultima IV: Quest of the Avatar ").setCollection("Ultima").onDisk()
 		.genre("Role-playing", "Adventure", "Fantasy")
