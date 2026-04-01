@@ -101,14 +101,19 @@ q(function() {
 			q("#collections").append(a);
 		});
 
-
 		// construction des jeux
 		q("#games").clearChildren();
+		let size = 0;
 		form.games.forEach((game) => {
 			let div = q("<div>").data("name", game.name);
 			div.append(q("<img>").src(game.img)).append(q("<span>").text(game.name));
 			q("#games").append(div);
+			size += game.size;
 		});
+		size = size.toFixed(1);
+
+		q("#size").clearChildren().append(q("<p>").append(q("<strong>").text("Taille totale : ")).append(q("<span>").text(size+ " Go")));
+
 	}
 
 	display();
@@ -163,17 +168,21 @@ q(function() {
 		div.append(h1);
 
 		if (game.collection) {
-			let collection = q("<p>").append(q("<strong>").text("Collection : ")).append(q("<a>").href("#" + game.collection).data("collection", game.collection).text(game.collection));
+			let collection = q("<p>")
+				.append(q("<strong>").text("Collection : "))
+				.append(q("<a>").href("#" + game.collection).data("collection", game.collection).text(game.collection));
 			div.append(collection);
 		}
 
 		let genre = q("<p>").append(q("<strong>").text("Genre : "));
 		game.genres.forEach(g => genre.append(q("<a>").href("#" + g).data("genre", g).text(g)));
 
+		let size = q("<p>").append(q("<strong>").text("Taille : ")).append(q("<span>").text(game.formatedSize));
+
 		let tag = q("<p>").append(q("<strong>").text("Tags : "));
 		game.tags.forEach(t => tag.append(q("<a>").href("#" + t).data("tag", t).text(t)));
 
-		div.append(genre).append(tag);
+		div.append(genre).append(size).append(tag);
 		q("#game").clearChildren().append(div).addClass("open");
 	});
 });

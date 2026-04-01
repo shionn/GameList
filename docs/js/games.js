@@ -22,6 +22,15 @@ class Game {
 		return this.json.onDisk || false;
 	}
 
+	get size() {
+		return this.json.size || 0;
+	}
+
+	get formatedSize() {
+		return (this.json.size || "-") + " Go";
+	}
+
+
 	get genres() {
 		return [];
 	}
@@ -78,14 +87,14 @@ var GAMES = [{
 		tags: ["Aventure", "Science fiction", "Classique", "Casse-tête", "Science", "Choix multiples", "Point&Click", "Post-apocalyptique", "Cyberpunk", "Dystopique", "Robots"]
 	}
 }, {
-	name: "Beyond Good & Evil",
+	name: "Beyond Good & Evil", size: 1.5,
 	onDisk: true,
 	gog: {
 		genres: ["Action", "TPP", "SF"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Exploration", "Science", "Protagoniste féminine", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Émotionnel", "Infiltration", "Dystopique"]
 	}
 }, {
-	name: "BioShock", fullname: "BioShock & BioShock Remastered",
+	name: "BioShock", fullname: "BioShock & BioShock Remastered", size: 20.3,
 	onDisk: true,
 	gog: {
 		name: "BioShock Remastered",
@@ -94,7 +103,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Brigador", fullname: "Brigador: Up-Armored Edition",
-	onDisk: true,
+	onDisk: true, size: 0.67,
 	gog: {
 		name: "Brigador",
 		genres: ["Action", "Combat", "Tactique"],
@@ -102,14 +111,14 @@ var GAMES = [{
 	}
 }, {
 	name: "Cyberpunk 2077",
-	onDisk: true,
+	onDisk: true, size: 113.1,
 	gog: {
 		genres: ["Jeu de rôle", "Action", "SF"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Science", "Première personne", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Mature", "Nudité", "Violent", "Fins multiples", "FPS", "Cyberpunk"]
 	}
 }, {
 	name: "D", fullname: "D: Résoudre le Mystére... Explorer le Côté Noir de Votre âme",
-	onDisk: true,
+	onDisk: true, size: 0.584,
 	gog: {
 		name: "D the Game",
 		genres: ["Horreur", "Aventure", "Réflexion"],
@@ -118,20 +127,20 @@ var GAMES = [{
 }, {
 	name: "Darksiders", fullname: "Darksiders Warmastered Edition",
 	collection: "Darksiders",
-	onDisk: true,
+	onDisk: true, size: 40.5,
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Classique", "Casse-tête", "Monde Ouvert", "Troisième personne", "Multijoueur", "Violent", "Difficile", "Gore", "Hack and Slash", "Post-apocalyptique", "Metroidvania", "Remake"]
 	}
 }, {
-	name: "Darksiders II", fullname: "Darksiders II: Deathinitive Edition", collection: "Darksiders",
+	name: "Darksiders II", fullname: "Darksiders II: Deathinitive Edition", collection: "Darksiders", size: 15.5,
 	onDisk: true,
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Gore", "Hack and Slash", "Metroidvania"]
 	}
 }, {
-	name: "Darksiders III", collection: "Darksiders",
+	name: "Darksiders III", collection: "Darksiders", size: 23.9,
 	onDisk: true,
 	gog: {
 		genres: ["Action", "Aventure", "Fantasy"],
@@ -139,14 +148,14 @@ var GAMES = [{
 	}
 }, {
 	name: "Everspace",
-	onDisk: true,
+	onDisk: true, size: 3.7,
 	gog: {
 		genres: ["Action", "Simulation", "SF"],
 		tags: ["Action", "Science fiction", "Classique", "Exploration", "Simulation", "Science", "Première personne", "Superbe bande-son", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Vol", "Réalité virtuelle"]
 	}
 }, {
 	name: "Fantasy General",
-	onDisk: true,
+	onDisk: true, size: 0.194,
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Fantasy"],
 		tags: ["Fantasy", "Stratégie", "2D", "Classique", "Tour par tour", "Magie", "Guerre"]
@@ -159,13 +168,13 @@ var GAMES = [{
 	}
 }, {
 	name: "Grandia 2", fullname: "Grandia II Anniversary Edition",
-	onDisk: true,
+	onDisk: true, size: 2.0,
 	gog: {
 		genre: ["Aventure", "RPG"]
 	}
 }, {
 	name: "Leisure Suit Larry 7", fullname: "Leisure Suit Larry : Drague en Haute Mer !",
-	onDisk: true,
+	onDisk: true, size: 0.926,
 	gog: {
 		name: "Leisure Suit Larry: Love for Sail!",
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
@@ -179,7 +188,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition",
-	onDisk: true,
+	onDisk: true, size: 4.9,
 	gog: {
 		genres: ["Action", "Aventure", "Plateforme"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Plateformes", "Difficile", "Familial", "Metroidvania"]
@@ -209,7 +218,7 @@ var GAMES = [{
 	gog: {
 		name: "Prince of Persia: The Two Thrones",
 		genres: ["Action", "TPP", "Fantasy"],
-		tags: ["Action, Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Troisième personne", "Plateformes", "Hack and Slash", "Infiltration", "Manipulation temporelle"]
+		tags: ["Action","Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Troisième personne", "Plateformes", "Hack and Slash", "Infiltration", "Manipulation temporelle"]
 	}
 }, {
 	name: "Prince of Persia 2008", fullname: "Prince of Persia", collection: "Prince of Persia",
@@ -220,7 +229,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Return of the Obra Dinn",
-	onDisk: true,
+	onDisk: true, size: 0.928,
 	gog: {
 		genres: ["FPP", "Aventure", "Mystère"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Casse-tête", "Première personne", "Superbe bande-son", "Horreur", "Mystère", "Historique", "Violent", "Difficile", "Fins multiples", "FPS", "Simulation de marche", "Noir", "Pirates", "Naval"]
@@ -257,14 +266,14 @@ var GAMES = [{
 	}
 }, {
 	name: "The Elder Scrolls: Arena", collection: "The Elder Scrolls",
-	onDisk: true,
+	onDisk: true, size: 0.122,
 	gog: {
 		genres: ["Jeu de rôle", "Action", "Monde ouvert"],
 		tags: ["Action", "Jeu de rôle", "Classique", "Monde Ouvert"]
 	}
 }, {
 	name: "The Elder Scrolls II: Daggerfall", fullname: "The Elder Scrolls Chapter II: Daggerfall", collection: "The Elder Scrolls",
-	onDisk: true,
+	onDisk: true, size: 0.256,
 	gog: {
 		genres: ["Jeu de rôle", "Aventure", "Monde ouvert"],
 		tags: ["Aventure", "Jeu de rôle", "Classique", "Monde Ouvert"]
@@ -290,7 +299,7 @@ var GAMES = [{
 	}
 }, {
 	name: "The Witcher 3", fullname: "The Witcher 3: Wild Hunt - Complete Edition", collection: "The Witcher",
-	onDisk: true,
+	onDisk: true, size: 86.0,
 	gog: {
 		genres: ["Jeu de rôle", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Exploration", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Fins multiples", "Gore", "Magie", "Médieval", "Vampire", "Loups-garous"]
@@ -298,14 +307,14 @@ var GAMES = [{
 }, {
 
 	name: "The Witness",
-	onDisk: true,
+	onDisk: true, size: 4.0,
 	gog: {
 		genres: ["Aventure", "Réflexion", "Monde ouvert"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Casual", "Première personne", "Superbe bande-son", "Monde Ouvert", "Mystère", "Bac-à-sable", "Difficile", "Logique", "Relaxant", "Surréaliste", "Simulation de marche", "Cozy", "Philosophique"]
 	}
 }, {
 	name: "Theme Hospital",
-	onDisk: true,
+	onDisk: true, size: 0.176,
 	gog: {
 		genres: ["Stratégie", "Construction", "Gestion"],
 		tags: ["Stratégie", "Classique", "Casual", "Amusant", "Gestion", "Construction", "Gestion", "Humour noir"]
@@ -318,14 +327,14 @@ var GAMES = [{
 	}
 }, {
 	name: "Timberborn",
-	onDisk: true,
+	onDisk: true, size: 1.3,
 	gog: {
 		genres: ["Simulation", "Building", "Survival"],
 		tags: ["Science fiction", "Simulation", "Gestion", "Bac-à-sable", "Survie", "Gestion des resources", "Vue du dessus", "Construction", "Construction de base", "Post-apocalyptique", "Construction de villes", "Editeur de niveaux"]
 	}
 }, {
 	name: "Tomb Raider 1/2/3", fullname: "Tomb Raider I-III Remastered Starring Lara Croft", collection: "Tomb Raider",
-	onDisk: true,
+	onDisk: true, size: 4.3,
 	gog: {
 		name: "Tomb Raider I to III Remastered",
 		genres: ["Action", "Aventure", "Exploration"],
@@ -340,14 +349,14 @@ var GAMES = [{
 	}
 }, {
 	name: "Tomb Raider 10", fullname: "Tomb Raider GOTY", collection: "Tomb Raider",
-	onDisk: true,
+	onDisk: true, size: 17.8,
 	gog: {
 		genres: ["Action", "Aventure", "Survie"],
 		tags: ["Aventure", "Action", "Classique", "Survie", "Horreur et survie"]
 	}
 }, {
 	name: "Tomb Raider 11", fullname: "Rise of the Tomb Raider: 20 Year Celebration", collection: "Tomb Raider",
-	onDisk: true,
+	onDisk: true, size: 33.8,
 	gog: {
 		genres: ["Action", "Aventure", "Survie"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Survie", "Violent", "Gore", "Infiltration"]
@@ -360,13 +369,14 @@ var GAMES = [{
 	}
 }, {
 	name: "Toonstruck",
-	onDisk: true,
+	onDisk: true, size: 2.0,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Histoire Riche", "2D", "Classique", "Exploration", "Casse-tête", "Amusant", "Troisième personne", "Point&Click", "Logique", "Cartoonesque", "Humour noir", "Objets cachés", "FMV"]
 	}
 }, {
 	name: "Torchlight", collection: "Torchlight",
+	onDisk: true, size: 0.442,
 	gog: {
 		genres: ["Jeu de rôle", "Action", "Fantasy"],
 		tags: ["Action", "Indé", "Fantasy", "Jeu de rôle", "Classique", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Isométrique", "Magie", "Vue du dessus", "Hack and Slash", "Dungeon Crawler", "Steampunk"]
@@ -379,7 +389,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Tower Hunter: Erza's Trial", fullname: "Tower Hunter: Erza's Trial",
-	onDisk: true,
+	onDisk: true, size: 1.1,
 	gog: {
 		genres: ["Action", "Roguelike", "Metroidvania"],
 		tags: ["Action", "2D", "Casual", "Protagoniste féminine", "Superbe bande-son", "Nudité", "Difficile", "Roguelike", "Roguelite", "Hack and Slash", "Metroidvania", "Souls-like", "Perma Death"]
@@ -404,7 +414,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Ultima 4", fullname: "Ultima IV: Quest of the Avatar", collection: "Ultima",
-	onDisk: true,
+	onDisk: true, size: 0.013,
 	gog: {
 		genres: ["Role-playing", "Adventure", "Fantasy"],
 		tags: ["Adventure", "Fantasy", "Role-playing", "Classic"]
@@ -422,7 +432,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Worlds of Ultima: The Savage Empire", collection: "Ultima",
-	onDisk: true,
+	onDisk: true, size: 0.051,
 	gog: {
 		genres: ["Role-playing", "Adventure", "Fantasy"],
 		tags: ["Adventure", "Fantasy", "Role-playing", "Classic"]
