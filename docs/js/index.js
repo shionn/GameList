@@ -156,7 +156,7 @@ q(function() {
 		let div = q("<div>");
 		div.append(q("<img>").src(game.img));
 		let h1 = q("<h1>").text(game.displayName);
-		if (game.disk) {
+		if (game.onDisk) {
 			h1.append(q("<small>").text(ICON_DISK))
 		}
 		div.append(h1);
