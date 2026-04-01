@@ -75,20 +75,22 @@ class Game {
 
 var GAMES = [{
 	name: "Anno 1404", fullname: "Anno 1404: Gold Edition",
+	onDisk: true, size: 0.003,
 	gog: {
 		genres: ["Simulation", "Historique", "Stratégie"],
 		tags: ["Stratégie", "Classique", "Simulation", "Superbe bande-son", "Gestion", "Bac-à-sable", "Historique", "Temps réél", "Gestion des resources", "Relaxant", "Médieval", "Construction de villes", "Commerce", "Transport"]
 	}
 }, {
 	name: "Beneath a Steel Sky", fullname: "Beneath a Steel Sky (1994)",
+	onDisk: true, size: 0.222,
 	gog: {
 		name: "Beneath a Steel Sky",
 		genres: ["SF", "Aventure", "Point-and-click"],
 		tags: ["Aventure", "Science fiction", "Classique", "Casse-tête", "Science", "Choix multiples", "Point&Click", "Post-apocalyptique", "Cyberpunk", "Dystopique", "Robots"]
 	}
 }, {
-	name: "Beyond Good & Evil", size: 1.5,
-	onDisk: true,
+	name: "Beyond Good & Evil",
+	onDisk: true, size: 1.7,
 	gog: {
 		genres: ["Action", "TPP", "SF"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Exploration", "Science", "Protagoniste féminine", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Émotionnel", "Infiltration", "Dystopique"]
@@ -155,7 +157,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Fantasy General",
-	onDisk: true, size: 0.194,
+	onDisk: true, size: 0.412,
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Fantasy"],
 		tags: ["Fantasy", "Stratégie", "2D", "Classique", "Tour par tour", "Magie", "Guerre"]
@@ -363,6 +365,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Tomb Raider 12", fullname: "Shadow of the Tomb Raider: Definitive Edition", collection: "Tomb Raider",
+	onDisk: true, size: 36.3,
 	gog: {
 		genres: ["Action", "Aventure", "Survie"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Survie", "Violent", "Gore", "Infiltration"]
@@ -383,6 +386,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Torchlight 2", fullname: "Torchlight II", collection: "Torchlight",
+	onDisk: true, size: 3.4,
 	gog: {
 		genres: ["Jeu de rôle", "Action", "Fantasy"],
 		tags: ["Action", "Indé", "Fantasy", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Isométrique", "Hack and Slash", "Dungeon Crawler", "Steampunk"]
@@ -414,7 +418,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Ultima 4", fullname: "Ultima IV: Quest of the Avatar", collection: "Ultima",
-	onDisk: true, size: 0.013,
+	onDisk: true, size: 0.054,
 	gog: {
 		genres: ["Role-playing", "Adventure", "Fantasy"],
 		tags: ["Adventure", "Fantasy", "Role-playing", "Classic"]
@@ -432,7 +436,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Worlds of Ultima: The Savage Empire", collection: "Ultima",
-	onDisk: true, size: 0.051,
+	onDisk: true, size: 0.169,
 	gog: {
 		genres: ["Role-playing", "Adventure", "Fantasy"],
 		tags: ["Adventure", "Fantasy", "Role-playing", "Classic"]
