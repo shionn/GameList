@@ -39,7 +39,7 @@ a:not(.selected) {
 	@media (max-width: 500px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
-		
+
 }
 
 #games div {
@@ -76,8 +76,13 @@ a:not(.selected) {
 	display: block;
 }
 
-#game h1 small {
+#game h1 small, #game h1 a {
 	float: right;
+	margin-left: 5px;
+}
+
+#game h1 img {
+	height: 32px;
 }
 
 #game > div {

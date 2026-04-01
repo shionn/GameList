@@ -46,6 +46,18 @@ class Game {
 		return "img/" + img.charAt(0) + "/" + img + ".jpg";
 	}
 
+	get gogUrl() {
+		let url = this.json.gog.name || this.displayName;
+		url = url.toLowerCase();
+		url = url.replaceAll(" - ", " ");
+		url = url.replaceAll(":", "");
+		url = url.replaceAll("'", "");
+		url = url.replaceAll("!", "");
+		url = url.replaceAll("&", "and");
+		url = url.replaceAll(" ", "_");
+		return "https://www.gog.com/fr/game/" + url;
+	}
+
 	get displayName() {
 		return this.fullname || this.name;
 	}
@@ -61,6 +73,7 @@ var GAMES = [{
 }, {
 	name: "Beneath a Steel Sky", fullname: "Beneath a Steel Sky (1994)",
 	gog: {
+		name: "Beneath a Steel Sky",
 		genres: ["SF", "Aventure", "Point-and-click"],
 		tags: ["Aventure", "Science fiction", "Classique", "Casse-tête", "Science", "Choix multiples", "Point&Click", "Post-apocalyptique", "Cyberpunk", "Dystopique", "Robots"]
 	}
@@ -75,6 +88,7 @@ var GAMES = [{
 	name: "BioShock", fullname: "BioShock & BioShock Remastered",
 	onDisk: true,
 	gog: {
+		name: "BioShock Remastered",
 		genres: ["Shooter", "FPP", "Sci-fi"],
 		tags: ["Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Horreur", "FPS", "Tir", "Dystopique", "Steampunk", "Sous l'eau"]
 	}
@@ -82,6 +96,7 @@ var GAMES = [{
 	name: "Brigador", fullname: "Brigador: Up-Armored Edition",
 	onDisk: true,
 	gog: {
+		name: "Brigador",
 		genres: ["Action", "Combat", "Tactique"],
 		tags: ["Action", "Indé", "Science", "Tactique", "Difficile", "Isométrique", "Vue du dessus", "Roguelite", "Combat", "Cyberpunk", "Dystopique", "Tir à deux joysticks", "Chars d'assaut"]
 	}
@@ -96,6 +111,7 @@ var GAMES = [{
 	name: "D", fullname: "D: Résoudre le Mystére... Explorer le Côté Noir de Votre âme",
 	onDisk: true,
 	gog: {
+		name: "D the Game",
 		genres: ["Horreur", "Aventure", "Réflexion"],
 		tags: ["Aventure", "Atmosphère", "Classique", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Horreur", "Fins multiples", "Logique", "Horreur psychologique", "FMV"]
 	}
@@ -108,14 +124,14 @@ var GAMES = [{
 		tags: ["Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Classique", "Casse-tête", "Monde Ouvert", "Troisième personne", "Multijoueur", "Violent", "Difficile", "Gore", "Hack and Slash", "Post-apocalyptique", "Metroidvania", "Remake"]
 	}
 }, {
-	name: "Darksiders 2", collection: "Darksiders",
+	name: "Darksiders II", fullname: "Darksiders II: Deathinitive Edition", collection: "Darksiders",
 	onDisk: true,
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Gore", "Hack and Slash", "Metroidvania"]
 	}
 }, {
-	name: "Darksiders 3", collection: "Darksiders",
+	name: "Darksiders III", collection: "Darksiders",
 	onDisk: true,
 	gog: {
 		genres: ["Action", "Aventure", "Fantasy"],
@@ -123,6 +139,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Everspace",
+	onDisk: true,
 	gog: {
 		genres: ["Action", "Simulation", "SF"],
 		tags: ["Action", "Science fiction", "Classique", "Exploration", "Simulation", "Science", "Première personne", "Superbe bande-son", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Vol", "Réalité virtuelle"]
@@ -150,6 +167,7 @@ var GAMES = [{
 	name: "Leisure Suit Larry 7", fullname: "Leisure Suit Larry : Drague en Haute Mer !",
 	onDisk: true,
 	gog: {
+		name: "Leisure Suit Larry: Love for Sail!",
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Classique", "Casse-tête", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Logique", "Adulte"]
 	}
@@ -167,7 +185,7 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Plateformes", "Difficile", "Familial", "Metroidvania"]
 	}
 }, {
-	name: "Outcast", fullname: "Outcast : Second Contact",
+	name: "Outcast", fullname: "Outcast - Second Contact",
 	gog: {
 		genres: ["Action", "Aventure", "SF"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Science", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Remake"]
@@ -175,24 +193,28 @@ var GAMES = [{
 }, {
 	name: "Prince of Persia 2003", fullname: "Prince of Persia : Les Sables du temps", collection: "Prince of Persia",
 	gog: {
+		name: "Prince of Persia: The Sands of Time",
 		genres: ["Action", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Troisième personne", "Plateformes", "Hack and Slash", "Casse-tête et plateformes", "Manipulation temporelle"]
 	}
 }, {
 	name: "Prince of Persia 2004", fullname: "Prince of Persia : L'Âme du guerrier", collection: "Prince of Persia",
 	gog: {
+		name: "Prince of Persia: Warrior Within",
 		genres: ["Action", "TPP", "Fantasy"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Casse-tête", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Gore", "Hack and Slash", "Manipulation temporelle"]
 	}
 }, {
 	name: "Prince of Persia 2005", fullname: "Prince of Persia : Les Deux Royaumes", collection: "Prince of Persia",
 	gog: {
+		name: "Prince of Persia: The Two Thrones",
 		genres: ["Action", "TPP", "Fantasy"],
 		tags: ["Action, Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Troisième personne", "Plateformes", "Hack and Slash", "Infiltration", "Manipulation temporelle"]
 	}
 }, {
 	name: "Prince of Persia 2008", fullname: "Prince of Persia", collection: "Prince of Persia",
 	gog: {
+		name: "Prince of Persia",
 		genres: ["Action", "TPP", "Fantasy"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Relaxant", "Hack and Slash", "Romance"]
 	}
@@ -241,16 +263,25 @@ var GAMES = [{
 		tags: ["Action", "Jeu de rôle", "Classique", "Monde Ouvert"]
 	}
 }, {
-	name: "The Elder Scrolls II: Daggerfall", collection: "The Elder Scrolls",
+	name: "The Elder Scrolls II: Daggerfall", fullname: "The Elder Scrolls Chapter II: Daggerfall", collection: "The Elder Scrolls",
 	onDisk: true,
 	gog: {
 		genres: ["Jeu de rôle", "Aventure", "Monde ouvert"],
 		tags: ["Aventure", "Jeu de rôle", "Classique", "Monde Ouvert"]
 	}
 }, {
-	name: "The Elder Scrolls III: Morrowind", fullname: "The Elder Scrolls III: Morrowind : GOTY Edition", collection: "The Elder Scrolls"
+	name: "The Elder Scrolls III: Morrowind", fullname: "The Elder Scrolls III: Morrowind GOTY Edition", collection: "The Elder Scrolls",
+	gog: {
+		genres: ["Jeu de rôle", "Aventure", "Monde ouvert"],
+		tags: ["Aventure", "Fantasy", "Jeu de rôle", "Classique", "Première personne", "Monde Ouvert", "Troisième personne", "Bac-à-sable", "Magie", "Médieval"]
+	}
 }, {
-	name: "The Elder Scrolls IV: Oblivion", fullname: "The Elder Scrolls IV: Oblivion - GOTY Deluxe", collection: "The Elder Scrolls"
+	name: "The Elder Scrolls IV: Oblivion", fullname: "The Elder Scrolls IV: Oblivion - GOTY Edition Deluxe", collection: "The Elder Scrolls",
+	gog: {
+		name: "Elder Scrolls IV: Oblivion - Game of the Year Edition Deluxe The",
+		genres: ["Jeu de rôle", "Aventure", "Fantasy"],
+		tags: ["Aventure", "Fantasy", "Jeu de rôle", "Classique"]
+	}
 }, {
 	name: "The Gunk",
 	gog: {
@@ -296,12 +327,14 @@ var GAMES = [{
 	name: "Tomb Raider 1/2/3", fullname: "Tomb Raider I-III Remastered Starring Lara Croft", collection: "Tomb Raider",
 	onDisk: true,
 	gog: {
+		name: "Tomb Raider I to III Remastered",
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Violent", "Remake"]
 	}
 }, {
 	name: "Tomb Raider 4/5/6", fullname: "Tomb Raider IV-VI Remastered", collection: "Tomb Raider",
 	gog: {
+		name: "Tomb Raider IV VI Remastered",
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Violent", "Remake"]
 	}
@@ -314,6 +347,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Tomb Raider 11", fullname: "Rise of the Tomb Raider: 20 Year Celebration", collection: "Tomb Raider",
+	onDisk: true,
 	gog: {
 		genres: ["Action", "Aventure", "Survie"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Survie", "Violent", "Gore", "Infiltration"]
@@ -326,6 +360,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Toonstruck",
+	onDisk: true,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Histoire Riche", "2D", "Classique", "Exploration", "Casse-tête", "Amusant", "Troisième personne", "Point&Click", "Logique", "Cartoonesque", "Humour noir", "Objets cachés", "FMV"]
@@ -368,7 +403,7 @@ var GAMES = [{
 		tags: ["Action", "Science fiction", "Classique", "Science", "Tir"]
 	}
 }, {
-	name: "Ultima 4", fullname: "Ultima IV: Quest of the Avatar ", collection: "Ultima",
+	name: "Ultima 4", fullname: "Ultima IV: Quest of the Avatar", collection: "Ultima",
 	onDisk: true,
 	gog: {
 		genres: ["Role-playing", "Adventure", "Fantasy"],
@@ -386,7 +421,7 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Histoire Riche", "Exploration", "Protagoniste féminine", "Troisième personne", "Plateformes", "Relaxant", "Cartoonesque", "Nature"]
 	}
 }, {
-	name: "Worlds of Ultima : The Savage Empire", collection: "Ultima",
+	name: "Worlds of Ultima: The Savage Empire", collection: "Ultima",
 	onDisk: true,
 	gog: {
 		genres: ["Role-playing", "Adventure", "Fantasy"],

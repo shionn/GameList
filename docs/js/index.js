@@ -159,6 +159,7 @@ q(function() {
 		if (game.onDisk) {
 			h1.append(q("<small>").text(ICON_DISK))
 		}
+		h1.append(q("<a>").href(game.gogUrl).attr("target", "_blank").append(q("<img>").src("img/gog.png")));
 		div.append(h1);
 
 		if (game.collection) {
