@@ -75,7 +75,7 @@ class Game {
 
 var GAMES = [{
 	name: "Anno 1404", fullname: "Anno 1404: Gold Edition",
-	onDisk: true, size: 0.003,
+	onDisk: true, size: 3.4,
 	gog: {
 		genres: ["Simulation", "Historique", "Stratégie"],
 		tags: ["Stratégie", "Classique", "Simulation", "Superbe bande-son", "Gestion", "Bac-à-sable", "Historique", "Temps réél", "Gestion des resources", "Relaxant", "Médieval", "Construction de villes", "Commerce", "Transport"]
@@ -102,6 +102,12 @@ var GAMES = [{
 		name: "BioShock Remastered",
 		genres: ["Shooter", "FPP", "Sci-fi"],
 		tags: ["Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Horreur", "FPS", "Tir", "Dystopique", "Steampunk", "Sous l'eau"]
+	}
+}, {
+	name: "Blades of Time",
+	gog: {
+		genres: ["Action", "Fantasy", "Jeu de rôle"],
+		tags: ["Action", "Fantasy", "Jeu de rôle", "Classique", "Nudité"]
 	}
 }, {
 	name: "Brigador", fullname: "Brigador: Up-Armored Edition",
@@ -176,6 +182,20 @@ var GAMES = [{
 		genre: ["Aventure", "RPG"]
 	}
 }, {
+	name: "Les Chevaliers de Baphomet", fullname: "Les Chevaliers de Baphomet : The Director's Cut", collection: "Broken Sword",
+	gog: {
+		name: "Broken Sword: Director's Cut!",
+		genres: ["Aventure" , "Point-and-click" , "Enquête-mystère"],
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Casual", "Amusant", "Troisième personne", "Point&Click", "Mystère", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
+	}
+}, {
+	name: "Les Chevaliers de Baphomet 2", fullname: " Les Chevaliers de Baphomet II : Les Boucliers de Quetzalcoatl", collection: "Broken Sword",
+	gog: {
+		name: "broken_sword_2__the_smoking_mirror!",
+		genres: ["Aventure" , "Point-and-click" , "Enquête-mystère"],
+		tags: ["Aventure", "Atmosphère", "2D", "Classique", "Casse-tête", "Amusant", "Point&Click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
+	}
+}, {
 	name: "Leisure Suit Larry 7", fullname: "Leisure Suit Larry : Drague en Haute Mer !",
 	onDisk: true, size: 0.926,
 	gog: {
@@ -199,6 +219,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Outcast", fullname: "Outcast - Second Contact",
+	onDisk: true, size: 5.8,
 	gog: {
 		genres: ["Action", "Aventure", "SF"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Science", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Remake"]
@@ -222,10 +243,11 @@ var GAMES = [{
 	gog: {
 		name: "Prince of Persia: The Two Thrones",
 		genres: ["Action", "TPP", "Fantasy"],
-		tags: ["Action","Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Troisième personne", "Plateformes", "Hack and Slash", "Infiltration", "Manipulation temporelle"]
+		tags: ["Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Troisième personne", "Plateformes", "Hack and Slash", "Infiltration", "Manipulation temporelle"]
 	}
 }, {
 	name: "Prince of Persia 2008", fullname: "Prince of Persia", collection: "Prince of Persia",
+	onDisk: true, size: 4.3,
 	gog: {
 		name: "Prince of Persia",
 		genres: ["Action", "TPP", "Fantasy"],
@@ -269,6 +291,24 @@ var GAMES = [{
 		tags: ["Fantasy", "Stratégie", "Classique", "Temps réél"]
 	}
 }, {
+	name: "Syberia", collection: "Syberia",
+	gog: {
+		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
+	}
+}, {
+	name: "Syberia 2", collection: "Syberia",
+	gog: {
+		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
+	}
+}, {
+	name: "Syberia 3", fullname: "Syberia 3: The Complete Journey",
+	gog: {
+		genres: ["TPP", "Fantasy", "Aventure"],
+		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Objets cachés", "Steampunk"]
+	}
+}, {
 	name: "The Elder Scrolls: Arena", collection: "The Elder Scrolls",
 	onDisk: true, size: 0.122,
 	gog: {
@@ -284,12 +324,14 @@ var GAMES = [{
 	}
 }, {
 	name: "The Elder Scrolls III: Morrowind", fullname: "The Elder Scrolls III: Morrowind GOTY Edition", collection: "The Elder Scrolls",
+	onDisk: true, size: 1.8,
 	gog: {
 		genres: ["Jeu de rôle", "Aventure", "Monde ouvert"],
 		tags: ["Aventure", "Fantasy", "Jeu de rôle", "Classique", "Première personne", "Monde Ouvert", "Troisième personne", "Bac-à-sable", "Magie", "Médieval"]
 	}
 }, {
 	name: "The Elder Scrolls IV: Oblivion", fullname: "The Elder Scrolls IV: Oblivion - GOTY Edition Deluxe", collection: "The Elder Scrolls",
+	onDisk: true, size: 5.6,
 	gog: {
 		name: "Elder Scrolls IV: Oblivion - Game of the Year Edition Deluxe The",
 		genres: ["Jeu de rôle", "Aventure", "Fantasy"],
@@ -302,7 +344,7 @@ var GAMES = [{
 		tags: ["Adventure", "Action", "Story Rich", "Atmospheric", "Sci-fi", "Exploration", "Female Protagonist", "Third Person", "Family Friendly", "Relaxing", "LGBTQ+", "Metroidvania", "Nature"]
 	}
 }, {
-	name: "The Witcher", fullname:"The Witcher: Enhanced Edition", collection: "The Witcher",
+	name: "The Witcher", fullname: "The Witcher: Enhanced Edition", collection: "The Witcher",
 	onDisk: true, size: 10.2,
 	gog: {
 		genres: ["Jeu de rôle", "Action", "Fantasy"],
