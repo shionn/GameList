@@ -120,7 +120,7 @@ var GAMES = [{
 	}
 }, {
 	name: "D", fullname: "D: Résoudre le Mystére... Explorer le Côté Noir de Votre âme",
-	onDisk: true, size: 0.584,
+	onDisk: true, size: 1.3,
 	gog: {
 		name: "D the Game",
 		genres: ["Horreur", "Aventure", "Réflexion"],
@@ -164,6 +164,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Full Throttle", fullname: "Full Throttle Remastered",
+	onDisk: true, size: 4.7,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point&Click", "Enquête", "Enquête-mystère", "Court", "Remake"]
@@ -184,6 +185,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Might and Magic 7", fullname: "Might and Magic 7: For Blood and Honor",
+	onDisk: true, size: 1.1,
 	gog: {
 		genres: ["Jeu de rôle", "FPP", "Fantasy"],
 		tags: ["Fantasy", "Jeu de rôle", "Classique", "Exploration", "Tour par tour", "Première personne", "Gestion", "Monde Ouvert", "Magie", "FPS", "cRPG"]
@@ -298,6 +300,13 @@ var GAMES = [{
 	gog: {
 		genres: ["Action", "Adventure", "Exploration"],
 		tags: ["Adventure", "Action", "Story Rich", "Atmospheric", "Sci-fi", "Exploration", "Female Protagonist", "Third Person", "Family Friendly", "Relaxing", "LGBTQ+", "Metroidvania", "Nature"]
+	}
+}, {
+	name: "The Witcher", fullname:"The Witcher: Enhanced Edition", collection: "The Witcher",
+	onDisk: true, size: 10.2,
+	gog: {
+		genres: ["Jeu de rôle", "Action", "Fantasy"],
+		tags: ["Action", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Nudité", "Fins multiples", "Magie", "Médieval"]
 	}
 }, {
 	name: "The Witcher 3", fullname: "The Witcher 3: Wild Hunt - Complete Edition", collection: "The Witcher",
