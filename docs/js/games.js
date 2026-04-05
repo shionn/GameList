@@ -105,10 +105,15 @@ var GAMES = [{
 	}
 }, {
 	name: "Blades of Time",
+	onDisk: true, size: 3.0,
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Fantasy", "Jeu de rôle", "Classique", "Nudité"]
 	}
+}, {
+	name: "Bleed 2",
+	onDisk: true, size: 0.210,
+	gog: {}
 }, {
 	name: "Brigador", fullname: "Brigador: Up-Armored Edition",
 	onDisk: true, size: 0.67,
@@ -169,6 +174,10 @@ var GAMES = [{
 		tags: ["Fantasy", "Stratégie", "2D", "Classique", "Tour par tour", "Magie", "Guerre"]
 	}
 }, {
+	name: "FTL: Faster than Light",
+	onDisk: true, size: 0.458,
+	gog: {}
+}, {
 	name: "Full Throttle", fullname: "Full Throttle Remastered",
 	onDisk: true, size: 4.7,
 	gog: {
@@ -183,6 +192,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Les Chevaliers de Baphomet", fullname: "Les Chevaliers de Baphomet : The Director's Cut", collection: "Broken Sword",
+	onDisk: true, size: 3.1,
 	gog: {
 		name: "Broken Sword: Director's Cut!",
 		genres: ["Aventure" , "Point-and-click" , "Enquête-mystère"],
@@ -190,6 +200,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Les Chevaliers de Baphomet 2", fullname: " Les Chevaliers de Baphomet II : Les Boucliers de Quetzalcoatl", collection: "Broken Sword",
+	onDisk: true, size: 2.5,
 	gog: {
 		name: "broken_sword_2__the_smoking_mirror!",
 		genres: ["Aventure" , "Point-and-click" , "Enquête-mystère"],
@@ -203,7 +214,7 @@ var GAMES = [{
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Classique", "Casse-tête", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Logique", "Adulte"]
 	}
-}, {
+},  {
 	name: "Might and Magic 7", fullname: "Might and Magic 7: For Blood and Honor",
 	onDisk: true, size: 1.1,
 	gog: {
@@ -211,6 +222,11 @@ var GAMES = [{
 		tags: ["Fantasy", "Jeu de rôle", "Classique", "Exploration", "Tour par tour", "Première personne", "Gestion", "Monde Ouvert", "Magie", "FPS", "cRPG"]
 	}
 }, {
+	name: "MKD",
+	onDisk: true, size: 0.090,
+	sources: ["DK"],
+	gog: { genres: [], tags: []}
+},{
 	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition",
 	onDisk: true, size: 4.9,
 	gog: {
@@ -225,7 +241,17 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Science", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Remake"]
 	}
 }, {
+	name: "Phantasmagoria 2", fullname : "Phantasmagoria 2: A Puzzle of Flesh",
+	onDisk: true, size: 2.5,
+	sources: ["DK"],
+	gog: {
+		name: "Phantasmagoria 2",
+		genres: ["TPP", "Horreur", "Aventure"],
+		tags: ["Aventure", "Classique", "Casse-tête", "Sombre", "Horreur", "Troisième personne", "Point&Click", "Nudité", "Gore", "Horreur psychologique", "LGBTQ+", "FMV"]
+	}
+}, {
 	name: "Prince of Persia 2003", fullname: "Prince of Persia : Les Sables du temps", collection: "Prince of Persia",
+	onDisk: true, size: 1.3,
 	gog: {
 		name: "Prince of Persia: The Sands of Time",
 		genres: ["Action", "Aventure", "Fantasy"],
@@ -233,6 +259,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Prince of Persia 2004", fullname: "Prince of Persia : L'Âme du guerrier", collection: "Prince of Persia",
+	onDisk: true, size: 3.3,
 	gog: {
 		name: "Prince of Persia: Warrior Within",
 		genres: ["Action", "TPP", "Fantasy"],
@@ -240,6 +267,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Prince of Persia 2005", fullname: "Prince of Persia : Les Deux Royaumes", collection: "Prince of Persia",
+	onDisk: true, size: 1.4,
 	gog: {
 		name: "Prince of Persia: The Two Thrones",
 		genres: ["Action", "TPP", "Fantasy"],
@@ -262,28 +290,37 @@ var GAMES = [{
 	}
 }, {
 	name: "Runaway: A Road Adventure", collection: "Runaway",
+	onDisk: true, size: 1.6,
 	gog: {
 		genres: ["Action", "Aventure", "Enquête-mystère"],
 		tags: ["Aventure", "Action", "Classique", "Enquête", "Enquête-mystère"]
 	}
 }, {
 	name: "Runaway 2: The Dream of the Turtle", collection: "Runaway",
+	onDisk: true, size: 3.6,
 	gog: {
 		genres: ["Action", "Aventure", "Enquête-mystère"],
 		tags: ["Aventure", "Action", "Histoire Riche", "2D", "Classique", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Point&Click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère"]
 	}
 }, {
 	name: "Runaway 3: A Twist of Fate", collection: "Runaway",
+	onDisk: true, size: 5.6,
 	gog: {
 		genres: ["Action", "Aventure", "Enquête-mystère"],
 		tags: ["Aventure", "Action", "Classique", "Enquête", "Enquête-mystère"]
 	}
 }, {
 	name: "SOMA",
+	onDisk: true, size: 24.5,
 	gog: {
 		genres: ["FPP", "Horreur", "Aventure"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Science", "Première personne", "Sombre", "Horreur", "Mystère", "FPS", "Infiltration", "Horreur psychologique", "Horreur et survie", "Simulation de marche", "Robots", "Philosophique", "Sous l'eau"]
 	}
+}, {
+	name: "Space Quest 6",
+	onDisk: true, size: 1.2,
+	sources: ["DK"],
+	gog: { genres: [], tags: []}
 }, {
 	name: "SPORE Collection",
 	gog: {
@@ -292,18 +329,21 @@ var GAMES = [{
 	}
 }, {
 	name: "Syberia", collection: "Syberia",
+	onDisk: true, size: 1.2,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
 	}
 }, {
 	name: "Syberia 2", collection: "Syberia",
+	onDisk: true, size: 1.5,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
 	}
 }, {
 	name: "Syberia 3", fullname: "Syberia 3: The Complete Journey",
+	onDisk: true, size: 20.6,
 	gog: {
 		genres: ["TPP", "Fantasy", "Aventure"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Objets cachés", "Steampunk"]
@@ -339,6 +379,7 @@ var GAMES = [{
 	}
 }, {
 	name: "The Gunk",
+	onDisk: true, size: 6.6,
 	gog: {
 		genres: ["Action", "Adventure", "Exploration"],
 		tags: ["Adventure", "Action", "Story Rich", "Atmospheric", "Sci-fi", "Exploration", "Female Protagonist", "Third Person", "Family Friendly", "Relaxing", "LGBTQ+", "Metroidvania", "Nature"]
@@ -358,7 +399,6 @@ var GAMES = [{
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Exploration", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Fins multiples", "Gore", "Magie", "Médieval", "Vampire", "Loups-garous"]
 	}
 }, {
-
 	name: "The Witness",
 	onDisk: true, size: 4.0,
 	gog: {
@@ -395,6 +435,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Tomb Raider 4/5/6", fullname: "Tomb Raider IV-VI Remastered", collection: "Tomb Raider",
+	onDisk: true, size: 8.2,
 	gog: {
 		name: "Tomb Raider IV VI Remastered",
 		genres: ["Action", "Aventure", "Exploration"],
@@ -430,7 +471,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Torchlight", collection: "Torchlight",
-	onDisk: true, size: 0.442,
+	onDisk: true, size: 0.910,
 	gog: {
 		genres: ["Jeu de rôle", "Action", "Fantasy"],
 		tags: ["Action", "Indé", "Fantasy", "Jeu de rôle", "Classique", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Isométrique", "Magie", "Vue du dessus", "Hack and Slash", "Dungeon Crawler", "Steampunk"]
@@ -451,6 +492,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Treasure Adventure Game",
+	onDisk: true, size: 0.116,
 	gog: {
 		genres: ["Plateforme", "Aventure", "Jeu de rôle"],
 		tags: ["Aventure", "Indé", "Fantasy", "Jeu de rôle", "2D", "Classique", "Plateformes", "Familial", "Cartoonesque", "Casse-tête et plateformes", "Metroidvania"]
@@ -463,6 +505,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Tyrian 2000",
+	onDisk: true, size: 0.019,
 	gog: {
 		genres: ["Tir", "Action", "SF"],
 		tags: ["Action", "Science fiction", "Classique", "Science", "Tir"]
@@ -476,14 +519,23 @@ var GAMES = [{
 	}
 }, {
 	name: "Unreal", fullname: "Unreal Gold",
+	onDisk: true, size: 0.234,
 	gog: {
 		genres: ["Action"]
 	}
 }, {
 	name: "Wavetale",
+	onDisk: true, size: 2.4,
 	gog: {
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Exploration", "Protagoniste féminine", "Troisième personne", "Plateformes", "Relaxant", "Cartoonesque", "Nature"]
+	}
+}, {
+	name: "World of Goo",
+	onDisk: true, size: 0.367,
+	gog: {
+		genres: ["Stratégie", "Construction", "Réflexion"],
+		tags: ["Indé", "Histoire Riche", "Stratégie", "Atmosphère", "2D", "Classique", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Difficile", "Familial", "Logique", "Construction", "Surréaliste", "Physique"]
 	}
 }, {
 	name: "Worlds of Ultima: The Savage Empire", collection: "Ultima",
