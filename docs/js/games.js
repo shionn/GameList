@@ -30,7 +30,6 @@ class Game {
 		return (this.json.size || "-") + " Go";
 	}
 
-
 	get genres() {
 		return [];
 	}
@@ -323,6 +322,7 @@ var GAMES = [{
 	gog: { genres: [], tags: []}
 }, {
 	name: "SPORE Collection",
+	onDisk: true, size: 5.6,
 	gog: {
 		genres: ["Stratégie", "Temps réel", "Fantasy"],
 		tags: ["Fantasy", "Stratégie", "Classique", "Temps réél"]
@@ -499,6 +499,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Two Point Hospital",
+	onDisk: true, size: 4.5,
 	gog: {
 		genres: ["Simulation", "Construction", "Gestion"],
 		tags: ["Simulation", "Casual", "Tactique", "Amusant", "Gestion", "Bac-à-sable", "Isométrique", "Familial", "Rétro", "Construction", "Cartoonesque", "Gestion"]
