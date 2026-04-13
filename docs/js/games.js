@@ -72,7 +72,33 @@ class Game {
 
 }
 
+var skel = {
+	name: "",
+	onDisk: true, size: 0.0,
+	sources: ["GP"],
+	gog: {
+		genres: [],
+		tags: []
+	}
+};
+
 var GAMES = [{
+	name: "9 Years of Shadows",
+	onDisk: true, size: 1.4,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Metroidvania"],
+		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Exploration", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Magie", "Metroidvania"]
+	}
+}, {
+	name: "A Plague Tale: Innocence",
+	onDisk: true, size: 38.0,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Infiltration"],
+		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Horreur", "Troisième personne", "Historique", "Violent", "Gore", "Médieval", "Émotionnel", "Infiltration"]
+	}
+}, {
 	name: "Anno 1404", fullname: "Anno 1404: Gold Edition",
 	onDisk: true, size: 3.4,
 	gog: {
@@ -103,6 +129,32 @@ var GAMES = [{
 		tags: ["Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Horreur", "FPS", "Tir", "Dystopique", "Steampunk", "Sous l'eau"]
 	}
 }, {
+	name: "BioShock 2",
+	onDisk: true, size: 14.1,
+	sources: ["GP"],
+	gog: {
+		name: "BioShock 2 Remastered",
+		genres: ["Tir", "FPP", "SF"],
+		tags: ["Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Horreur", "FPS", "Tir", "Dystopique", "Steampunk", "Sous l'eau"]
+	}
+}, {
+	name: "BioShock Infinite", fullname: "BioShock Infinite Complete Edition",
+	onDisk: true, size: 41.3,
+	sources: ["GP"],
+	gog: {
+		name: "BioShock Infinite",
+		genres: ["Tir", "FPP", "SF"],
+		tags: ["Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "FPS", "Tir", "Steampunk"]
+	}
+}, {
+	name: "Blade of Darkness", fullname: "Severance: Blade of Darkness",
+	onDisk: true, size: 1.4,
+	sources: ["GP"],
+	gog: {
+		genres: ["Jeu de rôle", "Action", "Fantasy"],
+		tags: ["Action", "Fantasy", "Jeu de rôle", "Sombre", "Troisième personne", "Violent", "Gore", "Hack and Slash", "Souls-like"]
+	}
+}, {
 	name: "Blades of Time",
 	onDisk: true, size: 3.0,
 	gog: {
@@ -122,6 +174,54 @@ var GAMES = [{
 		tags: ["Action", "Indé", "Science", "Tactique", "Difficile", "Isométrique", "Vue du dessus", "Roguelite", "Combat", "Cyberpunk", "Dystopique", "Tir à deux joysticks", "Chars d'assaut"]
 	}
 }, {
+	name: "Chasm: The Rift",
+	onDisk: true, size: 0.801,
+	sources: ["GP"],
+	gog: {
+		genres: ["Tir", "FPP", "Fantasy"],
+		tags: ["Fantasy", "Atmosphère", "Science fiction", "Classique", "Première personne", "Sombre", "Violent", "Gore", "FPS", "Rétro", "Tir"]
+	}
+}, {
+	name: "Close To The Sun",
+	onDisk: true, size: 21.6,
+	sources: ["GP"],
+	gog: {
+		genres: ["FPP", "SF", "Aventure"],
+		tags: ["Aventure", "Science fiction", "Science", "Première personne", "Protagoniste féminine", "Horreur", "Violent", "Gore", "FPS", "Simulation de marche", "Steampunk"]
+	}
+}, {
+	name: "Colt Canyon",
+	onDisk: true, size: 0.545,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Roguelike"],
+		tags: ["Aventure", "Action", "Atmosphère", "Casual", "Superbe bande-son", "Graphismes Pixel", "Violent", "Gore", "Roguelike", "Roguelite", "Génération procédurale", "Coop locale"]
+	}
+}, {
+	name: "Control", fullname: "Control Ultimate Edition",
+	onDisk: true, size: 28.4,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "SF"],
+		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Science fiction", "Science", "Protagoniste féminine", "Horreur", "Troisième personne", "Horreur psychologique", "Surréaliste", "Surnaturel"]
+	}
+}, {
+	name: "Coromon",
+	onDisk: true, size: 0.934,
+	sources: ["GP"],
+	gog: {
+		genres: ["Aventure", "Jeu de rôle", "Exploration"],
+		tags: ["Aventure", "Histoire Riche", "Jeu de rôle", "2D", "Exploration", "Tour par tour", "Graphismes Pixel", "Difficile", "JRPG", "Rétro"]
+	}
+}, {
+	name: "Cursed to Golf",
+	onDisk: true, size: 0.710,
+	sources: ["GP"],
+	gog: {
+		genres: ["Aventure", "Sport", "Roguelike"],
+		tags: ["Aventure", "2D", "Graphismes Pixel", "Amusant", "Plateformes", "Difficile", "Roguelike", "Rétro", "Roguelite", "Dungeon Crawler", "Physique", "Sport"]
+	}
+}, {
 	name: "Cyberpunk 2077",
 	onDisk: true, size: 113.1,
 	gog: {
@@ -137,6 +237,14 @@ var GAMES = [{
 		tags: ["Aventure", "Atmosphère", "Classique", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Horreur", "Fins multiples", "Logique", "Horreur psychologique", "FMV"]
 	}
 }, {
+	name: "Dark Sky",
+	onDisk: true, size: 2.0,
+	sources: ["GP"],
+	gog: {
+		genres: ["SF", "Stratégie", "Aventure"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Stratégie", "2D", "Science fiction", "Exploration", "Tour par tour", "JRPG", "Isométrique", "Post-apocalyptique", "RPG tactique", "Jeu de cartes", "Deckbuilding", "Party Game"]
+	}
+}, {
 	name: "Darksiders", fullname: "Darksiders Warmastered Edition",
 	collection: "Darksiders",
 	onDisk: true, size: 40.5,
@@ -145,18 +253,50 @@ var GAMES = [{
 		tags: ["Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Classique", "Casse-tête", "Monde Ouvert", "Troisième personne", "Multijoueur", "Violent", "Difficile", "Gore", "Hack and Slash", "Post-apocalyptique", "Metroidvania", "Remake"]
 	}
 }, {
-	name: "Darksiders II", fullname: "Darksiders II: Deathinitive Edition", collection: "Darksiders", size: 15.5,
-	onDisk: true,
+	name: "Darksiders II", fullname: "Darksiders II: Deathinitive Edition", collection: "Darksiders",
+	onDisk: true, size: 15.5,
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Gore", "Hack and Slash", "Metroidvania"]
 	}
 }, {
-	name: "Darksiders III", collection: "Darksiders", size: 23.9,
-	onDisk: true,
+	name: "Darksiders III", collection: "Darksiders",
+	onDisk: true, size: 23.9,
 	gog: {
 		genres: ["Action", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Casse-tête", "Protagoniste féminine", "Sombre", "Troisième personne", "Violent", "Gore", "Hack and Slash", "Post-apocalyptique", "Souls-like"]
+	}
+}, {
+	name: "Deus Ex: Human Revolution", fullname: "Deus Ex: Human Revolution - Director's Cut",
+	onDisk: true, size: 16.5,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "SF", "Jeu de rôle"],
+		tags: ["Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Science", "Première personne", "Superbe bande-son", "FPS", "Infiltration", "Cyberpunk", "Dystopique"]
+	}
+}, {
+	name: "Dishonored", fullname: "Dishonored - Definitive Edition",
+	onDisk: true, size: 15.4,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "FPP", "Infiltration"],
+		tags: ["Action", "Histoire Riche", "Atmosphère", "Classique", "Première personne", "Sombre", "Superbe bande-son", "Choix multiples", "Violent", "Gore", "Magie", "FPS", "Infiltration", "Surnaturel", "Steampunk"]
+	}
+}, {
+	name: "Dragonsphere",
+	onDisk: true, size: 0.172,
+	sources: ["GP"],
+	gog: {
+		genres: ["Fantasy", "Aventure", "Point-and-click"],
+		tags: ["Aventure", "Fantasy", "Classique", "Graphismes Pixel", "Point&Click"]
+	}
+}, {
+	name: "Duck Paradox",
+	onDisk: true, size: 0.226,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Roguelike"],
+		tags: ["Aventure", "Action", "Indé", "2D", "Science fiction", "Casse-tête", "Science", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Difficile", "Roguelike", "Rétro", "Surréaliste", "Bullet Hell", "Manipulation temporelle"]
 	}
 }, {
 	name: "Everspace",
@@ -164,6 +304,30 @@ var GAMES = [{
 	gog: {
 		genres: ["Action", "Simulation", "SF"],
 		tags: ["Action", "Science fiction", "Classique", "Exploration", "Simulation", "Science", "Première personne", "Superbe bande-son", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Vol", "Réalité virtuelle"]
+	}
+}, {
+	name: "Fallout", collection: "Fallout",
+	onDisk: true, size: 0.515,
+	sources: ["GP"],
+	gog: {
+		genres: ["Jeu de rôle", "Tour par tour", "SF"],
+		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Fins multiples", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
+	}
+}, {
+	name: "Fallout 2", collection: "Fallout",
+	onDisk: true, size: 0.740,
+	sources: ["GP"],
+	gog: {
+		genres: ["Jeu de rôle", "Tour par tour", "SF"],
+		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
+	}
+}, {
+	name: "Fallout Tactics", collection: "Fallout",
+	onDisk: true, size: 1.8,
+	sources: ["GP"],
+	gog: {
+		genres: ["Jeu de rôle", "Tour par tour", "SF"],
+		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
 	}
 }, {
 	name: "Fantasy General",
@@ -184,17 +348,73 @@ var GAMES = [{
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point&Click", "Enquête", "Enquête-mystère", "Court", "Remake"]
 	}
 }, {
+	name: "Ghost Song",
+	onDisk: true, size: 1.5,
+	sources: ["GP"],
+	gog: {
+		genres: ["Jeu de rôle", "Tour par tour", "SF"],
+		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
+	}
+}, {
+	name: "Ghostrunner",
+	onDisk: true, size: 20.5,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "FPP", "SF"],
+		tags: ["Action", "Science fiction", "Science", "Première personne", "Superbe bande-son", "Violent", "Difficile", "Gore", "FPS", "Hack and Slash", "Post-apocalyptique", "Cyberpunk", "Combat"]
+	}
+}, {
+	name: "Giants: Citizen Kabuto",
+	onDisk: true, size: 1.1,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "TPP", "SF"],
+		tags: ["Action", "Fantasy", "Science fiction", "Classique", "Science", "Amusant", "Monde Ouvert", "Troisième personne", "Multijoueur", "Nudité", "Violent", "Gestion des resources", "FPS", "Construction de base", "Réaliste", "Stratégie en temps réél"]
+	}
+}, {
 	name: "Grandia 2", fullname: "Grandia II Anniversary Edition",
 	onDisk: true, size: 2.0,
 	gog: {
 		genre: ["Aventure", "RPG"]
 	}
 }, {
+	name: "GRIP",
+	onDisk: true, size: 5.2,
+	sources: ["GP"],
+	gog: {
+		genres: ["Course", "Action", "SF"],
+		tags: ["Action", "Science fiction", "Science", "Multijoueur", "Multijoueur local", "Course", "Écran partagé", "Réalité virtuelle"]
+	}
+}, {
+	name: "Hell Pie",
+	onDisk: true, size: 4.3,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Comédie"],
+		tags: ["Aventure", "Action", "Amusant", "Monde Ouvert", "Troisième personne", "Plateformes", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Adulte", "Comédie", "Humour noir"]
+	}
+}, {
+	name: "Hive Jump 2: Survivors",
+	onDisk: true, size: 0.168,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Roguelike", "Survie"],
+		tags: ["Action", "Indé", "2D", "Science fiction", "Casual", "Graphismes Pixel", "Survie", "Roguelike", "Vue du dessus", "Espace", "Tir", "Roguelite", "Combat", "Bullet Hell", "Tir à deux joysticks"]
+	}
+}, {
+	name: "Kerbal Space Program",
+	onDisk: true, size: 4.3,
+	sources: ["GP"],
+	gog: {
+		genres: ["Simulation", "SF", "Construction"],
+		tags: ["Indé", "Science fiction", "Exploration", "Simulation", "Science", "Amusant", "Monde Ouvert", "Bac-à-sable", "Difficile", "Espace", "Construction", "Physique", "Éducation"]
+	}
+}, {
 	name: "Les Chevaliers de Baphomet", fullname: "Les Chevaliers de Baphomet : The Director's Cut", collection: "Broken Sword",
 	onDisk: true, size: 3.1,
 	gog: {
 		name: "Broken Sword: Director's Cut!",
-		genres: ["Aventure" , "Point-and-click" , "Enquête-mystère"],
+		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Casual", "Amusant", "Troisième personne", "Point&Click", "Mystère", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
 	}
 }, {
@@ -202,7 +422,7 @@ var GAMES = [{
 	onDisk: true, size: 2.5,
 	gog: {
 		name: "broken_sword_2__the_smoking_mirror!",
-		genres: ["Aventure" , "Point-and-click" , "Enquête-mystère"],
+		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Atmosphère", "2D", "Classique", "Casse-tête", "Amusant", "Point&Click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
 	}
 }, {
@@ -213,7 +433,15 @@ var GAMES = [{
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Classique", "Casse-tête", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Logique", "Adulte"]
 	}
-},  {
+}, {
+	name: "Mafia 2", fullname: "Mafia II: Definitive Edition",
+	onDisk: true, size: 46.6,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Monde ouvert"],
+		tags: ["Aventure", "Action", "Histoire Riche", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Crime", "Noir"]
+	}
+}, {
 	name: "Might and Magic 7", fullname: "Might and Magic 7: For Blood and Honor",
 	onDisk: true, size: 1.1,
 	gog: {
@@ -224,8 +452,24 @@ var GAMES = [{
 	name: "MKD",
 	onDisk: true, size: 0.090,
 	sources: ["DK"],
-	gog: { genres: [], tags: []}
-},{
+	gog: { genres: [], tags: [] }
+}, {
+	name: "Monster Train",
+	onDisk: true, size: 0.684,
+	sources: ["GP"],
+	gog: {
+		genres: ["Stratégie", "Roguelike", "Jeu de cartes"],
+		tags: ["Fantasy", "Stratégie", "Choix multiples", "Difficile", "Roguelike", "Magie", "Roguelite", "Génération procédurale", "Jeu de cartes", "Deckbuilding"]
+	}
+}, {
+	name: "Moonscars",
+	onDisk: true, size: 0.273,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Plateforme", "Metroidvania"],
+		tags: ["Action", "Indé", "2D", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Hack and Slash", "Combat", "Metroidvania", "Souls-like"]
+	}
+}, {
 	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition",
 	onDisk: true, size: 4.9,
 	gog: {
@@ -240,7 +484,15 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Science", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Remake"]
 	}
 }, {
-	name: "Phantasmagoria 2", fullname : "Phantasmagoria 2: A Puzzle of Flesh",
+	name: "Overcooked", fullname: "Overcooked: Gourmet Edition",
+	onDisk: true, size: 0.317,
+	sources: ["GP"],
+	gog: {
+		genres: ["Simulation", "Action", "Comédie"],
+		tags: ["Action", "Indé", "Classique", "Simulation", "Casual", "Superbe bande-son", "Amusant", "Difficile", "Familial", "Coop locale", "Multijoueur local", "Comédie", "Cuisine"]
+	}
+}, {
+	name: "Phantasmagoria 2", fullname: "Phantasmagoria 2: A Puzzle of Flesh",
 	onDisk: true, size: 2.5,
 	sources: ["DK"],
 	gog: {
@@ -281,11 +533,35 @@ var GAMES = [{
 		tags: ["Action", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Relaxant", "Hack and Slash", "Romance"]
 	}
 }, {
+	name: "Prison Architect",
+	onDisk: true, size: 1.1,
+	sources: ["GP"],
+	gog: {
+		genres: ["Simulation", "Temps réel", "Gestion"],
+		tags: ["2D", "Simulation", "Gestion", "Bac-à-sable", "Temps réél", "Gestion des resources", "Vue du dessus", "Construction", "Gestion", "Construction de base", "Construction de villes", "Moderne"]
+	}
+}, {
+	name: "Pumpkin Jack",
+	onDisk: true, size: 2.2,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Plateforme"],
+		tags: ["Aventure", "Action", "Fantasy", "2D", "Casse-tête", "Troisième personne", "Plateformes", "Cartoonesque"]
+	}
+}, {
 	name: "Return of the Obra Dinn",
 	onDisk: true, size: 0.928,
 	gog: {
 		genres: ["FPP", "Aventure", "Mystère"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Casse-tête", "Première personne", "Superbe bande-son", "Horreur", "Mystère", "Historique", "Violent", "Difficile", "Fins multiples", "FPS", "Simulation de marche", "Noir", "Pirates", "Naval"]
+	}
+}, {
+	name: "RIOT - Civil Unrest",
+	onDisk: true, size: 1.1,
+	sources: ["GP"],
+	gog: {
+		genres: ["Stratégie", "Simulation", "Moderne"],
+		tags: ["Stratégie", "2D", "Simulation", "Graphismes Pixel", "Multijoueur", "Historique", "Violent", "Stratégie en temps réél", "Moderne", "Crime"]
 	}
 }, {
 	name: "Runaway: A Road Adventure", collection: "Runaway",
@@ -309,6 +585,38 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Classique", "Enquête", "Enquête-mystère"]
 	}
 }, {
+	name: "Saints Row: The Third", fullname: "Saints Row: The Third Remastered",
+	onDisk: true, size: 44.9,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "TPP", "Moderne"],
+		tags: ["Action", "Classique", "Troisième personne", "Moderne"]
+	}
+}, {
+	name: "Scorn",
+	onDisk: true, size: 18.6,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Horreur"],
+		tags: ["Aventure", "Action", "Indé", "Atmosphère", "Science fiction", "Première personne", "Sombre", "Horreur", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Horreur psychologique", "Horreur et survie", "Surréaliste", "Lovecraft", "Steampunk"]
+	}
+}, {
+	name: "Shogun Showdown",
+	onDisk: true, size: 0.238,
+	sources: ["GP"],
+	gog: {
+		genres: ["Stratégie", "Tour par tour", "Roguelike"],
+		tags: ["Stratégie", "2D", "Tour par tour", "Graphismes Pixel", "Tactique", "Roguelike", "Jeu de cartes", "Deckbuilding", "Ninja"]
+	}
+}, {
+	name: "Showgunners",
+	onDisk: true, size: 10.8,
+	sources: ["GP"],
+	gog: {
+		genres: ["Stratégie", "Tour par tour", "Tactique"],
+		tags: ["Stratégie", "Atmosphère", "Exploration", "Tour par tour", "Sombre", "Choix multiples", "Tactique", "Vue du dessus", "Dystopique"]
+	}
+}, {
 	name: "SOMA",
 	onDisk: true, size: 24.5,
 	gog: {
@@ -319,7 +627,7 @@ var GAMES = [{
 	name: "Space Quest 6",
 	onDisk: true, size: 1.2,
 	sources: ["DK"],
-	gog: { genres: [], tags: []}
+	gog: { genres: [], tags: [] }
 }, {
 	name: "SPORE Collection",
 	onDisk: true, size: 5.6,
