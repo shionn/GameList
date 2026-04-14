@@ -47,6 +47,14 @@ class Game {
 		return this.genres.includes(genre);
 	}
 
+	get letter() {
+		return this.name.charAt(0).replace(/\d/,"#");
+	}
+
+	get isNew() {
+		return this.json.date === LAST_DATE;
+	}
+
 	get img() {
 		let img = this.name.toLowerCase();
 		img = img.replaceAll(":", "");
@@ -76,19 +84,21 @@ class Game {
 }
 
 var skel = {
-	name: "STAR WARS: X-Wing Alliance",
-	onDisk: true, size: 0.581,
-	sources: ["Redloved"],
+	name: "Secret Files 2",
+	onDisk: false, size: 0.0,
 	gog: {
 		genres: [],
 		tags: []
 	}
 };
 
+var LAST_DATE = "2026-04-14";
+
 var GAMES = [{
 	name: "9 Years of Shadows",
 	onDisk: true, size: 1.4,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Metroidvania"],
 		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Exploration", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Magie", "Metroidvania"]
@@ -97,9 +107,18 @@ var GAMES = [{
 	name: "A Plague Tale: Innocence",
 	onDisk: true, size: 38.0,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Infiltration"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Horreur", "Troisième personne", "Historique", "Violent", "Gore", "Médieval", "Émotionnel", "Infiltration"]
+	}
+}, {
+	name: "Alan Wake",
+	onDisk: false, size: 0.0,
+	date : "2026-04-14",
+	gog: {
+		genres: ["Action", "Aventure", "Horreur"],
+		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Classique", "Sombre", "Superbe bande-son", "Horreur", "Troisième personne", "Mystère", "Survie", "Horreur psychologique", "Horreur et survie", "Surnaturel", "Thriller"]
 	}
 }, {
 	name: "Anno 1404", fullname: "Anno 1404: Gold Edition",
@@ -111,7 +130,8 @@ var GAMES = [{
 }, {
 	name: "Baldur's Gate", fullname: "Baldur's Gate: Enhanced Edition",
 	onDisk: true, size: 5.8,
-	sources: ["Redloved"],
+	sources: ["Redloved", "Faran"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Jeu de rôle","Temps réel", "Fantasy"],
 		tags: ["Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Temps réél", "Isométrique", "Magie", "cRPG", "Remake"]
@@ -143,6 +163,7 @@ var GAMES = [{
 	name: "BioShock 2",
 	onDisk: true, size: 14.1,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		name: "BioShock 2 Remastered",
 		genres: ["Tir", "FPP", "SF"],
@@ -152,6 +173,7 @@ var GAMES = [{
 	name: "BioShock Infinite", fullname: "BioShock Infinite Complete Edition",
 	onDisk: true, size: 41.3,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		name: "BioShock Infinite",
 		genres: ["Tir", "FPP", "SF"],
@@ -161,6 +183,7 @@ var GAMES = [{
 	name: "Blade of Darkness", fullname: "Severance: Blade of Darkness",
 	onDisk: true, size: 1.4,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Jeu de rôle", "Action", "Fantasy"],
 		tags: ["Action", "Fantasy", "Jeu de rôle", "Sombre", "Troisième personne", "Violent", "Gore", "Hack and Slash", "Souls-like"]
@@ -188,6 +211,7 @@ var GAMES = [{
 	name: "Chasm: The Rift",
 	onDisk: true, size: 0.801,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Tir", "FPP", "Fantasy"],
 		tags: ["Fantasy", "Atmosphère", "Science fiction", "Classique", "Première personne", "Sombre", "Violent", "Gore", "FPS", "Rétro", "Tir"]
@@ -196,6 +220,7 @@ var GAMES = [{
 	name: "Close To The Sun",
 	onDisk: true, size: 21.6,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["FPP", "SF", "Aventure"],
 		tags: ["Aventure", "Science fiction", "Science", "Première personne", "Protagoniste féminine", "Horreur", "Violent", "Gore", "FPS", "Simulation de marche", "Steampunk"]
@@ -204,6 +229,7 @@ var GAMES = [{
 	name: "Colt Canyon",
 	onDisk: true, size: 0.545,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Roguelike"],
 		tags: ["Aventure", "Action", "Atmosphère", "Casual", "Superbe bande-son", "Graphismes Pixel", "Violent", "Gore", "Roguelike", "Roguelite", "Génération procédurale", "Coop locale"]
@@ -212,6 +238,7 @@ var GAMES = [{
 	name: "Control", fullname: "Control Ultimate Edition",
 	onDisk: true, size: 28.4,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "SF"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Science fiction", "Science", "Protagoniste féminine", "Horreur", "Troisième personne", "Horreur psychologique", "Surréaliste", "Surnaturel"]
@@ -220,6 +247,7 @@ var GAMES = [{
 	name: "Coromon",
 	onDisk: true, size: 0.934,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Aventure", "Jeu de rôle", "Exploration"],
 		tags: ["Aventure", "Histoire Riche", "Jeu de rôle", "2D", "Exploration", "Tour par tour", "Graphismes Pixel", "Difficile", "JRPG", "Rétro"]
@@ -228,6 +256,7 @@ var GAMES = [{
 	name: "Cursed to Golf",
 	onDisk: true, size: 0.710,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Aventure", "Sport", "Roguelike"],
 		tags: ["Aventure", "2D", "Graphismes Pixel", "Amusant", "Plateformes", "Difficile", "Roguelike", "Rétro", "Roguelite", "Dungeon Crawler", "Physique", "Sport"]
@@ -251,6 +280,7 @@ var GAMES = [{
 	name: "Dark Sky",
 	onDisk: true, size: 2.0,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["SF", "Stratégie", "Aventure"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Stratégie", "2D", "Science fiction", "Exploration", "Tour par tour", "JRPG", "Isométrique", "Post-apocalyptique", "RPG tactique", "Jeu de cartes", "Deckbuilding", "Party Game"]
@@ -278,9 +308,18 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Casse-tête", "Protagoniste féminine", "Sombre", "Troisième personne", "Violent", "Gore", "Hack and Slash", "Post-apocalyptique", "Souls-like"]
 	}
 }, {
+	name: "Day of the Tentacle", fullname: "Day of the Tentacle Remastered",
+	onDisk: false, size: 0.0,
+	date : "2026-04-14",
+	gog: {
+		genres: ["SF", "Aventure", "Point-and-click"],
+		tags: ["Aventure", "Histoire Riche", "2D", "Science fiction", "Classique", "Casse-tête", "Science", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point&Click", "Familial", "Cartoonesque", "Remake"]
+	}
+}, {
 	name: "Deus Ex: Human Revolution", fullname: "Deus Ex: Human Revolution - Director's Cut",
 	onDisk: true, size: 16.5,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "SF", "Jeu de rôle"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Science", "Première personne", "Superbe bande-son", "FPS", "Infiltration", "Cyberpunk", "Dystopique"]
@@ -289,6 +328,7 @@ var GAMES = [{
 	name: "Dishonored", fullname: "Dishonored - Definitive Edition",
 	onDisk: true, size: 15.4,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "FPP", "Infiltration"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Classique", "Première personne", "Sombre", "Superbe bande-son", "Choix multiples", "Violent", "Gore", "Magie", "FPS", "Infiltration", "Surnaturel", "Steampunk"]
@@ -297,6 +337,7 @@ var GAMES = [{
 	name: "Dragonsphere",
 	onDisk: true, size: 0.172,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Fantasy", "Aventure", "Point-and-click"],
 		tags: ["Aventure", "Fantasy", "Classique", "Graphismes Pixel", "Point&Click"]
@@ -305,6 +346,7 @@ var GAMES = [{
 	name: "Duck Paradox",
 	onDisk: true, size: 0.226,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Roguelike"],
 		tags: ["Aventure", "Action", "Indé", "2D", "Science fiction", "Casse-tête", "Science", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Difficile", "Roguelike", "Rétro", "Surréaliste", "Bullet Hell", "Manipulation temporelle"]
@@ -320,6 +362,7 @@ var GAMES = [{
 	name: "Fallout", collection: "Fallout",
 	onDisk: true, size: 1.0,
 	sources: ["GP", "Redloved"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Fins multiples", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
@@ -328,6 +371,7 @@ var GAMES = [{
 	name: "Fallout 2", collection: "Fallout",
 	onDisk: true, size: 1.5,
 	sources: ["GP", "Redloved"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
@@ -336,6 +380,7 @@ var GAMES = [{
 	name: "Fallout Tactics", collection: "Fallout",
 	onDisk: true, size: 3.5,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
@@ -362,6 +407,7 @@ var GAMES = [{
 	name: "Ghost of a Tale",
 	onDisk: true, size: 2.9,
 	sources: ["Redloved"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Exploration", "Superbe bande-son", "Horreur", "Amusant", "Monde Ouvert", "Troisième personne", "Médieval", "Infiltration"]
@@ -370,6 +416,7 @@ var GAMES = [{
 	name: "Ghost Song",
 	onDisk: true, size: 1.5,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
@@ -378,6 +425,7 @@ var GAMES = [{
 	name: "Ghostrunner",
 	onDisk: true, size: 20.5,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "FPP", "SF"],
 		tags: ["Action", "Science fiction", "Science", "Première personne", "Superbe bande-son", "Violent", "Difficile", "Gore", "FPS", "Hack and Slash", "Post-apocalyptique", "Cyberpunk", "Combat"]
@@ -386,6 +434,7 @@ var GAMES = [{
 	name: "Giants: Citizen Kabuto",
 	onDisk: true, size: 1.1,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "TPP", "SF"],
 		tags: ["Action", "Fantasy", "Science fiction", "Classique", "Science", "Amusant", "Monde Ouvert", "Troisième personne", "Multijoueur", "Nudité", "Violent", "Gestion des resources", "FPS", "Construction de base", "Réaliste", "Stratégie en temps réél"]
@@ -400,6 +449,7 @@ var GAMES = [{
 	name: "GRIP",
 	onDisk: true, size: 5.2,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Course", "Action", "SF"],
 		tags: ["Action", "Science fiction", "Science", "Multijoueur", "Multijoueur local", "Course", "Écran partagé", "Réalité virtuelle"]
@@ -408,6 +458,7 @@ var GAMES = [{
 	name: "Hell Pie",
 	onDisk: true, size: 4.3,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Comédie"],
 		tags: ["Aventure", "Action", "Amusant", "Monde Ouvert", "Troisième personne", "Plateformes", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Adulte", "Comédie", "Humour noir"]
@@ -416,6 +467,7 @@ var GAMES = [{
 	name: "Hero's Hour",
 	onDisk: true, size: 0.322,
 	sources: ["Redloved"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour"],
 		tags: ["Indé", "Fantasy", "Atmosphère", "Jeu de rôle", "2D", "Tour par tour", "Graphismes Pixel", "Tactique", "Gestion", "Gestion des resources", "Génération procédurale", "Coop locale", "Stratégie complexe", "4X", "Auto Battler"]
@@ -424,6 +476,7 @@ var GAMES = [{
 	name: "Hive Jump 2: Survivors",
 	onDisk: true, size: 0.168,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Roguelike", "Survie"],
 		tags: ["Action", "Indé", "2D", "Science fiction", "Casual", "Graphismes Pixel", "Survie", "Roguelike", "Vue du dessus", "Espace", "Tir", "Roguelite", "Combat", "Bullet Hell", "Tir à deux joysticks"]
@@ -432,6 +485,7 @@ var GAMES = [{
 	name: "Kerbal Space Program",
 	onDisk: true, size: 4.3,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Simulation", "SF", "Construction"],
 		tags: ["Indé", "Science fiction", "Exploration", "Simulation", "Science", "Amusant", "Monde Ouvert", "Bac-à-sable", "Difficile", "Espace", "Construction", "Physique", "Éducation"]
@@ -464,6 +518,7 @@ var GAMES = [{
 	name: "Mafia 2", fullname: "Mafia II: Definitive Edition",
 	onDisk: true, size: 46.6,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Monde ouvert"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Crime", "Noir"]
@@ -484,6 +539,7 @@ var GAMES = [{
 	name: "Monster Train",
 	onDisk: true, size: 0.684,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Stratégie", "Roguelike", "Jeu de cartes"],
 		tags: ["Fantasy", "Stratégie", "Choix multiples", "Difficile", "Roguelike", "Magie", "Roguelite", "Génération procédurale", "Jeu de cartes", "Deckbuilding"]
@@ -492,6 +548,7 @@ var GAMES = [{
 	name: "Moonscars",
 	onDisk: true, size: 0.273,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Plateforme", "Metroidvania"],
 		tags: ["Action", "Indé", "2D", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Hack and Slash", "Combat", "Metroidvania", "Souls-like"]
@@ -514,6 +571,7 @@ var GAMES = [{
 	name: "Overcooked", fullname: "Overcooked: Gourmet Edition",
 	onDisk: true, size: 0.317,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Simulation", "Action", "Comédie"],
 		tags: ["Action", "Indé", "Classique", "Simulation", "Casual", "Superbe bande-son", "Amusant", "Difficile", "Familial", "Coop locale", "Multijoueur local", "Comédie", "Cuisine"]
@@ -563,6 +621,7 @@ var GAMES = [{
 	name: "Prison Architect",
 	onDisk: true, size: 1.1,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Simulation", "Temps réel", "Gestion"],
 		tags: ["2D", "Simulation", "Gestion", "Bac-à-sable", "Temps réél", "Gestion des resources", "Vue du dessus", "Construction", "Gestion", "Construction de base", "Construction de villes", "Moderne"]
@@ -571,6 +630,7 @@ var GAMES = [{
 	name: "Pumpkin Jack",
 	onDisk: true, size: 2.2,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Plateforme"],
 		tags: ["Aventure", "Action", "Fantasy", "2D", "Casse-tête", "Troisième personne", "Plateformes", "Cartoonesque"]
@@ -586,6 +646,7 @@ var GAMES = [{
 	name: "RIOT - Civil Unrest",
 	onDisk: true, size: 1.1,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Stratégie", "Simulation", "Moderne"],
 		tags: ["Stratégie", "2D", "Simulation", "Graphismes Pixel", "Multijoueur", "Historique", "Violent", "Stratégie en temps réél", "Moderne", "Crime"]
@@ -615,6 +676,7 @@ var GAMES = [{
 	name: "Saints Row: The Third", fullname: "Saints Row: The Third Remastered",
 	onDisk: true, size: 44.9,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "TPP", "Moderne"],
 		tags: ["Action", "Classique", "Troisième personne", "Moderne"]
@@ -623,14 +685,48 @@ var GAMES = [{
 	name: "Scorn",
 	onDisk: true, size: 18.6,
 	sources: ["GP", "Redloved"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Horreur"],
 		tags: ["Aventure", "Action", "Indé", "Atmosphère", "Science fiction", "Première personne", "Sombre", "Horreur", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Horreur psychologique", "Horreur et survie", "Surréaliste", "Lovecraft", "Steampunk"]
 	}
 }, {
+	name: "Secret Files 1", fullname: "Secret Files: Tunguska",
+	onDisk: false, size: 0.0,
+	date : "2026-04-14",
+	gog: {
+		genres: [],
+		tags: ["Aventure", "Classique", "Casse-tête", "Protagoniste féminine", "Mystère", "Point&Click", "Moderne"]
+	}
+}, {
+	name: "Secret Files 2", fullname: "Secret Files 2: Puritas Cordis",
+	onDisk: false, size: 0.0,
+	date : "2026-04-14",
+	gog: {
+		genres: ["Moderne", "Aventure", "Point-and-click"],
+		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point&Click", "Moderne"]
+	}
+}, {
+	name: "Secret Files 3",
+	onDisk: false, size: 0.0,
+	date : "2026-04-14",
+	gog: {
+		genres: ["Moderne", "Aventure", "Point-and-click"],
+		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point&Click", "Moderne"]
+	}
+}, {
+	name: "Secret Files: Sam Peters",
+	onDisk: false, size: 0.0,
+	date : "2026-04-14",
+	gog: {
+		genres: ["Moderne", "Aventure", "Point-and-click"],
+		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point&Click", "Moderne"]
+	}
+}, {
 	name: "Shogun Showdown",
 	onDisk: true, size: 0.238,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Roguelike"],
 		tags: ["Stratégie", "2D", "Tour par tour", "Graphismes Pixel", "Tactique", "Roguelike", "Jeu de cartes", "Deckbuilding", "Ninja"]
@@ -639,6 +735,7 @@ var GAMES = [{
 	name: "Showgunners",
 	onDisk: true, size: 10.8,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Tactique"],
 		tags: ["Stratégie", "Atmosphère", "Exploration", "Tour par tour", "Sombre", "Choix multiples", "Tactique", "Vue du dessus", "Dystopique"]
@@ -647,6 +744,7 @@ var GAMES = [{
 	name: "Sir Whoopass: Immortal Death",
 	onDisk: true, size: 11.1,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action, Aventure, Combat"],
 		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Exploration", "Amusant", "Troisième personne", "Hack and Slash", "Combat", "Loups-garous"]
@@ -674,6 +772,7 @@ var GAMES = [{
 	name: "STAR WARS: X-Wing Alliance",
 	onDisk: true, size: 0.581,
 	sources: ["Redloved"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Tir", "Simulation", "SF"],
 		tags: ["Science fiction", "Classique", "Simulation", "Science", "Espace", "Tir", "Vol"]
@@ -732,6 +831,7 @@ var GAMES = [{
 	name: "The Falconeer",
 	onDisk: true, size: 0.962,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Combat", "Monde ouvert"],
 		tags: ["Action", "Fantasy", "Exploration", "Science", "Monde Ouvert", "Troisième personne", "Guerre", "Militaire", "Combat", "Vol", "Pirates", "Sous terre"]
@@ -748,6 +848,7 @@ var GAMES = [{
 	name: "The Smurfs 2", fullname: "The Smurfs 2 - The Prisoner of the Green Stone",
 	onDisk: true, size: 9.4,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Exploration", "Amusant", "Plateformes", "Coop locale", "Nature"]
@@ -756,6 +857,7 @@ var GAMES = [{
 	name: "The Talos Principle", fullname: "The Talos Principle: Gold Edition",
 	onDisk: true, size: 6.9,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Réflexion"],
 		tags: ["Aventure", "Action", "Indé", "Casse-tête", "Logique", "Casse-tête et plateformes"]
@@ -821,6 +923,7 @@ var GAMES = [{
 	name: "Tomb Raider 8", fullname: "Tomb Raider: Anniversary", collection: "Tomb Raider",
 	onDisk: true, size: 3.1,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Action"],
 		tags: ["Aventure", "Action", "2D", "Classique", "Plateformes"]
@@ -912,6 +1015,7 @@ var GAMES = [{
 	name: "Warsow",
 	onDisk: true, size: 0.929,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: [],
 		tags: []

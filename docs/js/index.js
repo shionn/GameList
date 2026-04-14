@@ -104,8 +104,17 @@ q(function() {
 		// construction des jeux
 		q("#games").clearChildren();
 		let size = 0;
+		var current=' ';
 		form.games.forEach((game) => {
+			if (game.letter !== current) {
+				current = game.letter;
+				q("#games").append(q("<h1>").text(current));
+			}
+
 			let div = q("<div>").data("name", game.name);
+			if (game.isNew) {
+				div.append(q("<strong>").text(ICON_NEW))
+			}
 			div.append(q("<img>").src(game.img)).append(q("<span>").text(game.name));
 			q("#games").append(div);
 			size += game.size;
@@ -165,6 +174,9 @@ q(function() {
 			h1.append(q("<small>").text(ICON_DISK))
 		}
 		h1.append(q("<a>").href(game.gogUrl).attr("target", "_blank").append(q("<img>").src("img/gog.png")));
+		if (game.isNew) {
+			h1.append(q("<small>").text(ICON_NEW))
+		}
 		div.append(h1);
 
 		if (game.collection) {
