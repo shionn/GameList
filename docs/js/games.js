@@ -51,6 +51,7 @@ class Game {
 		let img = this.name.toLowerCase();
 		img = img.replaceAll(":", "");
 		img = img.replaceAll("/", "-");
+		img = img.replaceAll(",", "");
 		return "img/" + img.charAt(0) + "/" + img + ".jpg";
 	}
 
@@ -59,8 +60,10 @@ class Game {
 		url = url.toLowerCase();
 		url = url.replaceAll(" - ", " ");
 		url = url.replaceAll(":", "");
+		url = url.replaceAll("-", "");
 		url = url.replaceAll("'", "");
 		url = url.replaceAll("!", "");
+		url = url.replaceAll(",", "");
 		url = url.replaceAll("&", "and");
 		url = url.replaceAll(" ", "_");
 		return "https://www.gog.com/fr/game/" + url;
@@ -73,9 +76,9 @@ class Game {
 }
 
 var skel = {
-	name: "",
-	onDisk: true, size: 0.0,
-	sources: ["GP"],
+	name: "STAR WARS: X-Wing Alliance",
+	onDisk: true, size: 0.581,
+	sources: ["Redloved"],
 	gog: {
 		genres: [],
 		tags: []
@@ -104,6 +107,14 @@ var GAMES = [{
 	gog: {
 		genres: ["Simulation", "Historique", "Stratégie"],
 		tags: ["Stratégie", "Classique", "Simulation", "Superbe bande-son", "Gestion", "Bac-à-sable", "Historique", "Temps réél", "Gestion des resources", "Relaxant", "Médieval", "Construction de villes", "Commerce", "Transport"]
+	}
+}, {
+	name: "Baldur's Gate", fullname: "Baldur's Gate: Enhanced Edition",
+	onDisk: true, size: 5.8,
+	sources: ["Redloved"],
+	gog: {
+		genres: ["Jeu de rôle","Temps réel", "Fantasy"],
+		tags: ["Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Temps réél", "Isométrique", "Magie", "cRPG", "Remake"]
 	}
 }, {
 	name: "Beneath a Steel Sky", fullname: "Beneath a Steel Sky (1994)",
@@ -307,23 +318,23 @@ var GAMES = [{
 	}
 }, {
 	name: "Fallout", collection: "Fallout",
-	onDisk: true, size: 0.515,
-	sources: ["GP"],
+	onDisk: true, size: 1.0,
+	sources: ["GP", "Redloved"],
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Fins multiples", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
 	}
 }, {
 	name: "Fallout 2", collection: "Fallout",
-	onDisk: true, size: 0.740,
-	sources: ["GP"],
+	onDisk: true, size: 1.5,
+	sources: ["GP", "Redloved"],
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
 	}
 }, {
 	name: "Fallout Tactics", collection: "Fallout",
-	onDisk: true, size: 1.8,
+	onDisk: true, size: 3.5,
 	sources: ["GP"],
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "SF"],
@@ -346,6 +357,14 @@ var GAMES = [{
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point&Click", "Enquête", "Enquête-mystère", "Court", "Remake"]
+	}
+}, {
+	name: "Ghost of a Tale",
+	onDisk: true, size: 2.9,
+	sources: ["Redloved"],
+	gog: {
+		genres: ["Action", "Fantasy", "Jeu de rôle"],
+		tags: ["Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Exploration", "Superbe bande-son", "Horreur", "Amusant", "Monde Ouvert", "Troisième personne", "Médieval", "Infiltration"]
 	}
 }, {
 	name: "Ghost Song",
@@ -392,6 +411,14 @@ var GAMES = [{
 	gog: {
 		genres: ["Action", "Aventure", "Comédie"],
 		tags: ["Aventure", "Action", "Amusant", "Monde Ouvert", "Troisième personne", "Plateformes", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Adulte", "Comédie", "Humour noir"]
+	}
+}, {
+	name: "Hero's Hour",
+	onDisk: true, size: 0.322,
+	sources: ["Redloved"],
+	gog: {
+		genres: ["Jeu de rôle", "Tour par tour"],
+		tags: ["Indé", "Fantasy", "Atmosphère", "Jeu de rôle", "2D", "Tour par tour", "Graphismes Pixel", "Tactique", "Gestion", "Gestion des resources", "Génération procédurale", "Coop locale", "Stratégie complexe", "4X", "Auto Battler"]
 	}
 }, {
 	name: "Hive Jump 2: Survivors",
@@ -595,7 +622,7 @@ var GAMES = [{
 }, {
 	name: "Scorn",
 	onDisk: true, size: 18.6,
-	sources: ["GP"],
+	sources: ["GP", "Redloved"],
 	gog: {
 		genres: ["Action", "Aventure", "Horreur"],
 		tags: ["Aventure", "Action", "Indé", "Atmosphère", "Science fiction", "Première personne", "Sombre", "Horreur", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Horreur psychologique", "Horreur et survie", "Surréaliste", "Lovecraft", "Steampunk"]
@@ -617,6 +644,14 @@ var GAMES = [{
 		tags: ["Stratégie", "Atmosphère", "Exploration", "Tour par tour", "Sombre", "Choix multiples", "Tactique", "Vue du dessus", "Dystopique"]
 	}
 }, {
+	name: "Sir Whoopass: Immortal Death",
+	onDisk: true, size: 11.1,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action, Aventure, Combat"],
+		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Exploration", "Amusant", "Troisième personne", "Hack and Slash", "Combat", "Loups-garous"]
+	}
+}, {
 	name: "SOMA",
 	onDisk: true, size: 24.5,
 	gog: {
@@ -634,6 +669,14 @@ var GAMES = [{
 	gog: {
 		genres: ["Stratégie", "Temps réel", "Fantasy"],
 		tags: ["Fantasy", "Stratégie", "Classique", "Temps réél"]
+	}
+}, {
+	name: "STAR WARS: X-Wing Alliance",
+	onDisk: true, size: 0.581,
+	sources: ["Redloved"],
+	gog: {
+		genres: ["Tir", "Simulation", "SF"],
+		tags: ["Science fiction", "Classique", "Simulation", "Science", "Espace", "Tir", "Vol"]
 	}
 }, {
 	name: "Syberia", collection: "Syberia",
@@ -686,11 +729,36 @@ var GAMES = [{
 		tags: ["Aventure", "Fantasy", "Jeu de rôle", "Classique"]
 	}
 }, {
+	name: "The Falconeer",
+	onDisk: true, size: 0.962,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Combat", "Monde ouvert"],
+		tags: ["Action", "Fantasy", "Exploration", "Science", "Monde Ouvert", "Troisième personne", "Guerre", "Militaire", "Combat", "Vol", "Pirates", "Sous terre"]
+	}
+}, {
 	name: "The Gunk",
 	onDisk: true, size: 6.6,
+	sources: ["Shionn", "GP"],
 	gog: {
 		genres: ["Action", "Adventure", "Exploration"],
 		tags: ["Adventure", "Action", "Story Rich", "Atmospheric", "Sci-fi", "Exploration", "Female Protagonist", "Third Person", "Family Friendly", "Relaxing", "LGBTQ+", "Metroidvania", "Nature"]
+	}
+}, {
+	name: "The Smurfs 2", fullname: "The Smurfs 2 - The Prisoner of the Green Stone",
+	onDisk: true, size: 9.4,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Exploration"],
+		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Exploration", "Amusant", "Plateformes", "Coop locale", "Nature"]
+	}
+}, {
+	name: "The Talos Principle", fullname: "The Talos Principle: Gold Edition",
+	onDisk: true, size: 6.9,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Réflexion"],
+		tags: ["Aventure", "Action", "Indé", "Casse-tête", "Logique", "Casse-tête et plateformes"]
 	}
 }, {
 	name: "The Witcher", fullname: "The Witcher: Enhanced Edition", collection: "The Witcher",
@@ -748,6 +816,14 @@ var GAMES = [{
 		name: "Tomb Raider IV VI Remastered",
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Violent", "Remake"]
+	}
+}, {
+	name: "Tomb Raider 8", fullname: "Tomb Raider: Anniversary", collection: "Tomb Raider",
+	onDisk: true, size: 3.1,
+	sources: ["GP"],
+	gog: {
+		genres: ["Action", "Aventure", "Action"],
+		tags: ["Aventure", "Action", "2D", "Classique", "Plateformes"]
 	}
 }, {
 	name: "Tomb Raider 10", fullname: "Tomb Raider GOTY", collection: "Tomb Raider",
@@ -833,6 +909,14 @@ var GAMES = [{
 		genres: ["Action"]
 	}
 }, {
+	name: "Warsow",
+	onDisk: true, size: 0.929,
+	sources: ["GP"],
+	gog: {
+		genres: [],
+		tags: []
+	}
+}, {
 	name: "Wavetale",
 	onDisk: true, size: 2.4,
 	gog: {
@@ -853,5 +937,13 @@ var GAMES = [{
 		genres: ["Role-playing", "Adventure", "Fantasy"],
 		tags: ["Adventure", "Fantasy", "Role-playing", "Classic"]
 	}
-}].map(json => new Game(json));
+}, {
+	name: "Yes, Your Grace",
+	onDisk: true, size: 0.371,
+	sources: ["GP"],
+	gog: {
+		genres: ["Stratégie", "Simulation", "Gestion"],
+		tags: ["Aventure", "Fantasy", "Stratégie", "Jeu de rôle", "Casse-tête", "Simulation", "Superbe bande-son", "Graphismes Pixel", "Choix multiples", "Gestion", "Point&Click", "Historique", "Gestion des resources", "Fins multiples", "Guerre", "Médieval", "Gestion"]
+	}
+},].map(json => new Game(json));
 
