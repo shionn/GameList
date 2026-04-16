@@ -1044,6 +1044,7 @@ var GAMES = [{
 	name: "Yes, Your Grace",
 	onDisk: true, size: 0.371,
 	sources: ["GP"],
+	date : "2026-04-14",
 	gog: {
 		genres: ["Stratégie", "Simulation", "Gestion"],
 		tags: ["Aventure", "Fantasy", "Stratégie", "Jeu de rôle", "Casse-tête", "Simulation", "Superbe bande-son", "Graphismes Pixel", "Choix multiples", "Gestion", "Point&Click", "Historique", "Gestion des resources", "Fins multiples", "Guerre", "Médieval", "Gestion"]
