@@ -85,11 +85,12 @@ class Game {
 }
 
 var skel = {
-	name: "Secret Files 2",
-	onDisk: false, size: 0.0,
+	name: "Brutal Legend",
+	onDisk: true, size: 17.7,
+	date : "2026-04-16",
 	gog: {
-		genres: [],
-		tags: []
+		genres: ["Action", "Fantasy", "Stratégie"],
+		tags: ["Action", "Fantasy", "Stratégie", "Atmosphère", "Classique", "Superbe bande-son", "Amusant", "Monde Ouvert", "Troisième personne", "Multijoueur", "Hack and Slash", "Stratégie en temps réél", "Beat 'em up"]
 	}
 };
 
@@ -113,7 +114,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Alan Wake",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 8.4,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Horreur"],
@@ -205,6 +206,14 @@ var GAMES = [{
 		name: "Brigador",
 		genres: ["Action", "Combat", "Tactique"],
 		tags: ["Action", "Indé", "Science", "Tactique", "Difficile", "Isométrique", "Vue du dessus", "Roguelite", "Combat", "Cyberpunk", "Dystopique", "Tir à deux joysticks", "Chars d'assaut"]
+	}
+}, {
+	name: "Brutal Legend",
+	onDisk: true, size: 17.7,
+	date : "2026-04-16",
+	gog: {
+		genres: ["Action", "Fantasy", "Stratégie"],
+		tags: ["Action", "Fantasy", "Stratégie", "Atmosphère", "Classique", "Superbe bande-son", "Amusant", "Monde Ouvert", "Troisième personne", "Multijoueur", "Hack and Slash", "Stratégie en temps réél", "Beat 'em up"]
 	}
 }, {
 	name: "Chasm: The Rift",
@@ -308,7 +317,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Day of the Tentacle", fullname: "Day of the Tentacle Remastered",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 4.7,
 	date : "2026-04-14",
 	gog: {
 		genres: ["SF", "Aventure", "Point-and-click"],
@@ -691,7 +700,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Secret Files 1", fullname: "Secret Files: Tunguska",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 2.7,
 	date : "2026-04-14",
 	gog: {
 		genres: [],
@@ -699,7 +708,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Secret Files 2", fullname: "Secret Files 2: Puritas Cordis",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 2.1,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
@@ -707,7 +716,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Secret Files 3",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 2.3,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
@@ -715,7 +724,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Secret Files: Sam Peters",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 0.765,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
@@ -975,6 +984,14 @@ var GAMES = [{
 	gog: {
 		genres: ["Action", "Roguelike", "Metroidvania"],
 		tags: ["Action", "2D", "Casual", "Protagoniste féminine", "Superbe bande-son", "Nudité", "Difficile", "Roguelike", "Roguelite", "Hack and Slash", "Metroidvania", "Souls-like", "Perma Death"]
+	}
+}, {
+	name: "Train Valley",
+	onDisk: true, size: 0.581,
+	date : "2026-04-16",
+	gog: {
+		genres: ["Simulation", "Construction", "Gestion"],
+		tags: ["Atmosphère", "Casse-tête", "Simulation", "Casual", "Gestion", "Bac-à-sable", "Temps réél", "Gestion des resources", "Familial", "Relaxant", "Construction", "Gestion", "Construction de villes", "Trains"]
 	}
 }, {
 	name: "Treasure Adventure Game",
