@@ -52,7 +52,8 @@ class Game {
 	}
 
 	get isNew() {
-		return this.json.date === LAST_DATE;
+		// deux semaines
+		return Date.now()-Date.parse(this.json.date) <= 14*24*60*60*1000;
 	}
 
 	get img() {
@@ -91,8 +92,6 @@ var skel = {
 		tags: []
 	}
 };
-
-var LAST_DATE = "2026-04-14";
 
 var GAMES = [{
 	name: "9 Years of Shadows",
