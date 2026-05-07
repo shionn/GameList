@@ -585,6 +585,15 @@ var GAMES = [{
 		tags: ["Action", "Indé", "Classique", "Simulation", "Casual", "Superbe bande-son", "Amusant", "Difficile", "Familial", "Coop locale", "Multijoueur local", "Comédie", "Cuisine"]
 	}
 }, {
+	name: "Phantasmagoria",
+	onDisk: true, size: 3.5,
+	sources: ["DK"],
+	date : "2026-05-07",
+	gog: {
+		genres: ["TPP", "Horreur", "Aventure"],
+		tags: ["Aventure", "Classique", "Protagoniste féminine", "Sombre", "Horreur", "Troisième personne", "Mystère", "Point&Click", "Gore", "Horreur psychologique", "FMV", "Caresse de chien"]
+	}
+}, {
 	name: "Phantasmagoria 2", fullname: "Phantasmagoria 2: A Puzzle of Flesh",
 	onDisk: true, size: 2.5,
 	sources: ["DK"],
@@ -891,6 +900,10 @@ var GAMES = [{
 		genres: ["Aventure", "Réflexion", "Monde ouvert"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Casual", "Première personne", "Superbe bande-son", "Monde Ouvert", "Mystère", "Bac-à-sable", "Difficile", "Logique", "Relaxant", "Surréaliste", "Simulation de marche", "Cozy", "Philosophique"]
 	}
+}, {
+	name: "The X-Files",
+	onDisk: true, size: 3.5,
+	date: "2026-05-07"
 }, {
 	name: "Theme Hospital",
 	onDisk: true, size: 0.176,
