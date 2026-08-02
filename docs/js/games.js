@@ -499,6 +499,14 @@ var GAMES = [{
 		tags: ["Indé", "Science fiction", "Exploration", "Simulation", "Science", "Amusant", "Monde Ouvert", "Bac-à-sable", "Difficile", "Espace", "Construction", "Physique", "Éducation"]
 	}
 }, {
+	name: "L'amazone Queen",
+	onDisk: false, size: 0.0,
+	date : "2026-08-02",
+	gog: {
+		genres: ["Aventure", "Point-and-click", "Réflexion"],
+		tags: ["Aventure", "Histoire Riche", "2D", "Classique", "Casse-tête", "Choix multiples", "Point&Click", "Logique", "Casse-tête et plateformes"]
+	}
+}, {
 	name: "Les Chevaliers de Baphomet", fullname: "Les Chevaliers de Baphomet : The Director's Cut", collection: "Broken Sword",
 	onDisk: true, size: 3.1,
 	gog: {
@@ -521,6 +529,14 @@ var GAMES = [{
 		name: "Leisure Suit Larry: Love for Sail!",
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Classique", "Casse-tête", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Logique", "Adulte"]
+	}
+}, {
+	name: "Lure of the Tempress",
+	onDisk: false, size: 0.0,
+	date : "2026-08-02",
+	gog: {
+		genres: ["Fantasy","Aventure","Point-and-click"],
+		tags: ["Aventure", "Fantasy", "2D", "Classique", "Sombre", "Point&Click", "Médieval"]
 	}
 }, {
 	name: "Mafia 2", fullname: "Mafia II: Definitive Edition",
@@ -941,13 +957,22 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Violent", "Remake"]
 	}
 }, {
+	name: "Tomb Raider 7", fullname: "Tomb Raider: Legend", collection: "Tomb Raider",
+	onDisk: false, size: 0.0,
+	date : "2026-08-02",
+	gog: {
+		name : "Tomb Raider: Legend",
+		genres: ["Action", "Aventure", "Action"],
+		tags: ["Aventure", "Action", "Classique", "Plateformes"]
+	}
+}, {
 	name: "Tomb Raider 8", fullname: "Tomb Raider: Anniversary", collection: "Tomb Raider",
 	onDisk: true, size: 3.1,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Action"],
-		tags: ["Aventure", "Action", "2D", "Classique", "Plateformes"]
+		tags: ["Aventure", "Action", "Classique", "Plateformes"]
 	}
 }, {
 	name: "Tomb Raider 10", fullname: "Tomb Raider GOTY", collection: "Tomb Raider",
@@ -1031,8 +1056,16 @@ var GAMES = [{
 	name: "Ultima 4", fullname: "Ultima IV: Quest of the Avatar", collection: "Ultima",
 	onDisk: true, size: 0.054,
 	gog: {
-		genres: ["Role-playing", "Adventure", "Fantasy"],
-		tags: ["Adventure", "Fantasy", "Role-playing", "Classic"]
+		genres: ["Jeu de rôle", "Adventure", "Fantasy"],
+		tags: ["Adventure", "Fantasy", "Jeu de rôle", "Classic"]
+	}
+}, {
+	name: "Ultima Worlds of Adventure 2: Martian Dreams", collection: "Ultima",
+	onDisk: false, size: 0.0,
+	date: "2026-08-02",
+	gog: {
+		genres: ["Jeu de rôle", "Adventure", "SF"],
+		tags: ["Aventure", "Jeu de rôle", "Science fiction", "Classique", "Science"]
 	}
 }, {
 	name: "Unreal", fullname: "Unreal Gold",
@@ -1067,8 +1100,8 @@ var GAMES = [{
 	name: "Worlds of Ultima: The Savage Empire", collection: "Ultima",
 	onDisk: true, size: 0.169,
 	gog: {
-		genres: ["Role-playing", "Adventure", "Fantasy"],
-		tags: ["Adventure", "Fantasy", "Role-playing", "Classic"]
+		genres: ["Jeu de rôle", "Adventure", "Fantasy"],
+		tags: ["Adventure", "Fantasy", "Jeu de rôle", "Classic"]
 	}
 }, {
 	name: "Yes, Your Grace",
