@@ -285,6 +285,14 @@ var GAMES = [{
 		tags: ["Aventure", "Atmosphère", "Classique", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Horreur", "Fins multiples", "Logique", "Horreur psychologique", "FMV"]
 	}
 }, {
+	name: "Dark Devotion",
+	onDisk: false, size: 0.0,
+	date : "2026-08-05",
+	gog: {
+		genres: ["Action", "Aventure","Metroidvania"],
+		tags: ["Aventure", "Action", "Indé", "2D", "Protagoniste féminine", "Graphismes Pixel", "Violent", "Difficile", "Gore", "Roguelike", "Metroidvania", "Souls-like"]
+	}
+}, {
 	name: "Dark Sky",
 	onDisk: true, size: 2.0,
 	sources: ["GP"],
@@ -399,6 +407,14 @@ var GAMES = [{
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Fantasy"],
 		tags: ["Fantasy", "Stratégie", "2D", "Classique", "Tour par tour", "Magie", "Guerre"]
+	}
+}, {
+	name: "Flashback",
+	onDisk: false, size: 0.0,
+	date : "2026-08-05",
+	gog: {
+		genres: ["Action", "SF", "Aventure"],
+		tags: ["Aventure", "Action", "Atmosphère", "2D", "Science fiction", "Science", "Plateformes", "Cyberpunk"]
 	}
 }, {
 	name: "FTL: Faster than Light",
@@ -523,12 +539,28 @@ var GAMES = [{
 		tags: ["Aventure", "Atmosphère", "2D", "Classique", "Casse-tête", "Amusant", "Point&Click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
 	}
 }, {
-	name: "Leisure Suit Larry 7", fullname: "Leisure Suit Larry : Drague en Haute Mer !",
+	name: "Leisure Suit Larry 7", fullname: "Leisure Suit Larry : Drague en Haute Mer !", collection: "Leisure Suit Larry",
 	onDisk: true, size: 0.926,
 	gog: {
 		name: "Leisure Suit Larry: Love for Sail!",
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Classique", "Casse-tête", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Logique", "Adulte"]
+	}
+}, {
+	name: "Leisure Suit Larry 8", fullname: "Leisure Suit Larry - Wet Dreams Don't Dry", collection: "Leisure Suit Larry",
+	onDisk: false, size: 0.0,
+	date : "2026-08-05",
+	gog: {
+		genres: ["Moderne", "Point-and-click", "Aventure"],
+		tags: ["Aventure", "Histoire Riche", "2D", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Adulte", "Cartoonesque", "LGBTQ+", "Moderne"]
+	}
+}, {
+	name: "Leisure Suit Larry 9", fullname: "Leisure Suit Larry - Wet Dreams Dry Twice", collection: "Leisure Suit Larry",
+	onDisk: false, size: 0.0,
+	date : "2026-08-05",
+	gog: {
+		genres: ["Moderne", "Point-and-click", "Aventure"],
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "2D", "Casse-tête", "Casual", "Amusant", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Adulte", "Rétro", "Cartoonesque", "Romance", "LGBTQ+", "Moderne"]
 	}
 }, {
 	name: "Lure of the Tempress",
