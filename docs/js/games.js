@@ -286,7 +286,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Dark Devotion",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 1.4,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Action", "Aventure","Metroidvania"],
@@ -410,7 +410,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Flashback",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 0.169,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Action", "SF", "Aventure"],
@@ -516,7 +516,7 @@ var GAMES = [{
 	}
 }, {
 	name: "L'amazone Queen",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 0.089,
 	date : "2026-08-02",
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
@@ -548,7 +548,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Leisure Suit Larry 8", fullname: "Leisure Suit Larry - Wet Dreams Don't Dry", collection: "Leisure Suit Larry",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 1.1,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Moderne", "Point-and-click", "Aventure"],
@@ -556,7 +556,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Leisure Suit Larry 9", fullname: "Leisure Suit Larry - Wet Dreams Dry Twice", collection: "Leisure Suit Larry",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 1.2,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Moderne", "Point-and-click", "Aventure"],
@@ -564,7 +564,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Lure of the Tempress",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 0.070,
 	date : "2026-08-02",
 	gog: {
 		genres: ["Fantasy","Aventure","Point-and-click"],
@@ -1011,7 +1011,6 @@ var GAMES = [{
 	onDisk: true, size: 17.8,
 	gog: {
 		genres: ["Action", "Aventure", "Survie"],
-		tags: ["Aventure", "Action", "Classique", "Survie", "Horreur et survie"]
 	}
 }, {
 	name: "Tomb Raider 11", fullname: "Rise of the Tomb Raider: 20 Year Celebration", collection: "Tomb Raider",
@@ -1093,7 +1092,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Ultima Worlds of Adventure 2: Martian Dreams", collection: "Ultima",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 0.190,
 	date: "2026-08-02",
 	gog: {
 		genres: ["Jeu de rôle", "Adventure", "SF"],
