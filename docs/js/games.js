@@ -990,7 +990,7 @@ var GAMES = [{
 	}
 }, {
 	name: "Tomb Raider 7", fullname: "Tomb Raider: Legend", collection: "Tomb Raider",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 5.0,
 	date : "2026-08-02",
 	gog: {
 		name : "Tomb Raider: Legend",
