@@ -139,14 +139,6 @@ var GAMES = [{
 		tags: ["Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Temps réél", "Isométrique", "Magie", "cRPG", "Remake"]
 	}
 }, {
-	name: "Batman: Arkham Asylum", fullname: "Batman: Arkham Asylum Game of the Year Edition ", collection: "Batman Arkham",
-	onDisk: true, size: 7.4,
-	date : "2026-08-09",
-	gog: {
-		genres: ["Action","Aventure","Infiltration"],
-		tags: ["Aventure","Action", "Classique", "Casse-tête", "Sombre", "Horreur", "Troisième personne", "Infiltration", "Combat", "Metroidvania", "Beat 'em up", "Superhéros"]
-	}
-},  {
 	name: "Batman: Arkham Knight", collection: "Batman Arkham",
 	onDisk: true, size: 53.3,
 	date : "2026-08-09",
