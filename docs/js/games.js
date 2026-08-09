@@ -61,6 +61,8 @@ class Game {
 		img = img.replaceAll(":", "");
 		img = img.replaceAll("/", "-");
 		img = img.replaceAll(",", "");
+		img = img.replaceAll("&", "");
+		img = img.replaceAll("  ", " ");
 		return "img/" + img.charAt(0) + "/" + img + ".jpg";
 	}
 
@@ -137,12 +139,36 @@ var GAMES = [{
 		tags: ["Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Temps réél", "Isométrique", "Magie", "cRPG", "Remake"]
 	}
 }, {
+	name: "Batman: Arkham Asylum", fullname: "Batman: Arkham Asylum Game of the Year Edition ", collection: "Batman Arkham",
+	onDisk: true, size: 7.4,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Action","Aventure","Infiltration"],
+		tags: ["Aventure","Action", "Classique", "Casse-tête", "Sombre", "Horreur", "Troisième personne", "Infiltration", "Combat", "Metroidvania", "Beat 'em up", "Superhéros"]
+	}
+},  {
+	name: "Batman: Arkham Knight", collection: "Batman Arkham",
+	onDisk: true, size: 53.3,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Action","TPP","Monde ouvert"],
+		tags: ["Action", "Troisième personne", "Monde Ouvert", "Mature"]
+	}
+}, {
+	name: "Behind the Frame: The Finest Scenery",
+	onDisk: true, size: 0.696,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Aventure","Narratif","Roman visuel"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Casse-tête", "Protagoniste féminine", "Roman graphique", "Point-and-click", "Familial", "Relaxant", "Logique", "Narratif", "Émotionnel", "Cozy", "Objets cachés", "Chats"]
+	}
+}, {
 	name: "Beneath a Steel Sky", fullname: "Beneath a Steel Sky (1994)",
 	onDisk: true, size: 0.222,
 	gog: {
 		name: "Beneath a Steel Sky",
 		genres: ["SF", "Aventure", "Point-and-click"],
-		tags: ["Aventure", "Science fiction", "Classique", "Casse-tête", "Science", "Choix multiples", "Point&Click", "Post-apocalyptique", "Cyberpunk", "Dystopique", "Robots"]
+		tags: ["Aventure", "Science fiction", "Classique", "Casse-tête", "Science", "Choix multiples", "Point-and-click", "Post-apocalyptique", "Cyberpunk", "Dystopique", "Robots"]
 	}
 }, {
 	name: "Beyond Good & Evil",
@@ -199,6 +225,14 @@ var GAMES = [{
 	name: "Bleed 2",
 	onDisk: true, size: 0.210,
 	gog: {}
+}, {
+	name: "Bloodstained: Ritual of the Night",
+	onDisk: true, size: 9.4,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Action", "Jeu de rôle", "Metroidvania"],
+		tags: ["Action", "Jeu de rôle", "2D", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Multijoueur", "Plateformes", "Contenu à caractère sexuel", "Nudité", "Difficile", "Crafting", "Metroidvania", "Vampire"]
+	}
 }, {
 	name: "Brigador", fullname: "Brigador: Up-Armored Edition",
 	onDisk: true, size: 0.67,
@@ -329,7 +363,7 @@ var GAMES = [{
 	date : "2026-04-14",
 	gog: {
 		genres: ["SF", "Aventure", "Point-and-click"],
-		tags: ["Aventure", "Histoire Riche", "2D", "Science fiction", "Classique", "Casse-tête", "Science", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point&Click", "Familial", "Cartoonesque", "Remake"]
+		tags: ["Aventure", "Histoire Riche", "2D", "Science fiction", "Classique", "Casse-tête", "Science", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point-and-click", "Familial", "Cartoonesque", "Remake"]
 	}
 }, {
 	name: "Deus Ex: Human Revolution", fullname: "Deus Ex: Human Revolution - Director's Cut",
@@ -356,7 +390,7 @@ var GAMES = [{
 	date : "2026-04-14",
 	gog: {
 		genres: ["Fantasy", "Aventure", "Point-and-click"],
-		tags: ["Aventure", "Fantasy", "Classique", "Graphismes Pixel", "Point&Click"]
+		tags: ["Aventure", "Fantasy", "Classique", "Graphismes Pixel", "Point-and-click"]
 	}
 }, {
 	name: "Duck Paradox",
@@ -425,7 +459,7 @@ var GAMES = [{
 	onDisk: true, size: 4.7,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
-		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point&Click", "Enquête", "Enquête-mystère", "Court", "Remake"]
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point-and-click", "Enquête", "Enquête-mystère", "Court", "Remake"]
 	}
 }, {
 	name: "Ghost of a Tale",
@@ -479,6 +513,14 @@ var GAMES = [{
 		tags: ["Action", "Science fiction", "Science", "Multijoueur", "Multijoueur local", "Course", "Écran partagé", "Réalité virtuelle"]
 	}
 }, {
+	name: "GRIS",
+	onDisk: true, size: 1.1,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Plateforme","Aventure","Réflexion"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Exploration", "Casse-tête", "Casual", "Protagoniste féminine", "Superbe bande-son", "Plateformes", "Relaxant", "Logique", "Surréaliste", "Casse-tête et plateformes", "Simulation de marche", "Cozy"]
+	}
+}, {
 	name: "Hell Pie",
 	onDisk: true, size: 4.3,
 	sources: ["GP"],
@@ -520,7 +562,15 @@ var GAMES = [{
 	date : "2026-08-02",
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
-		tags: ["Aventure", "Histoire Riche", "2D", "Classique", "Casse-tête", "Choix multiples", "Point&Click", "Logique", "Casse-tête et plateformes"]
+		tags: ["Aventure", "Histoire Riche", "2D", "Classique", "Casse-tête", "Choix multiples", "Point-and-click", "Logique", "Casse-tête et plateformes"]
+	}
+}, {
+	name: "Lacuna", fullname : "Lacuna A Sci-Fi Noir Adventure",
+	onDisk: true, size: 0.575,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Aventure", "Aventure","Enquête-mystère"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "2D", "Science fiction", "Science", "Graphismes Pixel", "Choix multiples", "Fins multiples", "Enquête", "Cyberpunk", "Enquête-mystère", "Thriller", "Crime", "Basé sur du texte", "Noir"]
 	}
 }, {
 	name: "Les Chevaliers de Baphomet", fullname: "Les Chevaliers de Baphomet : The Director's Cut", collection: "Broken Sword",
@@ -528,7 +578,7 @@ var GAMES = [{
 	gog: {
 		name: "Broken Sword: Director's Cut!",
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
-		tags: ["Aventure", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Casual", "Amusant", "Troisième personne", "Point&Click", "Mystère", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Casual", "Amusant", "Troisième personne", "Point-and-click", "Mystère", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
 	}
 }, {
 	name: "Les Chevaliers de Baphomet 2", fullname: " Les Chevaliers de Baphomet II : Les Boucliers de Quetzalcoatl", collection: "Broken Sword",
@@ -536,7 +586,7 @@ var GAMES = [{
 	gog: {
 		name: "broken_sword_2__the_smoking_mirror!",
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
-		tags: ["Aventure", "Atmosphère", "2D", "Classique", "Casse-tête", "Amusant", "Point&Click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
+		tags: ["Aventure", "Atmosphère", "2D", "Classique", "Casse-tête", "Amusant", "Point-and-click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère", "Objets cachés", "Remake"]
 	}
 }, {
 	name: "Leisure Suit Larry 7", fullname: "Leisure Suit Larry : Drague en Haute Mer !", collection: "Leisure Suit Larry",
@@ -544,7 +594,7 @@ var GAMES = [{
 	gog: {
 		name: "Leisure Suit Larry: Love for Sail!",
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
-		tags: ["Aventure", "Classique", "Casse-tête", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Logique", "Adulte"]
+		tags: ["Aventure", "Classique", "Casse-tête", "Point-and-click", "Mature", "Contenu à caractère sexuel", "Nudité", "Logique", "Adulte"]
 	}
 }, {
 	name: "Leisure Suit Larry 8", fullname: "Leisure Suit Larry - Wet Dreams Don't Dry", collection: "Leisure Suit Larry",
@@ -552,7 +602,7 @@ var GAMES = [{
 	date : "2026-08-05",
 	gog: {
 		genres: ["Moderne", "Point-and-click", "Aventure"],
-		tags: ["Aventure", "Histoire Riche", "2D", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Adulte", "Cartoonesque", "LGBTQ+", "Moderne"]
+		tags: ["Aventure", "Histoire Riche", "2D", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Point-and-click", "Mature", "Contenu à caractère sexuel", "Nudité", "Adulte", "Cartoonesque", "LGBTQ+", "Moderne"]
 	}
 }, {
 	name: "Leisure Suit Larry 9", fullname: "Leisure Suit Larry - Wet Dreams Dry Twice", collection: "Leisure Suit Larry",
@@ -560,7 +610,7 @@ var GAMES = [{
 	date : "2026-08-05",
 	gog: {
 		genres: ["Moderne", "Point-and-click", "Aventure"],
-		tags: ["Aventure", "Histoire Riche", "Atmosphère", "2D", "Casse-tête", "Casual", "Amusant", "Point&Click", "Mature", "Contenu à caractère sexuel", "Nudité", "Adulte", "Rétro", "Cartoonesque", "Romance", "LGBTQ+", "Moderne"]
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "2D", "Casse-tête", "Casual", "Amusant", "Point-and-click", "Mature", "Contenu à caractère sexuel", "Nudité", "Adulte", "Rétro", "Cartoonesque", "Romance", "LGBTQ+", "Moderne"]
 	}
 }, {
 	name: "Lure of the Tempress",
@@ -568,7 +618,7 @@ var GAMES = [{
 	date : "2026-08-02",
 	gog: {
 		genres: ["Fantasy","Aventure","Point-and-click"],
-		tags: ["Aventure", "Fantasy", "2D", "Classique", "Sombre", "Point&Click", "Médieval"]
+		tags: ["Aventure", "Fantasy", "2D", "Classique", "Sombre", "Point-and-click", "Médieval"]
 	}
 }, {
 	name: "Mafia 2", fullname: "Mafia II: Definitive Edition",
@@ -578,6 +628,14 @@ var GAMES = [{
 	gog: {
 		genres: ["Action", "Aventure", "Monde ouvert"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Crime", "Noir"]
+	}
+}, {
+	name: "Maytroid", fullname: "Maytroid. I swear it's a nice game too",
+	onDisk: true, size: 0.321,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Adventure", "Indie", "Platform"],
+		tags: []
 	}
 }, {
 	name: "Might and Magic 7", fullname: "Might and Magic 7: For Blood and Honor",
@@ -610,12 +668,20 @@ var GAMES = [{
 		tags: ["Action", "Indé", "2D", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Hack and Slash", "Combat", "Metroidvania", "Souls-like"]
 	}
 }, {
-	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition",
+	name: "Mud Runner",
+	onDisk: true, size: 1.3,
+	date : "2026-08-09",
+}, {
+	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition", collection: "ori",
 	onDisk: true, size: 4.9,
 	gog: {
 		genres: ["Action", "Aventure", "Plateforme"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Plateformes", "Difficile", "Familial", "Metroidvania"]
 	}
+}, {
+	name: "Ori and the Will of the Wisps", collection: "ori",
+	onDisk: true, size: 4.4,
+	date : "2026-08-09",
 }, {
 	name: "Outcast", fullname: "Outcast - Second Contact",
 	onDisk: true, size: 5.8,
@@ -639,7 +705,7 @@ var GAMES = [{
 	date : "2026-05-07",
 	gog: {
 		genres: ["TPP", "Horreur", "Aventure"],
-		tags: ["Aventure", "Classique", "Protagoniste féminine", "Sombre", "Horreur", "Troisième personne", "Mystère", "Point&Click", "Gore", "Horreur psychologique", "FMV", "Caresse de chien"]
+		tags: ["Aventure", "Classique", "Protagoniste féminine", "Sombre", "Horreur", "Troisième personne", "Mystère", "Point-and-click", "Gore", "Horreur psychologique", "FMV", "Caresse de chien"]
 	}
 }, {
 	name: "Phantasmagoria 2", fullname: "Phantasmagoria 2: A Puzzle of Flesh",
@@ -648,8 +714,12 @@ var GAMES = [{
 	gog: {
 		name: "Phantasmagoria 2",
 		genres: ["TPP", "Horreur", "Aventure"],
-		tags: ["Aventure", "Classique", "Casse-tête", "Sombre", "Horreur", "Troisième personne", "Point&Click", "Nudité", "Gore", "Horreur psychologique", "LGBTQ+", "FMV"]
+		tags: ["Aventure", "Classique", "Casse-tête", "Sombre", "Horreur", "Troisième personne", "Point-and-click", "Nudité", "Gore", "Horreur psychologique", "LGBTQ+", "FMV"]
 	}
+}, {
+	name: "Portal",
+	onDisk: true, size: 2.5,
+	date : "2026-08-09"
 }, {
 	name: "Prince of Persia 2003", fullname: "Prince of Persia : Les Sables du temps", collection: "Prince of Persia",
 	onDisk: true, size: 1.3,
@@ -728,7 +798,7 @@ var GAMES = [{
 	onDisk: true, size: 3.6,
 	gog: {
 		genres: ["Action", "Aventure", "Enquête-mystère"],
-		tags: ["Aventure", "Action", "Histoire Riche", "2D", "Classique", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Point&Click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère"]
+		tags: ["Aventure", "Action", "Histoire Riche", "2D", "Classique", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Point-and-click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère"]
 	}
 }, {
 	name: "Runaway 3: A Twist of Fate", collection: "Runaway",
@@ -747,6 +817,22 @@ var GAMES = [{
 		tags: ["Action", "Classique", "Troisième personne", "Moderne"]
 	}
 }, {
+	name: "Sam & Max Save the World", collection: "Sam & Max",
+	onDisk: true, size: 0.927,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Aventure","Point-and-click","Enquête-mystère"],
+		tags: ["Aventure", "Casse-tête", "Troisième personne", "Point-and-click", "Cartoonesque", "Enquête", "LGBTQ+", "Enquête-mystère", "Remake", "Chien"]
+	}
+}, {
+	name: "Sam & Max: Beyond Time and Space", collection: "Sam & Max",
+	onDisk: true, size: 1.3,
+	date : "2026-08-09",
+	gog: {
+		genres: ["Aventure","Point-and-click","Enquête-mystère"],
+		tags: ["Aventure", "Point-and-click", "Enquête", "Enquête-mystère"]
+	}
+}, {
 	name: "Scorn",
 	onDisk: true, size: 18.6,
 	sources: ["GP", "Redloved"],
@@ -761,7 +847,7 @@ var GAMES = [{
 	date : "2026-04-14",
 	gog: {
 		genres: [],
-		tags: ["Aventure", "Classique", "Casse-tête", "Protagoniste féminine", "Mystère", "Point&Click", "Moderne"]
+		tags: ["Aventure", "Classique", "Casse-tête", "Protagoniste féminine", "Mystère", "Point-and-click", "Moderne"]
 	}
 }, {
 	name: "Secret Files 2", fullname: "Secret Files 2: Puritas Cordis",
@@ -769,7 +855,7 @@ var GAMES = [{
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
-		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point&Click", "Moderne"]
+		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point-and-click", "Moderne"]
 	}
 }, {
 	name: "Secret Files 3",
@@ -777,7 +863,7 @@ var GAMES = [{
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
-		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point&Click", "Moderne"]
+		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point-and-click", "Moderne"]
 	}
 }, {
 	name: "Secret Files: Sam Peters",
@@ -785,7 +871,7 @@ var GAMES = [{
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
-		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point&Click", "Moderne"]
+		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point-and-click", "Moderne"]
 	}
 }, {
 	name: "Shogun Showdown",
@@ -827,6 +913,14 @@ var GAMES = [{
 	sources: ["DK"],
 	gog: { genres: [], tags: [] }
 }, {
+	name: "Slipstream",
+	date : "2026-08-09",
+	onDisk: true, size: 0.159,
+	gog: {
+		genres: ["Course","Arcade", "Touring"],
+		tags: ["Indé", "Casual", "Graphismes Pixel", "Superbe bande-son", "Arcade", "Multijoueur local", "Course", "Touring"]
+	}
+}, {
 	name: "SPORE Collection",
 	onDisk: true, size: 5.6,
 	gog: {
@@ -843,25 +937,41 @@ var GAMES = [{
 		tags: ["Science fiction", "Classique", "Simulation", "Science", "Espace", "Tir", "Vol"]
 	}
 }, {
+	name: "Subnautica",
+	date : "2026-08-09",
+	onDisk: true, size: 3.6,
+	gog: {
+		genres: [],
+		tags: []
+	}
+}, {
+	name: "Sonic Adventure DX",
+	date : "2026-08-09",
+	onDisk: true, size: 1.0,
+	gog: {
+		genres: [],
+		tags: []
+	}
+}, {
 	name: "Syberia", collection: "Syberia",
 	onDisk: true, size: 1.2,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
-		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point-and-click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
 	}
-}, {
+},  {
 	name: "Syberia 2", collection: "Syberia",
 	onDisk: true, size: 1.5,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
-		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point-and-click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
 	}
 }, {
 	name: "Syberia 3", fullname: "Syberia 3: The Complete Journey",
 	onDisk: true, size: 20.6,
 	gog: {
 		genres: ["TPP", "Fantasy", "Aventure"],
-		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Troisième personne", "Point&Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Objets cachés", "Steampunk"]
+		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Troisième personne", "Point-and-click", "Mystère", "Logique", "Émotionnel", "Enquête", "Objets cachés", "Steampunk"]
 	}
 }, {
 	name: "The Elder Scrolls: Arena", collection: "The Elder Scrolls",
@@ -1031,7 +1141,7 @@ var GAMES = [{
 	onDisk: true, size: 2.0,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
-		tags: ["Aventure", "Histoire Riche", "2D", "Classique", "Exploration", "Casse-tête", "Amusant", "Troisième personne", "Point&Click", "Logique", "Cartoonesque", "Humour noir", "Objets cachés", "FMV"]
+		tags: ["Aventure", "Histoire Riche", "2D", "Classique", "Exploration", "Casse-tête", "Amusant", "Troisième personne", "Point-and-click", "Logique", "Cartoonesque", "Humour noir", "Objets cachés", "FMV"]
 	}
 }, {
 	name: "Torchlight", collection: "Torchlight",
@@ -1141,7 +1251,7 @@ var GAMES = [{
 	date : "2026-04-14",
 	gog: {
 		genres: ["Stratégie", "Simulation", "Gestion"],
-		tags: ["Aventure", "Fantasy", "Stratégie", "Jeu de rôle", "Casse-tête", "Simulation", "Superbe bande-son", "Graphismes Pixel", "Choix multiples", "Gestion", "Point&Click", "Historique", "Gestion des resources", "Fins multiples", "Guerre", "Médieval", "Gestion"]
+		tags: ["Aventure", "Fantasy", "Stratégie", "Jeu de rôle", "Casse-tête", "Simulation", "Superbe bande-son", "Graphismes Pixel", "Choix multiples", "Gestion", "Point-and-click", "Historique", "Gestion des resources", "Fins multiples", "Guerre", "Médieval", "Gestion"]
 	}
 },].map(json => new Game(json));
 
