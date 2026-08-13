@@ -62,6 +62,7 @@ class Game {
 		img = img.replaceAll("/", "-");
 		img = img.replaceAll(",", "");
 		img = img.replaceAll("&", "");
+		img = img.replaceAll("!", "");
 		img = img.replaceAll("  ", " ");
 		return "img/" + img.charAt(0) + "/" + img + ".jpg";
 	}
@@ -96,7 +97,15 @@ var skel = {
 	}
 };
 
-var GAMES = [{
+var GAMES = [
+{
+	name: "112 Operator",
+	onDisk: false,
+	gog: {
+		genres: ["Strategy", "Indie", "Puzzle","Simulator"],
+		tags: []
+	}
+}, {
 	name: "9 Years of Shadows",
 	onDisk: true, size: 1.4,
 	sources: ["GP"],
@@ -104,6 +113,13 @@ var GAMES = [{
 	gog: {
 		genres: ["Action", "Aventure", "Metroidvania"],
 		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Exploration", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Magie", "Metroidvania"]
+	}
+}, {
+	name: "A Game of Thrones: The Board Game",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie", "Fantasy", "Jeu de cartes"],
+		tags: ["Fantasy", "Stratégie", "Jeu de cartes"]
 	}
 }, {
 	name: "A Plague Tale: Innocence",
@@ -115,12 +131,41 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Horreur", "Troisième personne", "Historique", "Violent", "Gore", "Médieval", "Émotionnel", "Infiltration"]
 	}
 }, {
-	name: "Alan Wake",
+	name: "Adios",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation", "FPP", "Narratif"],
+		tags: ["Indé", "Histoire Riche", "Simulation", "Première personne", "Sombre", "Mystère", "FPS", "Narratif", "Émotionnel", "Simulation de marche", "Thriller", "Crime", "Philosophique"]
+	}
+}, {
+	name: "Alba: A Wildlife Adventure",
+	onDisk: true, size: 0.303,
+	date : "2026-08-13",
+	gog: {
+		genres: ["Aventure", "Exploration"],
+		tags: ["Aventure", "Indé", "Exploration", "Protagoniste féminine", "Familial", "Relaxant", "Cartoonesque", "Nature", "Cozy"]
+	}
+}, {
+	name: "Alan Wake", collection: "Remedy",
 	onDisk: true, size: 8.4,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Horreur"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Classique", "Sombre", "Superbe bande-son", "Horreur", "Troisième personne", "Mystère", "Survie", "Horreur psychologique", "Horreur et survie", "Surnaturel", "Thriller"]
+	}
+}, {
+	name: "Alan Wake 2", collection: "Remedy",
+	onDisk: false,
+	gog: {
+		genres: ["Adventure", "Shooter"],
+		tags: ["Action", "Horror", "Thriller", "Survival", "Mystery"]
+	}
+}, {
+	name: "Amnesia: Rebirth",
+	onDisk: false,
+	gog: {
+		genres: ["FPP", "Horreur", "Aventure"],
+		tags: ["Aventure", "Indé", "Première personne", "Sombre", "Horreur", "FPS"]
 	}
 }, {
 	name: "Anno 1404", fullname: "Anno 1404: Gold Edition",
@@ -129,6 +174,16 @@ var GAMES = [{
 		genres: ["Simulation", "Historique", "Stratégie"],
 		tags: ["Stratégie", "Classique", "Simulation", "Superbe bande-son", "Gestion", "Bac-à-sable", "Historique", "Temps réél", "Gestion des resources", "Relaxant", "Médieval", "Construction de villes", "Commerce", "Transport"]
 	}
+}, {
+	name: "Ancient Enemy",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle", "Fantasy", "Jeu de cartes"],
+		tags: ["Indé", "Fantasy", "Jeu de rôle", "Classique", "Tour par tour", "Sombre", "Historique", "Magie", "Relaxant", "Post-apocalyptique", "cRPG", "Jeu de cartes"]
+	}
+}, {
+	name: "Axiom Verge",
+	onDisk: false,
 }, {
 	name: "Baldur's Gate", fullname: "Baldur's Gate: Enhanced Edition",
 	onDisk: true, size: 5.8,
@@ -145,6 +200,20 @@ var GAMES = [{
 	gog: {
 		genres: ["Action","TPP","Monde ouvert"],
 		tags: ["Action", "Troisième personne", "Monde Ouvert", "Mature"]
+	}
+}, {
+	name: "Beacon Pines",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle", "Aventure", "Narratif"],
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Exploration", "Casual", "Horreur", "Choix multiples", "Amusant", "Mystère", "Fins multiples", "Relaxant", "Cartoonesque", "Narratif", "Émotionnel", "Cozy"]
+	}
+}, {
+	name: "Bear and Breakfast",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation ", "Construction", "Gestion"],
+		tags: ["Simulation", "Casual", "Amusant", "Gestion", "Gestion des resources", "Familial", "Relaxant", "Construction", "Cartoonesque", "Crafting", "Gestion", "Nature", "Simulation de vie"]
 	}
 }, {
 	name: "Behind the Frame: The Finest Scenery",
@@ -169,6 +238,9 @@ var GAMES = [{
 		genres: ["Action", "TPP", "SF"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Exploration", "Science", "Protagoniste féminine", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Émotionnel", "Infiltration", "Dystopique"]
 	}
+}, {
+	name: "Beyond Blue",
+	onDisk: false,
 }, {
 	name: "BioShock", fullname: "BioShock & BioShock Remastered", size: 20.3,
 	onDisk: true,
@@ -226,12 +298,33 @@ var GAMES = [{
 		tags: ["Action", "Jeu de rôle", "2D", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Multijoueur", "Plateformes", "Contenu à caractère sexuel", "Nudité", "Difficile", "Crafting", "Metroidvania", "Vampire"]
 	}
 }, {
+	name: "Bridge Constructor: The Walking Dead",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation", "Construction", "Gestion"],
+		tags: ["Indé", "Casse-tête", "Simulation", "Casual", "Bac-à-sable", "Construction", "Crafting", "Gestion", "Post-apocalyptique", "Physique", "Zombies"]
+	}
+}, {
 	name: "Brigador", fullname: "Brigador: Up-Armored Edition",
 	onDisk: true, size: 0.67,
 	gog: {
 		name: "Brigador",
 		genres: ["Action", "Combat", "Tactique"],
 		tags: ["Action", "Indé", "Science", "Tactique", "Difficile", "Isométrique", "Vue du dessus", "Roguelite", "Combat", "Cyberpunk", "Dystopique", "Tir à deux joysticks", "Chars d'assaut"]
+	}
+}, {
+	name: "Brotato",
+	onDisk: false,
+	gog: {
+		genres: ["Action", "Roguelike", "Survie"],
+		tags: ["2D", "Science fiction", "Casual", "Multijoueur", "Survie", "Roguelike", "Roguelite", "Coop locale", "Arcade", "Bullet Hell"]
+	}
+}, {
+	name: "Brothers: A Tale of Two Sons",
+	onDisk: false,
+	gog: {
+		genres: ["Action", "Aventure", "Fantasy"],
+		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Casse-tête", "Casual", "Superbe bande-son", "Troisième personne", "Plateformes", "Multijoueur", "Émotionnel", "Coop locale", "Simulation de marche", "Cozy", "Court"]
 	}
 }, {
 	name: "Brutal Legend",
@@ -242,6 +335,30 @@ var GAMES = [{
 		tags: ["Action", "Fantasy", "Stratégie", "Atmosphère", "Classique", "Superbe bande-son", "Amusant", "Monde Ouvert", "Troisième personne", "Multijoueur", "Hack and Slash", "Stratégie en temps réél", "Beat 'em up"]
 	}
 }, {
+	name: "Bus Simulator 21", fullname: "Bus Simulator 21 Next Stop",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation - Temps réel - Exploration"],
+		tags: ["Exploration", "Simulation", "Première personne", "Gestion", "Troisième personne", "Monde Ouvert", "Multijoueur", "Temps réél", "Familial", "Relaxant", "Réaliste", "Moderne"]
+	}
+}, {
+	name: "Call of the Sea",
+	onDisk: false,
+	gog: {
+		genres: ["Aventure", "Réflexion", "Mystère"],
+		tags: ["Aventure", "Indé", "Casse-tête", "Première personne", "Protagoniste féminine", "Mystère", "Historique", "Logique", "Émotionnel", "Enquête", "Surréaliste", "Simulation de marche", "Lovecraft"]
+	}
+}, {
+	name: "Car Mechanic Simulator 2018",
+	onDisk: false,
+}, {
+	name: "Cave Story+",
+	onDisk: false,
+	gog: {
+		genres: ["Action", "Aventure", "Plateforme"],
+		tags: ["Aventure", "Action", "Classique", "Science", "Plateformes", "Metroidvania", "Remake"]
+	}
+}, {
 	name: "Chasm: The Rift",
 	onDisk: true, size: 0.801,
 	sources: ["GP"],
@@ -249,6 +366,23 @@ var GAMES = [{
 	gog: {
 		genres: ["Tir", "FPP", "Fantasy"],
 		tags: ["Fantasy", "Atmosphère", "Science fiction", "Classique", "Première personne", "Sombre", "Violent", "Gore", "FPS", "Rétro", "Tir"]
+	}
+}, {
+	name: "Cities: Skylines",
+	onDisk: false,
+	gog: {
+		genres: ["Tir", "FPP", "Fantasy"],
+		tags: ["Fantasy", "Atmosphère", "Science fiction", "Classique", "Première personne", "Sombre", "Violent", "Gore", "FPS", "Rétro", "Tir"]
+	}
+}, {
+	name: "City of Brass",
+	onDisk: false,
+}, {
+	name: "City of Gangsters",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation", "Stratégie", "Gestion"],
+		tags: ["Stratégie", "Tour par tour", "Simulation", "Gestion", "Bac-à-sable", "Historique", "Gestion des resources", "Vue du dessus", "Gestion", "Génération procédurale", "Stratégie complexe", "Politique", "Crime", "Noir"]
 	}
 }, {
 	name: "Close To The Sun",
@@ -311,6 +445,17 @@ var GAMES = [{
 		tags: ["Aventure", "Atmosphère", "Classique", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Horreur", "Fins multiples", "Logique", "Horreur psychologique", "FMV"]
 	}
 }, {
+	name: "Daemon x Machina",
+	onDisk: false
+}, {
+	name: "Dark Deity",
+	onDisk: false,
+	gog: {
+		name: "Dark Deity: Complete Edition",
+		genres: ["Stratégie - Aventure - JRPG"],
+		tags: ["Aventure", "Fantasy", "Histoire Riche", "Stratégie", "2D", "Tour par tour", "Graphismes Pixel", "JRPG"]
+	}
+}, {
 	name: "Dark Devotion",
 	onDisk: true, size: 1.4,
 	date : "2026-08-05",
@@ -350,6 +495,20 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Casse-tête", "Protagoniste féminine", "Sombre", "Troisième personne", "Violent", "Gore", "Hack and Slash", "Post-apocalyptique", "Souls-like"]
 	}
 }, {
+	name: "Darkwood",
+	onDisk: false,
+	gog: {
+		genres: ["Action", "Horreur", "Survie"],
+		tags: ["Action", "Atmosphère", "Exploration", "Sombre", "Horreur", "Monde Ouvert", "Gestion des resources", "Gore", "Roguelike", "Vue du dessus", "Crafting", "Horreur et survie", "Horreur psychologique", "Lovecraft"]
+	}
+}, {
+	name: "DARQ",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Aventure","Horreur"],
+		tags: ["Aventure", "Action", "Atmosphère", "Casse-tête", "Sombre", "Horreur", "Troisième personne", "Mystère", "Infiltration", "Horreur et survie", "Horreur psychologique", "Surréaliste", "Casse-tête et plateformes", "Physique", "Thriller", "Steampunk"]
+	}
+}, {
 	name: "Day of the Tentacle", fullname: "Day of the Tentacle Remastered",
 	onDisk: true, size: 4.7,
 	date : "2026-04-14",
@@ -357,6 +516,9 @@ var GAMES = [{
 		genres: ["SF", "Aventure", "Point-and-click"],
 		tags: ["Aventure", "Histoire Riche", "2D", "Science fiction", "Classique", "Casse-tête", "Science", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point-and-click", "Familial", "Cartoonesque", "Remake"]
 	}
+}, {
+	name: "Deponia: The Complete Journey",
+	onDisk: false
 }, {
 	name: "Deus Ex: Human Revolution", fullname: "Deus Ex: Human Revolution - Director's Cut",
 	onDisk: true, size: 16.5,
@@ -374,6 +536,14 @@ var GAMES = [{
 	gog: {
 		genres: ["Action", "FPP", "Infiltration"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Classique", "Première personne", "Sombre", "Superbe bande-son", "Choix multiples", "Violent", "Gore", "Magie", "FPS", "Infiltration", "Surnaturel", "Steampunk"]
+	}
+}, {
+	name: "Dragon Age: Origins", fullname: "Dragon Age: Origins - Ultimate Edition",
+	onDisk: false, size: 0,
+	date : "2026-08-15",
+	gog: {
+		genres: ["Jeu de rôle","Aventure","Fantasy"],
+		tags: ["Aventure", "Fantasy", "Histoire Riche", "Jeu de rôle", "Classique", "Protagoniste féminine", "Choix multiples", "Tactique", "Monde Ouvert", "Mature", "Fins multiples", "LGBTQ+", "Caresse de chien"]
 	}
 }, {
 	name: "Dragonsphere",
@@ -394,11 +564,46 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Indé", "2D", "Science fiction", "Casse-tête", "Science", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Difficile", "Roguelike", "Rétro", "Surréaliste", "Bullet Hell", "Manipulation temporelle"]
 	}
 }, {
+	name: "Duskers",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie","SF","Survie"],
+		tags: ["Indé", "Atmosphère", "Stratégie", "2D", "Science fiction", "Exploration", "Classique", "Casse-tête", "Science", "Horreur", "Tactique", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Génération procédurale", "Taper du texte"]
+	}
+}, {
+	name: "Encased", fullname: "Encased: A Sci-Fi Post-Apocalyptic RPG",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle","Tour par tour","SF"],
+		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Exploration", "Tour par tour", "Science", "Choix multiples", "Tactique", "Monde Ouvert", "Survie", "Fins multiples", "Isométrique", "Post-apocalyptique", "cRPG"]
+	}
+}, {
+	name: "Enter the Gungeon",
+	onDisk: false,
+	gog: {
+		genres: ["Tir","Action","SF"],
+		tags: ["Action", "Indé", "2D", "Science fiction", "Classique", "Graphismes Pixel", "Amusant", "Difficile", "Roguelike", "Vue du dessus", "Tir", "Roguelite", "Coop locale", "Dungeon Crawler", "Bullet Hell", "Tir à deux joysticks"]
+	}
+}, {
+	name: "Epistory - Typing Chronicles",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Aventure","Fantasy"],
+		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Protagoniste féminine", "Superbe bande-son", "Monde Ouvert", "Magie", "Isométrique", "Vue du dessus", "Éducation", "Taper du texte"]
+	}
+}, {
 	name: "Everspace",
 	onDisk: true, size: 3.7,
 	gog: {
 		genres: ["Action", "Simulation", "SF"],
 		tags: ["Action", "Science fiction", "Classique", "Exploration", "Simulation", "Science", "Première personne", "Superbe bande-son", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Vol", "Réalité virtuelle"]
+	}
+}, {
+	name: "Evoland Legendary Edition",
+	onDisk: false,
+	gog: {
+		genres: ["Fantasy","Aventure","Jeu de rôle"],
+		tags: ["Aventure", "Indé", "Fantasy", "Jeu de rôle", "2D", "Exploration", "Casual", "Graphismes Pixel", "Rétro", "cRPG"]
 	}
 }, {
 	name: "Fallout", collection: "Fallout",
@@ -419,6 +624,13 @@ var GAMES = [{
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Exploration", "Tour par tour", "Science", "Tactique", "Monde Ouvert", "Isométrique", "Post-apocalyptique", "RPG tactique", "cRPG"]
 	}
 }, {
+	name: "Fallout 3", collection: "Fallout", fullname:"Fallout 3: Game of the Year Edition",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle","FPP","Monde ouvert"],
+		tags: ["Histoire Riche", "Jeu de rôle", "Science fiction", "Classique", "Science", "Première personne", "Troisième personne", "Monde Ouvert", "Bac-à-sable", "FPS", "Post-apocalyptique"]
+	}
+}, {
 	name: "Fallout Tactics", collection: "Fallout",
 	onDisk: true, size: 3.5,
 	sources: ["GP"],
@@ -435,12 +647,30 @@ var GAMES = [{
 		tags: ["Fantasy", "Stratégie", "2D", "Classique", "Tour par tour", "Magie", "Guerre"]
 	}
 }, {
+	name: "F.I.S.T.: Forged in Shadow Torch",
+	onDisk: false,
+}, {
+	name: "First Racer",
+	onDisk: true, size: 0.462,
+	date : "2026-08-15",
+	gog: {
+		genres: ["Course", "Arcade", "Touring"],
+		tags: ["Indé", "Atmosphère", "Casual", "Troisième personne", "Familial", "Relaxant", "Rétro", "Arcade", "Multijoueur local", "Course", "Touring"]
+	}
+}, {
 	name: "Flashback",
 	onDisk: true, size: 0.169,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Action", "SF", "Aventure"],
 		tags: ["Aventure", "Action", "Atmosphère", "2D", "Science fiction", "Science", "Plateformes", "Cyberpunk"]
+	}
+}, {
+	name: "Frostpunk",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie","Simulation","Survie"],
+		tags: ["Indé", "Atmosphère", "Stratégie", "Simulation", "Sombre", "Superbe bande-son", "Choix multiples", "Gestion", "Survie", "Gestion des resources", "Difficile", "Construction de base", "Post-apocalyptique", "Construction de villes", "Horreur et survie", "Steampunk"]
 	}
 }, {
 	name: "FTL: Faster than Light",
@@ -452,6 +682,20 @@ var GAMES = [{
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point-and-click", "Enquête", "Enquête-mystère", "Court", "Remake"]
+	}
+}, {
+	name: "Gamedec",  fullname: "Gamedec - Definitive Edition",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle","Aventure","SF"],
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Exploration", "Science", "Choix multiples", "Mystère", "Fins multiples", "Isométrique", "Enquête", "Vous êtes le héro", "Cyberpunk", "cRPG", "Noir", "Basé sur du texte"]
+	}
+}, {
+	name: "Geneforge 1 - Mutagen",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
+		tags: ["Fantasy", "Histoire Riche", "Jeu de rôle", "Exploration", "Tour par tour", "Choix multiples", "Fins multiples", "Isométrique", "Dungeon Crawler", "cRPG", "Remake"]
 	}
 }, {
 	name: "Ghost of a Tale",
@@ -490,6 +734,9 @@ var GAMES = [{
 		tags: ["Action", "Fantasy", "Science fiction", "Classique", "Science", "Amusant", "Monde Ouvert", "Troisième personne", "Multijoueur", "Nudité", "Violent", "Gestion des resources", "FPS", "Construction de base", "Réaliste", "Stratégie en temps réél"]
 	}
 }, {
+	name: "Golden Light",
+	onDisk: false,
+}, {
 	name: "Grandia 2", fullname: "Grandia II Anniversary Edition",
 	onDisk: true, size: 2.0,
 	gog: {
@@ -509,9 +756,19 @@ var GAMES = [{
 	onDisk: true, size: 1.1,
 	date : "2026-08-09",
 	gog: {
-		genres: ["Plateforme","Aventure","Réflexion"],
+		genres: ["Plateforme", "Aventure", "Réflexion"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Exploration", "Casse-tête", "Casual", "Protagoniste féminine", "Superbe bande-son", "Plateformes", "Relaxant", "Logique", "Surréaliste", "Casse-tête et plateformes", "Simulation de marche", "Cozy"]
 	}
+}, {
+	name: "Guild of Dungeoneering",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
+		tags: ["Fantasy", "Jeu de rôle", "2D", "Tour par tour", "Superbe bande-son", "Amusant", "Difficile", "Familial", "Roguelike", "Roguelite", "Dungeon Crawler", "Jeu de cartes", "Deckbuilding"]
+	}
+}, {
+	name: "Hell is Other Demons",
+	onDisk: false,
 }, {
 	name: "Hell Pie",
 	onDisk: true, size: 4.3,
@@ -540,6 +797,33 @@ var GAMES = [{
 		tags: ["Action", "Indé", "2D", "Science fiction", "Casual", "Graphismes Pixel", "Survie", "Roguelike", "Vue du dessus", "Espace", "Tir", "Roguelite", "Combat", "Bullet Hell", "Tir à deux joysticks"]
 	}
 }, {
+	name: "Horizon Chase Turbo",
+	onDisk: false,
+}, {
+	name: "In Sound Mind",
+	onDisk: false,
+	gog: {
+		genres: ["Horreur", "Aventure" ,"Survie"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Première personne", "Sombre", "Horreur", "Plateformes", "Survie", "FPS", "Horreur psychologique", "Casse-tête et plateformes", "Objets cachés", "Chats"]
+	}
+}, {
+	name: "Iratus: Lord of the Dead",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle", "Tour par tour", "Fantasy"],
+		tags: ["Indé", "Fantasy", "Jeu de rôle", "2D", "Tour par tour", "Sombre", "Violent", "Difficile", "Gore", "Roguelike", "Roguelite", "Dungeon Crawler", "Lovecraft"]
+	}
+}, {
+	name: "Ironcast",
+	onDisk: false,
+}, {
+	name: "Jotun", fullname: "Jotun: Valhalla Edition",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle","Action","Fantasy"],
+		tags: ["Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "2D", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Difficile", "Isométrique", "Souls-like", "Mythologie", "Vikings"]
+	}
+}, {
 	name: "Kerbal Space Program",
 	onDisk: true, size: 4.3,
 	sources: ["GP"],
@@ -547,6 +831,13 @@ var GAMES = [{
 	gog: {
 		genres: ["Simulation", "SF", "Construction"],
 		tags: ["Indé", "Science fiction", "Exploration", "Simulation", "Science", "Amusant", "Monde Ouvert", "Bac-à-sable", "Difficile", "Espace", "Construction", "Physique", "Éducation"]
+	}
+}, {
+	name: "Kingdom: New Lands",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie","Simulation","Fantasy"],
+		tags: ["Indé", "Fantasy", "Atmosphère", "Stratégie", "2D", "Exploration", "Classique", "Simulation", "Graphismes Pixel", "Superbe bande-son", "Monde Ouvert", "Survie", "Roguelike", "Construction", "Médieval", "Construction de base", "Tower Defense"]
 	}
 }, {
 	name: "L'amazone Queen",
@@ -605,6 +896,9 @@ var GAMES = [{
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "2D", "Casse-tête", "Casual", "Amusant", "Point-and-click", "Mature", "Contenu à caractère sexuel", "Nudité", "Adulte", "Rétro", "Cartoonesque", "Romance", "LGBTQ+", "Moderne"]
 	}
 }, {
+	name: "Limbo",
+	onDisk: false,
+}, {
 	name: "Lure of the Tempress",
 	onDisk: true, size: 0.070,
 	date : "2026-08-02",
@@ -637,10 +931,20 @@ var GAMES = [{
 		tags: ["Fantasy", "Jeu de rôle", "Classique", "Exploration", "Tour par tour", "Première personne", "Gestion", "Monde Ouvert", "Magie", "FPS", "cRPG"]
 	}
 }, {
+	name: "Minit",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Aventure","Mystère"],
+		tags: ["Aventure", "Action", "2D", "Exploration", "Casse-tête", "Graphismes Pixel", "Superbe bande-son", "Amusant", "Mystère", "Vue du dessus", "Metroidvania", "Court"]
+	}
+}, {
 	name: "MKD",
 	onDisk: true, size: 0.090,
 	sources: ["DK"],
 	gog: { genres: [], tags: [] }
+}, {
+	name: "Model Builder",
+	onDisk: false,
 }, {
 	name: "Monster Train",
 	onDisk: true, size: 0.684,
@@ -660,20 +964,56 @@ var GAMES = [{
 		tags: ["Action", "Indé", "2D", "Protagoniste féminine", "Graphismes Pixel", "Plateformes", "Hack and Slash", "Combat", "Metroidvania", "Souls-like"]
 	}
 }, {
+	name: "Mothergunship",
+	onDisk: false,
+	gog: {
+		genres: ["Action","FPP","Roguelike"],
+		tags: ["Action", "Science", "Première personne", "Difficile", "Roguelike", "FPS", "Roguelite", "Crafting", "Génération procédurale", "Bullet Hell", "Perma Death"]
+	}
+}, {
 	name: "Mud Runner",
 	onDisk: true, size: 1.3,
 	date : "2026-08-09",
 }, {
-	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition", collection: "ori",
+	name: "Murder by Numbers",
+	onDisk: false,
+	gog: {
+		genres: ["Aventure","Mystère","Roman visuel"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "2D", "Casse-tête", "Protagoniste féminine", "Mystère", "Roman graphique", "Logique", "Cartoonesque", "Enquête", "LGBTQ+", "Crime"]
+	}
+}, {
+	name: "Never Alone",
+	onDisk: false,
+	gog: {
+		name: "Never Alone Arctic Collection",
+		genres: ["Plateforme","Aventure","Réflexion"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Casse-tête", "Casual", "Protagoniste féminine", "Superbe bande-son", "Plateformes", "OST", "Logique", "Coop locale", "Casse-tête et plateformes", "Nature", "Court"]
+	}
+}, {
+	name: "Obduction",
+	onDisk: false,
+	gog: {
+		genres: ["FPP","Aventure","Réflexion"],
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Casse-tête", "Casual", "Science", "Première personne", "Choix multiples", "Monde Ouvert", "Mystère", "Point&Click", "Survie", "FPS", "Logique", "Surréaliste", "Simulation de marche", "FMV", "Réalité virtuelle"]
+	}
+}, {
+	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition", collection: "Ori",
 	onDisk: true, size: 4.9,
 	gog: {
 		genres: ["Action", "Aventure", "Plateforme"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Plateformes", "Difficile", "Familial", "Metroidvania"]
 	}
 }, {
-	name: "Ori and the Will of the Wisps", collection: "ori",
+	name: "Ori and the Will of the Wisps", collection: "Ori",
 	onDisk: true, size: 4.4,
 	date : "2026-08-09",
+}, {
+	name: "Out of Line",
+	onDisk: false,
+	gog: {
+		genres: ["Plateforme","Aventure","Réflexion"],
+		tags: ["Aventure", "Indé", "2D", "Casse-tête", "Plateformes", "Logique", "Casse-tête et plateformes"]
+	}
 }, {
 	name: "Outcast", fullname: "Outcast - Second Contact",
 	onDisk: true, size: 5.8,
@@ -682,13 +1022,20 @@ var GAMES = [{
 		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Science", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Remake"]
 	}
 }, {
-	name: "Overcooked", fullname: "Overcooked: Gourmet Edition",
+	name: "Overcooked!", fullname: "Overcooked: Gourmet Edition", collection :"Overcooked",
 	onDisk: true, size: 0.317,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
 		genres: ["Simulation", "Action", "Comédie"],
 		tags: ["Action", "Indé", "Classique", "Simulation", "Casual", "Superbe bande-son", "Amusant", "Difficile", "Familial", "Coop locale", "Multijoueur local", "Comédie", "Cuisine"]
+	}
+}, {
+	name: "Overcooked! 2", collection :"Overcooked",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation", "Action", "Comédie"],
+		tags: ["Action", "Simulation", "Casual", "Superbe bande-son", "Amusant", "Multijoueur", "Difficile", "Familial", "Coop locale", "Multijoueur local", "Comédie", "Cuisine"]
 	}
 }, {
 	name: "Phantasmagoria",
@@ -966,6 +1313,13 @@ var GAMES = [{
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Troisième personne", "Point-and-click", "Mystère", "Logique", "Émotionnel", "Enquête", "Objets cachés", "Steampunk"]
 	}
 }, {
+	name: "The Dungeon of Naheulbeuk: The Amulet of Chaos",
+	onDisk: false,
+	gog: {
+		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
+		tags: ["Fantasy", "Jeu de rôle", "Tour par tour", "Tactique", "Troisième personne", "Contenu à caractère sexuel", "Dungeon Crawler"]
+	}
+}, {
 	name: "The Elder Scrolls: Arena", collection: "The Elder Scrolls",
 	onDisk: true, size: 0.122,
 	gog: {
@@ -995,6 +1349,13 @@ var GAMES = [{
 		tags: ["Aventure", "Fantasy", "Jeu de rôle", "Classique"]
 	}
 }, {
+	name: "The Evil Within",
+	onDisk: false,
+	gog: {
+		genres: ["Action,", "Horreur", "Survie"],
+		tags: ["Action", "Histoire Riche", "Atmosphère", "Classique", "Sombre", "Horreur", "Troisième personne", "Survie", "Violent", "Gore", "Infiltration", "Horreur et survie", "Horreur psychologique"]
+	}
+}, {
 	name: "The Falconeer",
 	onDisk: true, size: 0.962,
 	sources: ["GP"],
@@ -1004,12 +1365,22 @@ var GAMES = [{
 		tags: ["Action", "Fantasy", "Exploration", "Science", "Monde Ouvert", "Troisième personne", "Guerre", "Militaire", "Combat", "Vol", "Pirates", "Sous terre"]
 	}
 }, {
+	name: "The Forest Quartet",
+	onDisk: false,
+}, {
 	name: "The Gunk",
 	onDisk: true, size: 6.6,
 	sources: ["Shionn", "GP"],
 	gog: {
 		genres: ["Action", "Adventure", "Exploration"],
 		tags: ["Adventure", "Action", "Story Rich", "Atmospheric", "Sci-fi", "Exploration", "Female Protagonist", "Third Person", "Family Friendly", "Relaxing", "LGBTQ+", "Metroidvania", "Nature"]
+	}
+}, {
+	name: "The Lion's Song",
+	onDisk: false,
+	gog: {
+		genres: ["Aventure","Point-and-click","Narratif"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Casual", "Protagoniste féminine", "Graphismes Pixel", "Superbe bande-son", "Choix multiples", "Roman graphique", "Point&Click", "Narratif"]
 	}
 }, {
 	name: "The Smurfs 2", fullname: "The Smurfs 2 - The Prisoner of the Green Stone",
@@ -1019,6 +1390,13 @@ var GAMES = [{
 	gog: {
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Exploration", "Amusant", "Plateformes", "Coop locale", "Nature"]
+	}
+}, {
+	name: "The Operator",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation","Réflexion","Narratif"],
+		tags: ["Histoire Riche", "Casse-tête", "Simulation", "Choix multiples", "Mystère", "Roman graphique", "Narratif", "Enquête", "Vous êtes le héro", "Thriller", "Crime", "FMV"]
 	}
 }, {
 	name: "The Talos Principle", fullname: "The Talos Principle: Gold Edition",
@@ -1186,6 +1564,14 @@ var GAMES = [{
 		tags: ["Action", "Science fiction", "Classique", "Science", "Tir"]
 	}
 }, {
+	name: "Unepic",
+	onDisk: true, size: 0.696,
+	date: "2026-08-15",
+	gog: {
+		genres: ["Action", "Plateforme", "Jeu de rôle"],
+		tags: ["Action", "Indé", "Jeu de rôle", "2D", "Classique", "Plateformes"]
+	}
+}, {
 	name: "Ultima 4", fullname: "Ultima IV: Quest of the Avatar", collection: "Ultima",
 	onDisk: true, size: 0.054,
 	gog: {
@@ -1193,7 +1579,23 @@ var GAMES = [{
 		tags: ["Adventure", "Fantasy", "Jeu de rôle", "Classic"]
 	}
 }, {
-	name: "Ultima Worlds of Adventure 2: Martian Dreams", collection: "Ultima",
+	name: "Ultima Underworld 1", collection: "Ultima",
+	onDisk: true, size: 0.076,
+	date: "2026-08-15",
+	gog: {
+		genres: ["Jeu de rôle", "FPP", "Fantasy"],
+		tags: ["Fantasy", "Jeu de rôle", "Classique", "Première personne", "FPS"]
+	}
+}, {
+	name: "Ultima Underworld 2", collection: "Ultima",
+	onDisk: true, size: 0.076,
+	date: "2026-08-15",
+	gog: {
+		genres: ["Jeu de rôle", "FPP", "Fantasy"],
+		tags: ["Fantasy", "Jeu de rôle", "Classique", "Première personne", "FPS"]
+	}
+}, {
+	name: "Ultima Worlds of Adventure 2", fullname: "Ultima Worlds of Adventure 2: Martian Dreams", collection: "Ultima",
 	onDisk: true, size: 0.190,
 	date: "2026-08-02",
 	gog: {
