@@ -1038,6 +1038,13 @@ var GAMES = [
 		tags: ["Action", "Simulation", "Casual", "Superbe bande-son", "Amusant", "Multijoueur", "Difficile", "Familial", "Coop locale", "Multijoueur local", "Comédie", "Cuisine"]
 	}
 }, {
+	name: "Paradigm",
+	onDisk: false,
+	gog: {
+		genres: ["SF","Aventure","Réflexion"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Science fiction", "Casse-tête", "Science", "Superbe bande-son", "Amusant", "Point&Click", "Logique", "Surréaliste"]
+	}
+}, {
 	name: "Phantasmagoria",
 	onDisk: true, size: 3.5,
 	sources: ["DK"],
@@ -1055,10 +1062,24 @@ var GAMES = [
 		genres: ["TPP", "Horreur", "Aventure"],
 		tags: ["Aventure", "Classique", "Casse-tête", "Sombre", "Horreur", "Troisième personne", "Point-and-click", "Nudité", "Gore", "Horreur psychologique", "LGBTQ+", "FMV"]
 	}
+},  {
+	name: "Pine",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Aventure","Monde ouvert"],
+		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Superbe bande-son", "Troisième personne", "Monde Ouvert", "Bac-à-sable", "Vous êtes le héro", "Nature"]
+	}
 }, {
 	name: "Portal",
 	onDisk: true, size: 2.5,
 	date : "2026-08-09"
+},  {
+	name: "Prey",
+	onDisk: false,
+	gog: {
+		genres: ["Action","FPP","SF"],
+		tags: ["Action", "Histoire Riche", "Atmosphère", "Science fiction", "Exploration", "Science", "Première personne", "Superbe bande-son", "Horreur", "Monde Ouvert", "FPS", "Espace", "Infiltration", "Horreur et survie", "Horreur psychologique"]
+	}
 }, {
 	name: "Prince of Persia 2003", fullname: "Prince of Persia : Les Sables du temps", collection: "Prince of Persia",
 	onDisk: true, size: 1.3,
@@ -1110,6 +1131,13 @@ var GAMES = [
 		tags: ["Aventure", "Action", "Fantasy", "2D", "Casse-tête", "Troisième personne", "Plateformes", "Cartoonesque"]
 	}
 }, {
+	name: "Relicta",
+	onDisk: false,
+	gog: {
+		genres: ["Action", "Aventure", "Réflexion"],
+		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Casse-tête", "Casual", "Science", "Première personne", "Protagoniste féminine", "Logique", "Casse-tête et plateformes", "Physique"]
+	}
+}, {
 	name: "Return of the Obra Dinn",
 	onDisk: true, size: 0.928,
 	gog: {
@@ -1124,6 +1152,30 @@ var GAMES = [
 	gog: {
 		genres: ["Stratégie", "Simulation", "Moderne"],
 		tags: ["Stratégie", "2D", "Simulation", "Graphismes Pixel", "Multijoueur", "Historique", "Violent", "Stratégie en temps réél", "Moderne", "Crime"]
+	}
+}, {
+	name: "Rise of Industry",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie","Simulation","Gestion"],
+		tags: ["Stratégie", "Simulation", "Gestion", "Bac-à-sable", "Gestion des resources", "Isométrique", "Construction de base", "Gestion", "Construction de villes", "Commerce"]
+	}
+}, {
+	name: "Rising Hell",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Roguelike"],
+		tags: ["Action", "Fantasy", "Plateformes", "Gore", "Roguelike", "Roguelite", "Génération procédurale", "Bullet Hell", "Beat 'em up"]
+	}
+}, {
+	name: "Road Redemption",
+	onDisk: false,
+}, {
+	name: "Rogue Legacy",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Plateforme","Jeu de rôle"],
+		tags: ["Action", "Indé", "Fantasy", "Jeu de rôle", "2D", "Exploration", "Classique", "Graphismes Pixel", "Plateformes", "Difficile", "Roguelike", "Médieval", "Roguelite", "Metroidvania"]
 	}
 }, {
 	name: "Runaway: A Road Adventure", collection: "Runaway",
@@ -1156,6 +1208,13 @@ var GAMES = [
 		tags: ["Action", "Classique", "Troisième personne", "Moderne"]
 	}
 }, {
+	name: "Saints Row IV: Re-Elected",
+	onDisk: false,
+	gog: {
+		genres: ["Action","TPP","Monde ouvert"],
+		tags: ["Action", "Classique", "Troisième personne", "Monde Ouvert"]
+	}
+}, {
 	name: "Sam & Max Save the World", collection: "Sam & Max",
 	onDisk: true, size: 0.927,
 	date : "2026-08-09",
@@ -1172,6 +1231,13 @@ var GAMES = [
 		tags: ["Aventure", "Point-and-click", "Enquête", "Enquête-mystère"]
 	}
 }, {
+	name: "Saturnalia",
+	onDisk: false,
+	gog: {
+		genres: ["Horreur","Aventure","Survie"],
+		tags: ["Aventure", "Atmosphère", "Exploration", "Horreur", "Troisième personne", "Monde Ouvert", "Mystère", "Survie", "Fins multiples", "Enquête", "Horreur et survie", "Enquête-mystère", "Lovecraft", "Thriller"]
+	}
+}, {
 	name: "Scorn",
 	onDisk: true, size: 18.6,
 	sources: ["GP", "Redloved"],
@@ -1181,7 +1247,10 @@ var GAMES = [
 		tags: ["Aventure", "Action", "Indé", "Atmosphère", "Science fiction", "Première personne", "Sombre", "Horreur", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Horreur psychologique", "Horreur et survie", "Surréaliste", "Lovecraft", "Steampunk"]
 	}
 }, {
-	name: "Secret Files 1", fullname: "Secret Files: Tunguska",
+	name: "Second Extinction",
+	onDisk: false,
+}, {
+	name: "Secret Files 1", fullname: "Secret Files: Tunguska", collection: "Secret Files",
 	onDisk: true, size: 2.7,
 	date : "2026-04-14",
 	gog: {
@@ -1189,7 +1258,7 @@ var GAMES = [
 		tags: ["Aventure", "Classique", "Casse-tête", "Protagoniste féminine", "Mystère", "Point-and-click", "Moderne"]
 	}
 }, {
-	name: "Secret Files 2", fullname: "Secret Files 2: Puritas Cordis",
+	name: "Secret Files 2", fullname: "Secret Files 2: Puritas Cordis", collection: "Secret Files",
 	onDisk: true, size: 2.1,
 	date : "2026-04-14",
 	gog: {
@@ -1197,7 +1266,7 @@ var GAMES = [
 		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point-and-click", "Moderne"]
 	}
 }, {
-	name: "Secret Files 3",
+	name: "Secret Files 3", collection: "Secret Files",
 	onDisk: true, size: 2.3,
 	date : "2026-04-14",
 	gog: {
@@ -1205,12 +1274,19 @@ var GAMES = [
 		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point-and-click", "Moderne"]
 	}
 }, {
-	name: "Secret Files: Sam Peters",
+	name: "Secret Files: Sam Peters", collection: "Secret Files",
 	onDisk: true, size: 0.765,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
 		tags: ["Aventure", "Classique", "Protagoniste féminine", "Point-and-click", "Moderne"]
+	}
+}, {
+	name: "Shadow Tactics: Blades of the Shogun - Aiko's Choice",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie","Temps réel","Infiltration"],
+		tags: ["Indé", "Atmosphère", "Stratégie", "Casse-tête", "Superbe bande-son", "Tactique", "Troisième personne", "Historique", "Survie", "Violent", "Temps réél", "Difficile", "Isométrique", "Stratégie en temps réél", "Infiltration", "Ninja"]
 	}
 }, {
 	name: "Shogun Showdown",
@@ -1239,6 +1315,9 @@ var GAMES = [
 		genres: ["Action, Aventure, Combat"],
 		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Exploration", "Amusant", "Troisième personne", "Hack and Slash", "Combat", "Loups-garous"]
 	}
+}, {
+	name: "Snakebird Complete",
+	onDisk: false,
 }, {
 	name: "SOMA",
 	onDisk: true, size: 24.5,
@@ -1284,6 +1363,16 @@ var GAMES = [
 		tags: []
 	}
 }, {
+	name: "Supraland",
+	onDisk: false,
+}, {
+	name: "Surviving the Aftermath",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie","Gestion" , "Survie"],
+		tags: ["Stratégie", "Gestion", "Survie", "Guerre", "Construction de base", "Gestion", "Post-apocalyptique", "Construction de villes"]
+	}
+}, {
 	name: "Sonic Adventure DX",
 	date : "2026-08-09",
 	onDisk: true, size: 1.0,
@@ -1311,6 +1400,13 @@ var GAMES = [
 	gog: {
 		genres: ["TPP", "Fantasy", "Aventure"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Troisième personne", "Point-and-click", "Mystère", "Logique", "Émotionnel", "Enquête", "Objets cachés", "Steampunk"]
+	}
+}, {
+	name: "Tandem: A Tale of Shadows",
+	onDisk: false,
+	gog: {
+		genres: ["Plateforme","Aventure","Réflexion"],
+		tags: ["Aventure", "Indé", "Fantasy", "2D", "Casse-tête", "Protagoniste féminine", "Mystère", "Plateformes", "Vue du dessus", "Logique", "Enquête", "Casse-tête et plateformes"]
 	}
 }, {
 	name: "The Dungeon of Naheulbeuk: The Amulet of Chaos",
@@ -1392,6 +1488,13 @@ var GAMES = [
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Exploration", "Amusant", "Plateformes", "Coop locale", "Nature"]
 	}
 }, {
+	name: "The Spirit and the Mouse",
+	onDisk: false,
+	gog: {
+		genres: ["Plateforme","Aventure","Réflexion"],
+		tags: ["Aventure", "Casse-tête", "Plateformes", "Casse-tête et plateformes"]
+	}
+}, {
 	name: "The Operator",
 	onDisk: false,
 	gog: {
@@ -1406,6 +1509,13 @@ var GAMES = [
 	gog: {
 		genres: ["Action", "Aventure", "Réflexion"],
 		tags: ["Aventure", "Action", "Indé", "Casse-tête", "Logique", "Casse-tête et plateformes"]
+	}
+}, {
+	name: "The Vanishing of Ethan Carter",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Aventure","Horreur"],
+		tags: ["Aventure", "Action", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Casse-tête", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Monde Ouvert", "Mystère", "Point&Click", "Horreur psychologique", "Simulation de marche", "Surnaturel", "Lovecraft", "Court"]
 	}
 }, {
 	name: "The Witcher", fullname: "The Witcher: Enhanced Edition", collection: "The Witcher",
@@ -1451,6 +1561,16 @@ var GAMES = [
 	gog: {
 		genres: ["Simulation", "Building", "Survival"],
 		tags: ["Science fiction", "Simulation", "Gestion", "Bac-à-sable", "Survie", "Gestion des resources", "Vue du dessus", "Construction", "Construction de base", "Post-apocalyptique", "Construction de villes", "Editeur de niveaux"]
+	}
+}, {
+	name: "ToeJam & Earl: Back in the Groove!",
+	onDisk: false,
+}, {
+	name: "TOEM",
+	onDisk: false,
+	gog: {
+		genres: ["Aventure","Réflexion","Exploration"],
+		tags: ["Aventure", "Exploration", "Casse-tête", "Logique"]
 	}
 }, {
 	name: "Tomb Raider 1/2/3", fullname: "Tomb Raider I-III Remastered Starring Lara Croft", collection: "Tomb Raider",
@@ -1535,7 +1655,7 @@ var GAMES = [
 		tags: ["Action", "2D", "Casual", "Protagoniste féminine", "Superbe bande-son", "Nudité", "Difficile", "Roguelike", "Roguelite", "Hack and Slash", "Metroidvania", "Souls-like", "Perma Death"]
 	}
 }, {
-	name: "Train Valley",
+	name: "Train Valley", collection: "Train Valley",
 	onDisk: true, size: 0.581,
 	date : "2026-04-16",
 	gog: {
@@ -1543,11 +1663,25 @@ var GAMES = [
 		tags: ["Atmosphère", "Casse-tête", "Simulation", "Casual", "Gestion", "Bac-à-sable", "Temps réél", "Gestion des resources", "Familial", "Relaxant", "Construction", "Gestion", "Construction de villes", "Trains"]
 	}
 }, {
+	name: "Train Valley 2", collection: "Train Valley",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation", "Construction", "Gestion"],
+		tags: ["Casse-tête", "Simulation", "Casual", "Gestion", "Gestion des resources", "Relaxant", "Vue du dessus", "Construction, Gestion", "Editeur de niveaux", "Trains", "Transport"]
+	}
+}, {
 	name: "Treasure Adventure Game",
 	onDisk: true, size: 0.116,
 	gog: {
 		genres: ["Plateforme", "Aventure", "Jeu de rôle"],
 		tags: ["Aventure", "Indé", "Fantasy", "Jeu de rôle", "2D", "Classique", "Plateformes", "Familial", "Cartoonesque", "Casse-tête et plateformes", "Metroidvania"]
+	}
+}, {
+	name: "Turnip Boy Commits Tax Evasion",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Aventure","Réflexion"],
+		tags: ["Aventure", "Action", "Casse-tête", "Vue du dessus", "Logique", "Cartoonesque", "Cozy", "Crime"]
 	}
 }, {
 	name: "Two Point Hospital",
@@ -1609,6 +1743,37 @@ var GAMES = [
 		genres: ["Action"]
 	}
 }, {
+	name: "Vampyr",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Horreur","Jeu de rôle"],
+		tags: ["Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Sombre", "Superbe bande-son", "Horreur", "Choix multiples", "Troisième personne", "Monde Ouvert", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Infiltration", "Souls-like", "Vampire"]
+	}
+}, {
+	name: "Void Bastards",
+	onDisk: false,
+}, {
+	name: "Warhammer 40,000: Gladius - Relics of War",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie", "Tour par tour", "SF"],
+		tags: ["Stratégie", "Science fiction", "Tour par tour", "Science", "Superbe bande-son", "Tactique", "Multijoueur", "Guerre", "Militaire", "Stratégie complexe", "4X"]
+	}
+}, {
+	name: "Warhammer 40,000: Mechanicus",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie", "Tour par tour", "SF"],
+		tags: ["Histoire Riche", "Atmosphère", "Stratégie", "Science fiction", "Tour par tour", "Science", "Tactique", "Difficile", "Dungeon Crawler", "Robots", "Jeu de plateau"]
+	}
+}, {
+	name: "Warpips",
+	onDisk: false,
+	gog: {
+		genres: ["Stratégie", "Temps réel", "Tactique"],
+		tags: ["Stratégie", "Tactique", "Temps réél"]
+	}
+}, {
 	name: "Warsow",
 	onDisk: true, size: 0.929,
 	sources: ["GP"],
@@ -1623,6 +1788,41 @@ var GAMES = [
 	gog: {
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Exploration", "Protagoniste féminine", "Troisième personne", "Plateformes", "Relaxant", "Cartoonesque", "Nature"]
+	}
+}, {
+	name: "What Remains of Edith Finch",
+	onDisk: false,
+	gog: {
+		genres: ["FPP", "Aventure", "Narratif"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Horreur", "Mystère", "Roman graphique", "Narratif", "Horreur psychologique", "Simulation de marche", "Lovecraft", "Cozy", "Court"]
+	}
+}, {
+	name: "While True: learn()",
+	onDisk: false,
+	gog: {
+		genres: ["Simulation","Réflexion","Programmation"],
+		tags: ["Indé", "2D", "Science fiction", "Casse-tête", "Simulation", "Science", "Bac-à-sable", "Logique", "Construction", "Enquête", "Chats", "Éducation", "Sous terre", "Programmation"]
+	}
+}, {
+	name: "Wildcat Gun Machine",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Temps réel","Shoot 'em Up"],
+		tags: ["Action", "Indé", "Temps réél", "Shoot'EmUp"]
+	}
+}, {
+	name: "Wolfenstein: The New Order",
+	onDisk: false,
+	gog: {
+		genres: ["Tir","FPP","SF"],
+		tags: ["Science fiction","Classique", "Science", "Première personne", "Gore", "FPS", "Tir"]
+	}
+}, {
+	name: "Wonder Boy: The Dragon's Trap",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Aventure","Plateforme"],
+		tags: ["Aventure", "Action", "Indé", "Fantasy", "2D", "Exploration", "Superbe bande-son", "Plateformes", "Difficile", "Familial", "Metroidvania", "Remake"]
 	}
 }, {
 	name: "World of Goo",
