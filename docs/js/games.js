@@ -100,7 +100,8 @@ var skel = {
 var GAMES = [
 {
 	name: "112 Operator",
-	onDisk: false,
+	onDisk: false, size: 1.6,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Strategy", "Indie", "Puzzle","Simulator"],
 		tags: []
@@ -116,7 +117,8 @@ var GAMES = [
 	}
 }, {
 	name: "A Game of Thrones: The Board Game",
-	onDisk: false,
+	onDisk: false, size: 0.147,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Stratégie", "Fantasy", "Jeu de cartes"],
 		tags: ["Fantasy", "Stratégie", "Jeu de cartes"]
@@ -132,7 +134,8 @@ var GAMES = [
 	}
 }, {
 	name: "Adios",
-	onDisk: false,
+	onDisk: true, size: 2.2,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Simulation", "FPP", "Narratif"],
 		tags: ["Indé", "Histoire Riche", "Simulation", "Première personne", "Sombre", "Mystère", "FPS", "Narratif", "Émotionnel", "Simulation de marche", "Thriller", "Crime", "Philosophique"]
@@ -162,7 +165,8 @@ var GAMES = [
 	}
 }, {
 	name: "Amnesia: Rebirth",
-	onDisk: false,
+	onDisk: true, size: 18.3,
+	date: "2026-08-14",
 	gog: {
 		genres: ["FPP", "Horreur", "Aventure"],
 		tags: ["Aventure", "Indé", "Première personne", "Sombre", "Horreur", "FPS"]
@@ -176,14 +180,15 @@ var GAMES = [
 	}
 }, {
 	name: "Ancient Enemy",
-	onDisk: false,
+	onDisk: true, size: 0.127,
+	date: "2026-08-14",
 	gog: {
 		genres: ["Jeu de rôle", "Fantasy", "Jeu de cartes"],
 		tags: ["Indé", "Fantasy", "Jeu de rôle", "Classique", "Tour par tour", "Sombre", "Historique", "Magie", "Relaxant", "Post-apocalyptique", "cRPG", "Jeu de cartes"]
 	}
 }, {
 	name: "Axiom Verge",
-	onDisk: false,
+	onDisk: true, size: 0.103,
 }, {
 	name: "Baldur's Gate", fullname: "Baldur's Gate: Enhanced Edition",
 	onDisk: true, size: 5.8,
@@ -194,7 +199,7 @@ var GAMES = [
 		tags: ["Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Temps réél", "Isométrique", "Magie", "cRPG", "Remake"]
 	}
 }, {
-	name: "Batman: Arkham Knight", collection: "Batman Arkham",
+	name: "Batman: Arkham Knight",
 	onDisk: true, size: 53.3,
 	date : "2026-08-09",
 	gog: {
@@ -203,14 +208,16 @@ var GAMES = [
 	}
 }, {
 	name: "Beacon Pines",
-	onDisk: false,
+	onDisk: true, size: 0.972,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Jeu de rôle", "Aventure", "Narratif"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Exploration", "Casual", "Horreur", "Choix multiples", "Amusant", "Mystère", "Fins multiples", "Relaxant", "Cartoonesque", "Narratif", "Émotionnel", "Cozy"]
 	}
 }, {
 	name: "Bear and Breakfast",
-	onDisk: false,
+	onDisk: true, size: 0.905,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Simulation ", "Construction", "Gestion"],
 		tags: ["Simulation", "Casual", "Amusant", "Gestion", "Gestion des resources", "Familial", "Relaxant", "Construction", "Cartoonesque", "Crafting", "Gestion", "Nature", "Simulation de vie"]
@@ -240,7 +247,8 @@ var GAMES = [
 	}
 }, {
 	name: "Beyond Blue",
-	onDisk: false,
+	onDisk: true, size: 7,
+	date : "2026-08-14"
 }, {
 	name: "BioShock", fullname: "BioShock & BioShock Remastered", size: 20.3,
 	onDisk: true,
@@ -403,7 +411,7 @@ var GAMES = [
 		tags: ["Aventure", "Action", "Atmosphère", "Casual", "Superbe bande-son", "Graphismes Pixel", "Violent", "Gore", "Roguelike", "Roguelite", "Génération procédurale", "Coop locale"]
 	}
 }, {
-	name: "Control", fullname: "Control Ultimate Edition",
+	name: "Control", fullname: "Control Ultimate Edition", collection: "Remedy",
 	onDisk: true, size: 28.4,
 	sources: ["GP"],
 	date : "2026-04-14",
