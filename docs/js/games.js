@@ -307,7 +307,8 @@ var GAMES = [
 	}
 }, {
 	name: "Bridge Constructor: The Walking Dead",
-	onDisk: false,
+	onDisk: true, size: 0.143,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Simulation", "Construction", "Gestion"],
 		tags: ["Indé", "Casse-tête", "Simulation", "Casual", "Bac-à-sable", "Construction", "Crafting", "Gestion", "Post-apocalyptique", "Physique", "Zombies"]
@@ -322,14 +323,16 @@ var GAMES = [
 	}
 }, {
 	name: "Brotato",
-	onDisk: false,
+	onDisk: true, size: 0.148,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Action", "Roguelike", "Survie"],
 		tags: ["2D", "Science fiction", "Casual", "Multijoueur", "Survie", "Roguelike", "Roguelite", "Coop locale", "Arcade", "Bullet Hell"]
 	}
 }, {
 	name: "Brothers: A Tale of Two Sons",
-	onDisk: false,
+	onDisk: true, size: 1.2,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Action", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Classique", "Casse-tête", "Casual", "Superbe bande-son", "Troisième personne", "Plateformes", "Multijoueur", "Émotionnel", "Coop locale", "Simulation de marche", "Cozy", "Court"]
@@ -361,7 +364,8 @@ var GAMES = [
 	onDisk: false,
 }, {
 	name: "Cave Story+",
-	onDisk: false,
+	onDisk: true, size: 0.085,
+	date : "2026-08-18",
 	gog: {
 		genres: ["Action", "Aventure", "Plateforme"],
 		tags: ["Aventure", "Action", "Classique", "Science", "Plateformes", "Metroidvania", "Remake"]
@@ -547,8 +551,8 @@ var GAMES = [
 	}
 }, {
 	name: "Dragon Age: Origins", fullname: "Dragon Age: Origins - Ultimate Edition",
-	onDisk: false, size: 0,
-	date : "2026-08-15",
+	onDisk: true, size: 23.5,
+	date : "2026-08-14",
 	gog: {
 		genres: ["Jeu de rôle","Aventure","Fantasy"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Jeu de rôle", "Classique", "Protagoniste féminine", "Choix multiples", "Tactique", "Monde Ouvert", "Mature", "Fins multiples", "LGBTQ+", "Caresse de chien"]
