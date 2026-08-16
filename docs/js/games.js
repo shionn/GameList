@@ -354,7 +354,8 @@ var GAMES = [
 	}
 }, {
 	name: "Call of the Sea",
-	onDisk: false,
+	onDisk: true, size: 11.6,
+	date: "2026-08-16",
 	gog: {
 		genres: ["Aventure", "Réflexion", "Mystère"],
 		tags: ["Aventure", "Indé", "Casse-tête", "Première personne", "Protagoniste féminine", "Mystère", "Historique", "Logique", "Émotionnel", "Enquête", "Surréaliste", "Simulation de marche", "Lovecraft"]
@@ -461,7 +462,8 @@ var GAMES = [
 	onDisk: false
 }, {
 	name: "Dark Deity",
-	onDisk: false,
+	onDisk: true, size: 0.827,
+	size: "2026-08-16",
 	gog: {
 		name: "Dark Deity: Complete Edition",
 		genres: ["Stratégie - Aventure - JRPG"],
@@ -508,14 +510,16 @@ var GAMES = [
 	}
 }, {
 	name: "Darkwood",
-	onDisk: false,
+	onDisk: true, size: 2.2,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Action", "Horreur", "Survie"],
 		tags: ["Action", "Atmosphère", "Exploration", "Sombre", "Horreur", "Monde Ouvert", "Gestion des resources", "Gore", "Roguelike", "Vue du dessus", "Crafting", "Horreur et survie", "Horreur psychologique", "Lovecraft"]
 	}
 }, {
 	name: "DARQ",
-	onDisk: false,
+	onDisk: true, size: 1.4,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Action","Aventure","Horreur"],
 		tags: ["Aventure", "Action", "Atmosphère", "Casse-tête", "Sombre", "Horreur", "Troisième personne", "Mystère", "Infiltration", "Horreur et survie", "Horreur psychologique", "Surréaliste", "Casse-tête et plateformes", "Physique", "Thriller", "Steampunk"]
@@ -577,7 +581,8 @@ var GAMES = [
 	}
 }, {
 	name: "Duskers",
-	onDisk: false,
+	onDisk: true,size: 0.093,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Stratégie","SF","Survie"],
 		tags: ["Indé", "Atmosphère", "Stratégie", "2D", "Science fiction", "Exploration", "Classique", "Casse-tête", "Science", "Horreur", "Tactique", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Génération procédurale", "Taper du texte"]
@@ -591,14 +596,16 @@ var GAMES = [
 	}
 }, {
 	name: "Enter the Gungeon",
-	onDisk: false,
+	onDisk: true, size: 0.227,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Tir","Action","SF"],
 		tags: ["Action", "Indé", "2D", "Science fiction", "Classique", "Graphismes Pixel", "Amusant", "Difficile", "Roguelike", "Vue du dessus", "Tir", "Roguelite", "Coop locale", "Dungeon Crawler", "Bullet Hell", "Tir à deux joysticks"]
 	}
 }, {
 	name: "Epistory - Typing Chronicles",
-	onDisk: false,
+	onDisk: true, size: 0.682,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Action","Aventure","Fantasy"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Protagoniste féminine", "Superbe bande-son", "Monde Ouvert", "Magie", "Isométrique", "Vue du dessus", "Éducation", "Taper du texte"]
@@ -611,8 +618,9 @@ var GAMES = [
 		tags: ["Action", "Science fiction", "Classique", "Exploration", "Simulation", "Science", "Première personne", "Superbe bande-son", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Vol", "Réalité virtuelle"]
 	}
 }, {
-	name: "Evoland Legendary Edition",
-	onDisk: false,
+	name: "Evoland", fullname: "Evoland Legendary Edition",
+	onDisk: true, size: 0.522,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Fantasy","Aventure","Jeu de rôle"],
 		tags: ["Aventure", "Indé", "Fantasy", "Jeu de rôle", "2D", "Exploration", "Casual", "Graphismes Pixel", "Rétro", "cRPG"]
@@ -1167,7 +1175,8 @@ var GAMES = [
 	}
 }, {
 	name: "Rise of Industry",
-	onDisk: false,
+	onDisk: true, size: 0.866,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Stratégie","Simulation","Gestion"],
 		tags: ["Stratégie", "Simulation", "Gestion", "Bac-à-sable", "Gestion des resources", "Isométrique", "Construction de base", "Gestion", "Construction de villes", "Commerce"]
@@ -1422,7 +1431,8 @@ var GAMES = [
 	}
 }, {
 	name: "The Dungeon of Naheulbeuk: The Amulet of Chaos",
-	onDisk: false,
+	onDisk: true, size: 9.1,
+	date: "2026-08-16",
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
 		tags: ["Fantasy", "Jeu de rôle", "Tour par tour", "Tactique", "Troisième personne", "Contenu à caractère sexuel", "Dungeon Crawler"]
@@ -1455,13 +1465,6 @@ var GAMES = [
 		name: "Elder Scrolls IV: Oblivion - Game of the Year Edition Deluxe The",
 		genres: ["Jeu de rôle", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Fantasy", "Jeu de rôle", "Classique"]
-	}
-}, {
-	name: "The Evil Within",
-	onDisk: false,
-	gog: {
-		genres: ["Action,", "Horreur", "Survie"],
-		tags: ["Action", "Histoire Riche", "Atmosphère", "Classique", "Sombre", "Horreur", "Troisième personne", "Survie", "Violent", "Gore", "Infiltration", "Horreur et survie", "Horreur psychologique"]
 	}
 }, {
 	name: "The Falconeer",
@@ -1563,6 +1566,7 @@ var GAMES = [
 	}
 }, {
 	name: "Theme Park",
+	onDisk: false,
 	gog: {
 		genres: ["Simulation", "Construction", "Gestion"],
 		tags: ["Classique", "Simulation", "Construction", "Gestion"]
