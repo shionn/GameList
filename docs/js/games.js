@@ -712,7 +712,8 @@ var GAMES = [
 	}
 }, {
 	name: "Geneforge 1 - Mutagen",
-	onDisk: false,
+	onDisk: true, size: 0.152,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
 		tags: ["Fantasy", "Histoire Riche", "Jeu de rôle", "Exploration", "Tour par tour", "Choix multiples", "Fins multiples", "Isométrique", "Dungeon Crawler", "cRPG", "Remake"]
@@ -781,14 +782,16 @@ var GAMES = [
 	}
 }, {
 	name: "Guild of Dungeoneering",
-	onDisk: false,
+	onDisk: true, size: 0.508,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
 		tags: ["Fantasy", "Jeu de rôle", "2D", "Tour par tour", "Superbe bande-son", "Amusant", "Difficile", "Familial", "Roguelike", "Roguelite", "Dungeon Crawler", "Jeu de cartes", "Deckbuilding"]
 	}
 }, {
 	name: "Hell is Other Demons",
-	onDisk: false,
+	onDisk: true, size: 0.149,
+	date : "2026-08-16",
 }, {
 	name: "Hell Pie",
 	onDisk: true, size: 4.3,
@@ -818,7 +821,8 @@ var GAMES = [
 	}
 }, {
 	name: "Horizon Chase Turbo",
-	onDisk: false,
+	onDisk: true, size: 0.552,
+	date : "2026-08-16",
 }, {
 	name: "In Sound Mind",
 	onDisk: false,
@@ -835,7 +839,8 @@ var GAMES = [
 	}
 }, {
 	name: "Ironcast",
-	onDisk: false,
+	onDisk: true, size: 0.278,
+	date: "2026-08-16",
 }, {
 	name: "Jotun", fullname: "Jotun: Valhalla Edition",
 	onDisk: false,
@@ -854,7 +859,8 @@ var GAMES = [
 	}
 }, {
 	name: "Kingdom: New Lands",
-	onDisk: false,
+	onDisk: false, size: 0.298,
+	date: "2026-08-16",
 	gog: {
 		genres: ["Stratégie","Simulation","Fantasy"],
 		tags: ["Indé", "Fantasy", "Atmosphère", "Stratégie", "2D", "Exploration", "Classique", "Simulation", "Graphismes Pixel", "Superbe bande-son", "Monde Ouvert", "Survie", "Roguelike", "Construction", "Médieval", "Construction de base", "Tower Defense"]
@@ -917,7 +923,8 @@ var GAMES = [
 	}
 }, {
 	name: "Limbo",
-	onDisk: false,
+	onDisk: true, size: 0.162,
+	date : "2026-08-18",
 }, {
 	name: "Lure of the Tempress",
 	onDisk: true, size: 0.070,
@@ -952,7 +959,8 @@ var GAMES = [
 	}
 }, {
 	name: "Minit",
-	onDisk: false,
+	onDisk: true, size: 0.101,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Action","Aventure","Mystère"],
 		tags: ["Aventure", "Action", "2D", "Exploration", "Casse-tête", "Graphismes Pixel", "Superbe bande-son", "Amusant", "Mystère", "Vue du dessus", "Metroidvania", "Court"]
@@ -996,7 +1004,8 @@ var GAMES = [
 	date : "2026-08-09",
 }, {
 	name: "Murder by Numbers",
-	onDisk: false,
+	onDisk: false, size: 0.511,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Aventure","Mystère","Roman visuel"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "2D", "Casse-tête", "Protagoniste féminine", "Mystère", "Roman graphique", "Logique", "Cartoonesque", "Enquête", "LGBTQ+", "Crime"]
@@ -1029,7 +1038,8 @@ var GAMES = [
 	date : "2026-08-09",
 }, {
 	name: "Out of Line",
-	onDisk: false,
+	onDisk: true, size: 0.336,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Plateforme","Aventure","Réflexion"],
 		tags: ["Aventure", "Indé", "2D", "Casse-tête", "Plateformes", "Logique", "Casse-tête et plateformes"]
@@ -1183,7 +1193,8 @@ var GAMES = [
 	}
 }, {
 	name: "Rising Hell",
-	onDisk: false,
+	onDisk: true, size: 0.148,
+	date : "2026-08-16",
 	gog: {
 		genres: ["Action","Roguelike"],
 		tags: ["Action", "Fantasy", "Plateformes", "Gore", "Roguelike", "Roguelite", "Génération procédurale", "Bullet Hell", "Beat 'em up"]
@@ -1193,7 +1204,8 @@ var GAMES = [
 	onDisk: false,
 }, {
 	name: "Rogue Legacy",
-	onDisk: false,
+	onDisk: true, size: 0.154,
+	date: "2026-08-16",
 	gog: {
 		genres: ["Action","Plateforme","Jeu de rôle"],
 		tags: ["Action", "Indé", "Fantasy", "Jeu de rôle", "2D", "Exploration", "Classique", "Graphismes Pixel", "Plateformes", "Difficile", "Roguelike", "Médieval", "Roguelite", "Metroidvania"]
@@ -1338,7 +1350,8 @@ var GAMES = [
 	}
 }, {
 	name: "Snakebird Complete",
-	onDisk: false,
+	onDisk: true, size: 0.090,
+	date : "2026-08-16",
 }, {
 	name: "SOMA",
 	onDisk: true, size: 24.5,
@@ -1477,7 +1490,8 @@ var GAMES = [
 	}
 }, {
 	name: "The Forest Quartet",
-	onDisk: false,
+	onDisk: true, size: 0.862,
+	date : "2026-08-16",
 }, {
 	name: "The Gunk",
 	onDisk: true, size: 6.6,
@@ -1488,10 +1502,19 @@ var GAMES = [
 	}
 }, {
 	name: "The Lion's Song",
-	onDisk: false,
+	onDisk: true, size: 0.358,
+	date: "2026-08-16",
 	gog: {
 		genres: ["Aventure","Point-and-click","Narratif"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Casual", "Protagoniste féminine", "Graphismes Pixel", "Superbe bande-son", "Choix multiples", "Roman graphique", "Point&Click", "Narratif"]
+	}
+}, {
+	name: "The Operator",
+	onDisk: true, size: 0.730,
+	date: "2026-08-16",
+	gog: {
+		genres: ["Simulation","Réflexion","Narratif"],
+		tags: ["Histoire Riche", "Casse-tête", "Simulation", "Choix multiples", "Mystère", "Roman graphique", "Narratif", "Enquête", "Vous êtes le héro", "Thriller", "Crime", "FMV"]
 	}
 }, {
 	name: "The Smurfs 2", fullname: "The Smurfs 2 - The Prisoner of the Green Stone",
@@ -1504,17 +1527,11 @@ var GAMES = [
 	}
 }, {
 	name: "The Spirit and the Mouse",
-	onDisk: false,
+	onDisk: true, size: 0.304,
+	date: "2026-08-16",
 	gog: {
 		genres: ["Plateforme","Aventure","Réflexion"],
 		tags: ["Aventure", "Casse-tête", "Plateformes", "Casse-tête et plateformes"]
-	}
-}, {
-	name: "The Operator",
-	onDisk: false,
-	gog: {
-		genres: ["Simulation","Réflexion","Narratif"],
-		tags: ["Histoire Riche", "Casse-tête", "Simulation", "Choix multiples", "Mystère", "Roman graphique", "Narratif", "Enquête", "Vous êtes le héro", "Thriller", "Crime", "FMV"]
 	}
 }, {
 	name: "The Talos Principle", fullname: "The Talos Principle: Gold Edition",
@@ -1580,7 +1597,8 @@ var GAMES = [
 	}
 }, {
 	name: "ToeJam & Earl: Back in the Groove!",
-	onDisk: false,
+	onDisk: false, size: 0.720,
+	date: "2026-08-16",
 }, {
 	name: "TOEM",
 	onDisk: false,
