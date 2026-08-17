@@ -97,10 +97,23 @@ var skel = {
 	}
 };
 
+/* TODO /  TOTEST
+Hiveswap Friendsim (GoG)
+Pyramids and Aliens: Escape Room (GoG)
+Right and Down (GoG)
+Zoria: Age of Shattering (GOG)
+Mystic Academy: Escape Room (GoG)
+Poly Vita (legacygames)
+Escape Academy (EGS)
+FRAMED Collection (GoG)
+Space Grunts 2 (GoG)
+XCOM: Chimera Squad (GoG)
+*/
+
 var GAMES = [
 {
 	name: "112 Operator",
-	onDisk: false, size: 1.6,
+	onDisk: true, size: 1.6,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Strategy", "Indie", "Puzzle","Simulator"],
@@ -1094,7 +1107,8 @@ var GAMES = [
 	}
 },  {
 	name: "Pine",
-	onDisk: false,
+	onDisk: true, size : 2.2,
+	date: "2026-08-17",
 	gog: {
 		genres: ["Action","Aventure","Monde ouvert"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Superbe bande-son", "Troisième personne", "Monde Ouvert", "Bac-à-sable", "Vous êtes le héro", "Nature"]
@@ -1162,7 +1176,8 @@ var GAMES = [
 	}
 }, {
 	name: "Relicta",
-	onDisk: false,
+	onDisk: true, size: 13.4,
+	date: "2026-08-17",
 	gog: {
 		genres: ["Action", "Aventure", "Réflexion"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Casse-tête", "Casual", "Science", "Première personne", "Protagoniste féminine", "Logique", "Casse-tête et plateformes", "Physique"]
@@ -1601,7 +1616,8 @@ var GAMES = [
 	date: "2026-08-16",
 }, {
 	name: "TOEM",
-	onDisk: false,
+	onDisk: true, size: 0.240,
+	date: "2026-08-17",
 	gog: {
 		genres: ["Aventure","Réflexion","Exploration"],
 		tags: ["Aventure", "Exploration", "Casse-tête", "Logique"]
@@ -1698,7 +1714,8 @@ var GAMES = [
 	}
 }, {
 	name: "Train Valley 2", collection: "Train Valley",
-	onDisk: false,
+	onDisk: true, size: 0.406,
+	date : "2026-08-17",
 	gog: {
 		genres: ["Simulation", "Construction", "Gestion"],
 		tags: ["Casse-tête", "Simulation", "Casual", "Gestion", "Gestion des resources", "Relaxant", "Vue du dessus", "Construction, Gestion", "Editeur de niveaux", "Trains", "Transport"]
@@ -1712,7 +1729,8 @@ var GAMES = [
 	}
 }, {
 	name: "Turnip Boy Commits Tax Evasion",
-	onDisk: false,
+	onDisk: true, size: 0.096,
+	date : "2026-08-17",
 	gog: {
 		genres: ["Action","Aventure","Réflexion"],
 		tags: ["Aventure", "Action", "Casse-tête", "Vue du dessus", "Logique", "Cartoonesque", "Cozy", "Crime"]
@@ -1802,7 +1820,8 @@ var GAMES = [
 	}
 }, {
 	name: "Warpips",
-	onDisk: false,
+	onDisk: true, size: 0.345,
+	date: "2026-08-17",
 	gog: {
 		genres: ["Stratégie", "Temps réel", "Tactique"],
 		tags: ["Stratégie", "Tactique", "Temps réél"]
@@ -1832,14 +1851,16 @@ var GAMES = [
 	}
 }, {
 	name: "While True: learn()",
-	onDisk: false,
+	onDisk: true, size: 0.147,
+	date: "2026-08-17",
 	gog: {
 		genres: ["Simulation","Réflexion","Programmation"],
 		tags: ["Indé", "2D", "Science fiction", "Casse-tête", "Simulation", "Science", "Bac-à-sable", "Logique", "Construction", "Enquête", "Chats", "Éducation", "Sous terre", "Programmation"]
 	}
 }, {
 	name: "Wildcat Gun Machine",
-	onDisk: false,
+	onDisk: true, size: 0.695,
+	date: "2026-08-17",
 	gog: {
 		genres: ["Action","Temps réel","Shoot 'em Up"],
 		tags: ["Action", "Indé", "Temps réél", "Shoot'EmUp"]
@@ -1853,7 +1874,8 @@ var GAMES = [
 	}
 }, {
 	name: "Wonder Boy: The Dragon's Trap",
-	onDisk: false,
+	onDisk: true, size: 0.955,
+	date: "2026-08-17",
 	gog: {
 		genres: ["Action","Aventure","Plateforme"],
 		tags: ["Aventure", "Action", "Indé", "Fantasy", "2D", "Exploration", "Superbe bande-son", "Plateformes", "Difficile", "Familial", "Metroidvania", "Remake"]
