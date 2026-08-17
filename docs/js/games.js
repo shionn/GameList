@@ -171,7 +171,7 @@ var GAMES = [
 	}
 }, {
 	name: "Alan Wake 2", collection: "Remedy",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 	gog: {
 		genres: ["Adventure", "Shooter"],
 		tags: ["Action", "Horror", "Thriller", "Survival", "Mystery"]
@@ -260,7 +260,7 @@ var GAMES = [
 	}
 }, {
 	name: "Beyond Blue",
-	onDisk: true, size: 7,
+	onDisk: true, size: 7.0,
 	date : "2026-08-14"
 }, {
 	name: "BioShock", fullname: "BioShock & BioShock Remastered", size: 20.3,
@@ -375,7 +375,7 @@ var GAMES = [
 	}
 }, {
 	name: "Car Mechanic Simulator 2018",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 }, {
 	name: "Cave Story+",
 	onDisk: true, size: 0.085,
@@ -405,7 +405,8 @@ var GAMES = [
 	onDisk: false,
 }, {
 	name: "City of Gangsters",
-	onDisk: false,
+	onDisk: true, size: 0.340,
+	date : "2026-08-17",
 	gog: {
 		genres: ["Simulation", "Stratégie", "Gestion"],
 		tags: ["Stratégie", "Tour par tour", "Simulation", "Gestion", "Bac-à-sable", "Historique", "Gestion des resources", "Vue du dessus", "Gestion", "Génération procédurale", "Stratégie complexe", "Politique", "Crime", "Noir"]
@@ -476,7 +477,7 @@ var GAMES = [
 }, {
 	name: "Dark Deity",
 	onDisk: true, size: 0.827,
-	size: "2026-08-16",
+	date: "2026-08-16",
 	gog: {
 		name: "Dark Deity: Complete Edition",
 		genres: ["Stratégie - Aventure - JRPG"],
@@ -549,6 +550,14 @@ var GAMES = [
 	name: "Deponia: The Complete Journey",
 	onDisk: false
 }, {
+	name: "Death's Gambit: Afterlife",
+	onDisk: true, size: 0.571,
+	date : "2026-08-17",
+	gog: {
+		genres: ["Action", "Aventure", "Fantasy"],
+		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Graphismes Pixel", "Superbe bande-son", "Plateformes", "Difficile", "Metroidvania", "Souls-like"]
+	}
+}, {
 	name: "Deus Ex: Human Revolution", fullname: "Deus Ex: Human Revolution - Director's Cut",
 	onDisk: true, size: 16.5,
 	sources: ["GP"],
@@ -602,7 +611,7 @@ var GAMES = [
 	}
 }, {
 	name: "Encased", fullname: "Encased: A Sci-Fi Post-Apocalyptic RPG",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Exploration", "Tour par tour", "Science", "Choix multiples", "Tactique", "Monde Ouvert", "Survie", "Fins multiples", "Isométrique", "Post-apocalyptique", "cRPG"]
@@ -624,6 +633,9 @@ var GAMES = [
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Protagoniste féminine", "Superbe bande-son", "Monde Ouvert", "Magie", "Isométrique", "Vue du dessus", "Éducation", "Taper du texte"]
 	}
 }, {
+	name: "Escape Academy",
+	onDisk: false, size: 0.0,
+},{
 	name: "Everspace",
 	onDisk: true, size: 3.7,
 	gog: {
@@ -658,7 +670,7 @@ var GAMES = [
 	}
 }, {
 	name: "Fallout 3", collection: "Fallout", fullname:"Fallout 3: Game of the Year Edition",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 	gog: {
 		genres: ["Jeu de rôle","FPP","Monde ouvert"],
 		tags: ["Histoire Riche", "Jeu de rôle", "Science fiction", "Classique", "Science", "Première personne", "Troisième personne", "Monde Ouvert", "Bac-à-sable", "FPS", "Post-apocalyptique"]
@@ -681,7 +693,7 @@ var GAMES = [
 	}
 }, {
 	name: "F.I.S.T.: Forged in Shadow Torch",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 }, {
 	name: "First Racer",
 	onDisk: true, size: 0.462,
@@ -700,7 +712,7 @@ var GAMES = [
 	}
 }, {
 	name: "Frostpunk",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 	gog: {
 		genres: ["Stratégie","Simulation","Survie"],
 		tags: ["Indé", "Atmosphère", "Stratégie", "Simulation", "Sombre", "Superbe bande-son", "Choix multiples", "Gestion", "Survie", "Gestion des resources", "Difficile", "Construction de base", "Post-apocalyptique", "Construction de villes", "Horreur et survie", "Steampunk"]
@@ -769,7 +781,7 @@ var GAMES = [
 	}
 }, {
 	name: "Golden Light",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 }, {
 	name: "Grandia 2", fullname: "Grandia II Anniversary Edition",
 	onDisk: true, size: 2.0,
@@ -838,14 +850,15 @@ var GAMES = [
 	date : "2026-08-16",
 }, {
 	name: "In Sound Mind",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 	gog: {
 		genres: ["Horreur", "Aventure" ,"Survie"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Première personne", "Sombre", "Horreur", "Plateformes", "Survie", "FPS", "Horreur psychologique", "Casse-tête et plateformes", "Objets cachés", "Chats"]
 	}
 }, {
 	name: "Iratus: Lord of the Dead",
-	onDisk: false,
+	onDisk: true, size: 1.7,
+	date: "2026-08-17",
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "Fantasy"],
 		tags: ["Indé", "Fantasy", "Jeu de rôle", "2D", "Tour par tour", "Sombre", "Violent", "Difficile", "Gore", "Roguelike", "Roguelite", "Dungeon Crawler", "Lovecraft"]
@@ -856,7 +869,7 @@ var GAMES = [
 	date: "2026-08-16",
 }, {
 	name: "Jotun", fullname: "Jotun: Valhalla Edition",
-	onDisk: false,
+	onDisk: false, size: 0.0,
 	gog: {
 		genres: ["Jeu de rôle","Action","Fantasy"],
 		tags: ["Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "2D", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Difficile", "Isométrique", "Souls-like", "Mythologie", "Vikings"]
@@ -1025,7 +1038,8 @@ var GAMES = [
 	}
 }, {
 	name: "Never Alone",
-	onDisk: false,
+	onDisk: true, size: 1.1,
+	date : "2026-08-17",
 	gog: {
 		name: "Never Alone Arctic Collection",
 		genres: ["Plateforme","Aventure","Réflexion"],
@@ -1082,7 +1096,8 @@ var GAMES = [
 	}
 }, {
 	name: "Paradigm",
-	onDisk: false,
+	onDisk: false, size: 1.5,
+	date : "2026-08-17",
 	gog: {
 		genres: ["SF","Aventure","Réflexion"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Science fiction", "Casse-tête", "Science", "Superbe bande-son", "Amusant", "Point&Click", "Logique", "Surréaliste"]
@@ -1458,6 +1473,14 @@ var GAMES = [
 		tags: ["Aventure", "Indé", "Fantasy", "2D", "Casse-tête", "Protagoniste féminine", "Mystère", "Plateformes", "Vue du dessus", "Logique", "Enquête", "Casse-tête et plateformes"]
 	}
 }, {
+	name: "Terraforming Mars",
+	onDisk: true, size: 0.180,
+	date: "2026-08-17",
+	gog: {
+		genres: ["Stratégie", "Simulation", "SF"],
+		tags: ["Stratégie", "Science fiction", "Tour par tour", "Simulation", "Science", "Gestion", "Multijoueur", "Espace", "Construction de base", "Stratégie complexe", "Multijoueur local", "Jeu de plateau", "Jeu de table"]
+	}
+}, {
 	name: "The Dungeon of Naheulbeuk: The Amulet of Chaos",
 	onDisk: true, size: 9.1,
 	date: "2026-08-16",
@@ -1602,6 +1625,14 @@ var GAMES = [
 	gog: {
 		genres: ["Simulation", "Construction", "Gestion"],
 		tags: ["Classique", "Simulation", "Construction", "Gestion"]
+	}
+}, {
+	name: "Thimbleweed Park",
+	onDisk: true, size: 0.913,
+	date: "2026-08-17",
+	gog: {
+		genres: ["Aventure","Point-and-click","Enquête-mystère"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Casse-tête", "Protagoniste féminine", "Graphismes Pixel", "Superbe bande-son", "Amusant", "Mystère", "Point&Click", "Enquête", "Enquête-mystère", "Remake"]
 	}
 }, {
 	name: "Timberborn",
