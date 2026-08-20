@@ -106,6 +106,7 @@ Mystic Academy: Escape Room (GoG)
 Poly Vita (legacygames)
 Escape Academy (EGS)
 FRAMED Collection (GoG)
+Space Grunts (GoG)
 Space Grunts 2 (GoG)
 XCOM: Chimera Squad (GoG)
 */
@@ -171,7 +172,8 @@ var GAMES = [
 	}
 }, {
 	name: "Alan Wake 2", collection: "Remedy",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 99.1,
+	date: "2026-08-20",
 	gog: {
 		genres: ["Adventure", "Shooter"],
 		tags: ["Action", "Horror", "Thriller", "Survival", "Mystery"]
@@ -198,6 +200,14 @@ var GAMES = [
 	gog: {
 		genres: ["Jeu de rôle", "Fantasy", "Jeu de cartes"],
 		tags: ["Indé", "Fantasy", "Jeu de rôle", "Classique", "Tour par tour", "Sombre", "Historique", "Magie", "Relaxant", "Post-apocalyptique", "cRPG", "Jeu de cartes"]
+	}
+}, {
+	name: "Aven Colony",
+	onDisk: true, size: 12.2,
+	date: "2026-08-20",
+	gog: {
+		genres: ["Strategy - Simulation - Sci-fi"],
+		tags: ["Indie", "Strategy", "Sci-fi", "Simulation", "Science", "Management", "Sandbox", "Survival", "Resource Management", "Space", "Base Building", "City builder"]
 	}
 }, {
 	name: "Axiom Verge",
