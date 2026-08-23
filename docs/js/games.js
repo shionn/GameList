@@ -206,7 +206,7 @@ var GAMES = [
 	onDisk: true, size: 12.2,
 	date: "2026-08-20",
 	gog: {
-		genres: ["Strategy - Simulation - Sci-fi"],
+		genres: ["Strategy","Simulation","Sci-fi"],
 		tags: ["Indie", "Strategy", "Sci-fi", "Simulation", "Science", "Management", "Sandbox", "Survival", "Resource Management", "Space", "Base Building", "City builder"]
 	}
 }, {
@@ -370,7 +370,8 @@ var GAMES = [
 	}
 }, {
 	name: "Bus Simulator 21", fullname: "Bus Simulator 21 Next Stop",
-	onDisk: false,
+	onDisk: true, size: 9.6,
+	date : "2026-08-21",
 	gog: {
 		genres: ["Simulation - Temps réel - Exploration"],
 		tags: ["Exploration", "Simulation", "Première personne", "Gestion", "Troisième personne", "Monde Ouvert", "Multijoueur", "Temps réél", "Familial", "Relaxant", "Réaliste", "Moderne"]
@@ -385,7 +386,7 @@ var GAMES = [
 	}
 }, {
 	name: "Car Mechanic Simulator 2018",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 6.0,
 }, {
 	name: "Cave Story+",
 	onDisk: true, size: 0.085,
@@ -405,14 +406,16 @@ var GAMES = [
 	}
 }, {
 	name: "Cities: Skylines",
-	onDisk: false,
+	onDisk: true, size: 10.0,
+	date : "2026-08-21",
 	gog: {
 		genres: ["Tir", "FPP", "Fantasy"],
 		tags: ["Fantasy", "Atmosphère", "Science fiction", "Classique", "Première personne", "Sombre", "Violent", "Gore", "FPS", "Rétro", "Tir"]
 	}
 }, {
 	name: "City of Brass",
-	onDisk: false,
+	onDisk: true, size: 2.5,
+	date : "2026-08-17",
 }, {
 	name: "City of Gangsters",
 	onDisk: true, size: 0.340,
@@ -483,7 +486,8 @@ var GAMES = [
 	}
 }, {
 	name: "Daemon x Machina",
-	onDisk: false
+	onDisk: true, size: 11.5,
+	date: "2026-08-23"
 }, {
 	name: "Dark Deity",
 	onDisk: true, size: 0.827,
@@ -558,7 +562,8 @@ var GAMES = [
 	}
 }, {
 	name: "Deponia: The Complete Journey",
-	onDisk: false
+	onDisk: true, size: 8.9,
+	date : "2026-08-23",
 }, {
 	name: "Death's Gambit: Afterlife",
 	onDisk: true, size: 0.571,
@@ -621,7 +626,8 @@ var GAMES = [
 	}
 }, {
 	name: "Encased", fullname: "Encased: A Sci-Fi Post-Apocalyptic RPG",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 13.5,
+	date : "2026-08-23",
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Exploration", "Tour par tour", "Science", "Choix multiples", "Tactique", "Monde Ouvert", "Survie", "Fins multiples", "Isométrique", "Post-apocalyptique", "cRPG"]
@@ -644,7 +650,8 @@ var GAMES = [
 	}
 }, {
 	name: "Escape Academy",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 4.4,
+	date : "2026-08-23",
 },{
 	name: "Everspace",
 	onDisk: true, size: 3.7,
@@ -1526,6 +1533,14 @@ var GAMES = [
 		name: "Elder Scrolls IV: Oblivion - Game of the Year Edition Deluxe The",
 		genres: ["Jeu de rôle", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Fantasy", "Jeu de rôle", "Classique"]
+	}
+}, {
+	name: "The Evil Within 2",
+	onDisk: true, size: 32.8,
+	date : "2026-08-23",
+	gog: {
+		genres: ["Action","Horror","Survival"],
+		tags: ["Action", "Story Rich", "Atmospheric", "Dark", "Horror", "Third Person", "Survival", "Violent", "Gore", "Stealth", "Survival Horror", "Psychological Horror"]
 	}
 }, {
 	name: "The Falconeer",
