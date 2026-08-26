@@ -109,6 +109,8 @@ FRAMED Collection (GoG)
 Space Grunts (GoG)
 Space Grunts 2 (GoG)
 XCOM: Chimera Squad (GoG)
+Royal Romances: Forbidden Magic. (legacygames)
+Spray Paint Simulator (Luna)
 */
 
 var GAMES = [
@@ -668,6 +670,9 @@ var GAMES = [
 		tags: ["Aventure", "Indé", "Fantasy", "Jeu de rôle", "2D", "Exploration", "Casual", "Graphismes Pixel", "Rétro", "cRPG"]
 	}
 }, {
+	name: "Eximius: Seize the Frontline",
+	onDisk: true, size: 18.4,
+},{
 	name: "Fallout", collection: "Fallout",
 	onDisk: true, size: 1.0,
 	sources: ["GP", "Redloved"],
@@ -687,7 +692,8 @@ var GAMES = [
 	}
 }, {
 	name: "Fallout 3", collection: "Fallout", fullname:"Fallout 3: Game of the Year Edition",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 13.9,
+	date : "2026-08-26",
 	gog: {
 		genres: ["Jeu de rôle","FPP","Monde ouvert"],
 		tags: ["Histoire Riche", "Jeu de rôle", "Science fiction", "Classique", "Science", "Première personne", "Troisième personne", "Monde Ouvert", "Bac-à-sable", "FPS", "Post-apocalyptique"]
@@ -704,17 +710,20 @@ var GAMES = [
 }, {
 	name: "Fantasy General",
 	onDisk: true, size: 0.412,
+	comment: "to update",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Fantasy"],
 		tags: ["Fantasy", "Stratégie", "2D", "Classique", "Tour par tour", "Magie", "Guerre"]
 	}
 }, {
 	name: "F.I.S.T.: Forged in Shadow Torch",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 21.3,
+	date : "2026-08-26",
 }, {
 	name: "First Racer",
 	onDisk: true, size: 0.462,
 	date : "2026-08-15",
+	comment: "to update",
 	gog: {
 		genres: ["Course", "Arcade", "Touring"],
 		tags: ["Indé", "Atmosphère", "Casual", "Troisième personne", "Familial", "Relaxant", "Rétro", "Arcade", "Multijoueur local", "Course", "Touring"]
@@ -726,6 +735,13 @@ var GAMES = [
 	gog: {
 		genres: ["Action", "SF", "Aventure"],
 		tags: ["Aventure", "Action", "Atmosphère", "2D", "Science fiction", "Science", "Plateformes", "Cyberpunk"]
+	}
+}, {
+	name: "FRAMED Collection",
+	onDisk: false, size: 0.0,
+	gog: {
+		genres: ["Aventure", "Point-and-click", "Réflexion"],
+		tags: ["Aventure", "Indé", "2D", "Casse-tête", "Casual", "Superbe bande-son", "Plateformes", "Point&Click", "Familial", "Noir"]
 	}
 }, {
 	name: "Frostpunk",
@@ -860,6 +876,13 @@ var GAMES = [
 	gog: {
 		genres: ["Action", "Roguelike", "Survie"],
 		tags: ["Action", "Indé", "2D", "Science fiction", "Casual", "Graphismes Pixel", "Survie", "Roguelike", "Vue du dessus", "Espace", "Tir", "Roguelite", "Combat", "Bullet Hell", "Tir à deux joysticks"]
+	}
+}, {
+	name: "Hiveswap Friendsim",
+	onDisk: false, size: 0,
+	gog: {
+		genres: ["Aventure","Comédie","Roman visuel"],
+		tags: ["Aventure", "Indé", "Histoire Riche", "Casual", "Première personne", "Amusant", "Roman graphique", "Violent", "Horreur psychologique", "LGBTQ+", "Dating Sim", "Comédie"]
 	}
 }, {
 	name: "Horizon Chase Turbo",
@@ -1047,11 +1070,18 @@ var GAMES = [
 	date : "2026-08-09",
 }, {
 	name: "Murder by Numbers",
-	onDisk: false, size: 0.511,
+	onDisk: true, size: 0.511,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Aventure","Mystère","Roman visuel"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "2D", "Casse-tête", "Protagoniste féminine", "Mystère", "Roman graphique", "Logique", "Cartoonesque", "Enquête", "LGBTQ+", "Crime"]
+	}
+}, {
+	name: "Mystic Academy: Escape Room",
+	onDisk: false, size: 0,
+	gog: {
+		genres: ["Aventure - Point-and-click - Réflexion"],
+		tags: ["Fantasy", "Exploration", "Casse-tête", "Casual", "Première personne", "Mystère", "Familial", "Magie", "Médieval", "Réaliste", "Simulation de marche", "Objets cachés"]
 	}
 }, {
 	name: "Never Alone",
@@ -1159,6 +1189,7 @@ var GAMES = [
 }, {
 	name: "Prince of Persia 2003", fullname: "Prince of Persia : Les Sables du temps", collection: "Prince of Persia",
 	onDisk: true, size: 1.3,
+	comment: "to update",
 	gog: {
 		name: "Prince of Persia: The Sands of Time",
 		genres: ["Action", "Aventure", "Fantasy"],
@@ -1207,6 +1238,13 @@ var GAMES = [
 		tags: ["Aventure", "Action", "Fantasy", "2D", "Casse-tête", "Troisième personne", "Plateformes", "Cartoonesque"]
 	}
 }, {
+	name: "Pyramids and Aliens: Escape Room",
+	onDisk: false, size: 0.0,
+	gog: {
+		genres: ["Aventure","Point-and-click","Réflexion"],
+		tags: ["Science fiction", "Casse-tête", "Casual", "Mystère", "Historique", "Familial", "Logique", "Enquête", "Simulation de marche", "Objets cachés"]
+	}
+}, {
 	name: "Relicta",
 	onDisk: true, size: 13.4,
 	date: "2026-08-17",
@@ -1220,6 +1258,13 @@ var GAMES = [
 	gog: {
 		genres: ["FPP", "Aventure", "Mystère"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Casse-tête", "Première personne", "Superbe bande-son", "Horreur", "Mystère", "Historique", "Violent", "Difficile", "Fins multiples", "FPS", "Simulation de marche", "Noir", "Pirates", "Naval"]
+	}
+}, {
+	name: "Right and Down",
+	onDisk: false, size: 0,
+	gog: {
+		genres: ["Stratégie", "Roguelike", "Jeu de cartes"],
+		tags: ["Fantasy", "2D", "Exploration", "Tour par tour", "Casse-tête", "Casual", "Roguelike", "Magie", "Roguelite", "Génération procédurale", "Dungeon Crawler", "Jeu de cartes", "Deckbuilding", "Jeu de plateau"]
 	}
 }, {
 	name: "RIOT - Civil Unrest",
@@ -1405,6 +1450,20 @@ var GAMES = [
 	gog: {
 		genres: ["FPP", "Horreur", "Aventure"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Science", "Première personne", "Sombre", "Horreur", "Mystère", "FPS", "Infiltration", "Horreur psychologique", "Horreur et survie", "Simulation de marche", "Robots", "Philosophique", "Sous l'eau"]
+	}
+}, {
+	name: "Space Grunts", collection: "Space Grunts",
+	onDisk: false, size: 0,
+	gog: {
+		genres: ["Stratégie", "Tour par tour", "Roguelike"],
+		tags: ["Action", "Indé", "Stratégie", "Jeu de rôle", "Science fiction", "Classique", "Tour par tour", "Graphismes Pixel", "Roguelike", "Rétro", "Espace", "Vue du dessus", "Roguelite", "Perma Death"]
+	}
+}, {
+	name: "Space Grunts 2", collection: "Space Grunts",
+	onDisk: false, size: 0,
+	gog: {
+		genres: ["Stratégie", "Arcade", "Roguelike"],
+		tags: ["Action", "Indé", "Stratégie", "Jeu de rôle", "2D", "Science fiction", "Tour par tour", "Graphismes Pixel", "Roguelike", "Espace", "Roguelite", "Génération procédurale", "Dungeon Crawler", "Arcade", "Jeu de cartes"]
 	}
 }, {
 	name: "Space Quest 6",
@@ -1681,6 +1740,7 @@ var GAMES = [
 }, {
 	name: "Tomb Raider 1/2/3", fullname: "Tomb Raider I-III Remastered Starring Lara Croft", collection: "Tomb Raider",
 	onDisk: true, size: 4.3,
+	comment: "to update",
 	gog: {
 		name: "Tomb Raider I to III Remastered",
 		genres: ["Action", "Aventure", "Exploration"],
@@ -1951,6 +2011,13 @@ var GAMES = [
 		tags: ["Adventure", "Fantasy", "Jeu de rôle", "Classic"]
 	}
 }, {
+	name: "XCOM: Chimera Squad",
+	onDisk: false, size: 0,
+	gog: {
+		genres: ["Stratégie", "Tour par tour", "SF"],
+		tags: ["Stratégie", "Science fiction", "Tour par tour", "Science"]
+	}
+}, {
 	name: "Yes, Your Grace",
 	onDisk: true, size: 0.371,
 	sources: ["GP"],
@@ -1959,5 +2026,12 @@ var GAMES = [
 		genres: ["Stratégie", "Simulation", "Gestion"],
 		tags: ["Aventure", "Fantasy", "Stratégie", "Jeu de rôle", "Casse-tête", "Simulation", "Superbe bande-son", "Graphismes Pixel", "Choix multiples", "Gestion", "Point-and-click", "Historique", "Gestion des resources", "Fins multiples", "Guerre", "Médieval", "Gestion"]
 	}
-},].map(json => new Game(json));
+}, {
+	name: "Zoria: Age of Shattering",
+	onDisk: false, size: 0,
+	gog: {
+		genres: ["Jeu de rôle", "Tour par tour", "Fantasy"],
+		tags: ["Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Exploration", "Tour par tour", "Tactique", "Construction de base", "Dungeon Crawler", "cRPG"]
+	}
+}].map(json => new Game(json));
 
