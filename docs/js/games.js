@@ -206,7 +206,7 @@ var GAMES = [
 	onDisk: true, size: 0.103,
 }, {
 	name: "Baldur's Gate", fullname: "Baldur's Gate: Enhanced Edition",
-	onDisk: true, size: 5.8,
+	onDisk: true, size: 5.83,
 	sources: ["Redloved", "Faran"],
 	date : "2026-04-14",
 	gog: {
@@ -215,7 +215,7 @@ var GAMES = [
 	}
 }, {
 	name: "Batman: Arkham Knight",
-	onDisk: true, size: 53.3,
+	onDisk: true, size: 57.24,
 	date : "2026-08-09",
 	gog: {
 		genres: ["Action","TPP","Monde ouvert"],
@@ -223,7 +223,7 @@ var GAMES = [
 	}
 }, {
 	name: "Beacon Pines",
-	onDisk: true, size: 0.972,
+	onDisk: true, size: 1.02,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Jeu de rôle", "Aventure", "Narratif"],
@@ -231,7 +231,7 @@ var GAMES = [
 	}
 }, {
 	name: "Bear and Breakfast",
-	onDisk: true, size: 0.905,
+	onDisk: true, size: 0.948,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Simulation ", "Construction", "Gestion"],
@@ -239,7 +239,7 @@ var GAMES = [
 	}
 }, {
 	name: "Behind the Frame: The Finest Scenery",
-	onDisk: true, size: 0.696,
+	onDisk: true, size: 0.729,
 	date : "2026-08-09",
 	gog: {
 		genres: ["Aventure","Narratif","Roman visuel"],
@@ -254,19 +254,19 @@ var GAMES = [
 		tags: ["Aventure", "Science fiction", "Classique", "Casse-tête", "Science", "Choix multiples", "Point-and-click", "Post-apocalyptique", "Cyberpunk", "Dystopique", "Robots"]
 	}
 }, {
+	name: "Beyond Blue",
+	onDisk: true, size: 7.53,
+	date : "2026-08-14"
+}, {
 	name: "Beyond Good & Evil",
-	onDisk: true, size: 1.7,
+	onDisk: true, size: 1.67,
 	gog: {
 		genres: ["Action", "TPP", "SF"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Science fiction", "Classique", "Exploration", "Science", "Protagoniste féminine", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Plateformes", "Émotionnel", "Infiltration", "Dystopique"]
 	}
 }, {
-	name: "Beyond Blue",
-	onDisk: true, size: 7.0,
-	date : "2026-08-14"
-}, {
-	name: "BioShock", fullname: "BioShock & BioShock Remastered", size: 20.3,
-	onDisk: true,
+	name: "BioShock", fullname: "BioShock & BioShock Remastered",
+	onDisk: true, size: 20.25,
 	gog: {
 		name: "BioShock Remastered",
 		genres: ["Shooter", "FPP", "Sci-fi"],
@@ -274,7 +274,7 @@ var GAMES = [
 	}
 }, {
 	name: "BioShock 2",
-	onDisk: true, size: 14.1,
+	onDisk: true, size: 14.12,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -284,7 +284,7 @@ var GAMES = [
 	}
 }, {
 	name: "BioShock Infinite", fullname: "BioShock Infinite Complete Edition",
-	onDisk: true, size: 41.3,
+	onDisk: true, size: 41.26,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -294,7 +294,7 @@ var GAMES = [
 	}
 }, {
 	name: "Blade of Darkness", fullname: "Severance: Blade of Darkness",
-	onDisk: true, size: 1.4,
+	onDisk: true, size: 1.42,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -303,18 +303,18 @@ var GAMES = [
 	}
 }, {
 	name: "Blades of Time",
-	onDisk: true, size: 3.0,
+	onDisk: true, size: 2.99,
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Fantasy", "Jeu de rôle", "Classique", "Nudité"]
 	}
 }, {
 	name: "Bleed 2",
-	onDisk: true, size: 0.210,
+	onDisk: true, size: 0.211,
 	gog: {}
 }, {
 	name: "Bloodstained: Ritual of the Night",
-	onDisk: true, size: 9.4,
+	onDisk: true, size: 10.05,
 	date : "2026-08-09",
 	gog: {
 		genres: ["Action", "Jeu de rôle", "Metroidvania"],
@@ -322,7 +322,7 @@ var GAMES = [
 	}
 }, {
 	name: "Bridge Constructor: The Walking Dead",
-	onDisk: true, size: 0.143,
+	onDisk: true, size: 0.148,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Simulation", "Construction", "Gestion"],
@@ -330,7 +330,7 @@ var GAMES = [
 	}
 }, {
 	name: "Brigador", fullname: "Brigador: Up-Armored Edition",
-	onDisk: true, size: 0.67,
+	onDisk: true, size: 0.670,
 	gog: {
 		name: "Brigador",
 		genres: ["Action", "Combat", "Tactique"],
@@ -338,7 +338,7 @@ var GAMES = [
 	}
 }, {
 	name: "Brotato",
-	onDisk: true, size: 0.148,
+	onDisk: true, size: 0.155,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Action", "Roguelike", "Survie"],
@@ -346,7 +346,7 @@ var GAMES = [
 	}
 }, {
 	name: "Brothers: A Tale of Two Sons",
-	onDisk: true, size: 1.2,
+	onDisk: true, size: 1.29,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Action", "Aventure", "Fantasy"],
@@ -354,7 +354,7 @@ var GAMES = [
 	}
 }, {
 	name: "Brutal Legend",
-	onDisk: true, size: 17.7,
+	onDisk: true, size: 17.67,
 	date : "2026-04-16",
 	gog: {
 		genres: ["Action", "Fantasy", "Stratégie"],
@@ -362,7 +362,7 @@ var GAMES = [
 	}
 }, {
 	name: "Bus Simulator 21", fullname: "Bus Simulator 21 Next Stop",
-	onDisk: true, size: 9.6,
+	onDisk: true, size: 10.34,
 	date : "2026-08-21",
 	gog: {
 		genres: ["Simulation - Temps réel - Exploration"],
@@ -370,7 +370,7 @@ var GAMES = [
 	}
 }, {
 	name: "Call of the Sea",
-	onDisk: true, size: 11.6,
+	onDisk: true, size: 12.44,
 	date: "2026-08-16",
 	gog: {
 		genres: ["Aventure", "Réflexion", "Mystère"],
@@ -378,10 +378,10 @@ var GAMES = [
 	}
 }, {
 	name: "Car Mechanic Simulator 2018",
-	onDisk: true, size: 6.0,
+	onDisk: true, size: 6.39,
 }, {
 	name: "Cave Story+",
-	onDisk: true, size: 0.085,
+	onDisk: true, size: 0.089,
 	date : "2026-08-18",
 	gog: {
 		genres: ["Action", "Aventure", "Plateforme"],
@@ -398,7 +398,7 @@ var GAMES = [
 	}
 }, {
 	name: "Cities: Skylines",
-	onDisk: true, size: 10.0,
+	onDisk: true, size: 10.69,
 	date : "2026-08-21",
 	gog: {
 		genres: ["Tir", "FPP", "Fantasy"],
@@ -406,11 +406,11 @@ var GAMES = [
 	}
 }, {
 	name: "City of Brass",
-	onDisk: true, size: 2.5,
+	onDisk: true, size: 2.69,
 	date : "2026-08-17",
 }, {
 	name: "City of Gangsters",
-	onDisk: true, size: 0.340,
+	onDisk: true, size: 0.356,
 	date : "2026-08-17",
 	gog: {
 		genres: ["Simulation", "Stratégie", "Gestion"],
@@ -418,7 +418,7 @@ var GAMES = [
 	}
 }, {
 	name: "Close To The Sun",
-	onDisk: true, size: 21.6,
+	onDisk: true, size: 21.56,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -436,7 +436,7 @@ var GAMES = [
 	}
 }, {
 	name: "Control", fullname: "Control Ultimate Edition", collection: "Remedy",
-	onDisk: true, size: 28.4,
+	onDisk: true, size: 28.45,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -470,7 +470,7 @@ var GAMES = [
 	}
 }, {
 	name: "D", fullname: "D: Résoudre le Mystére... Explorer le Côté Noir de Votre âme",
-	onDisk: true, size: 1.3,
+	onDisk: true, size: 1.29,
 	gog: {
 		name: "D the Game",
 		genres: ["Horreur", "Aventure", "Réflexion"],
@@ -478,11 +478,11 @@ var GAMES = [
 	}
 }, {
 	name: "Daemon x Machina",
-	onDisk: true, size: 11.5,
+	onDisk: true, size: 12.30,
 	date: "2026-08-23"
 }, {
 	name: "Dark Deity",
-	onDisk: true, size: 0.827,
+	onDisk: true, size: 0.866,
 	date: "2026-08-16",
 	gog: {
 		name: "Dark Deity: Complete Edition",
@@ -491,7 +491,7 @@ var GAMES = [
 	}
 }, {
 	name: "Dark Devotion",
-	onDisk: true, size: 1.4,
+	onDisk: true, size: 1.52,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Action", "Aventure","Metroidvania"],
@@ -499,7 +499,7 @@ var GAMES = [
 	}
 }, {
 	name: "Dark Sky",
-	onDisk: true, size: 2.0,
+	onDisk: true, size: 2.02,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -509,28 +509,28 @@ var GAMES = [
 }, {
 	name: "Darksiders", fullname: "Darksiders Warmastered Edition",
 	collection: "Darksiders",
-	onDisk: true, size: 40.5,
+	onDisk: true, size: 40.49,
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Classique", "Casse-tête", "Monde Ouvert", "Troisième personne", "Multijoueur", "Violent", "Difficile", "Gore", "Hack and Slash", "Post-apocalyptique", "Metroidvania", "Remake"]
 	}
 }, {
 	name: "Darksiders II", fullname: "Darksiders II: Deathinitive Edition", collection: "Darksiders",
-	onDisk: true, size: 15.5,
+	onDisk: true, size: 15.49,
 	gog: {
 		genres: ["Action", "Fantasy", "Jeu de rôle"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Jeu de rôle", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Gore", "Hack and Slash", "Metroidvania"]
 	}
 }, {
 	name: "Darksiders III", collection: "Darksiders",
-	onDisk: true, size: 23.9,
+	onDisk: true, size: 23.89,
 	gog: {
 		genres: ["Action", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "Casse-tête", "Protagoniste féminine", "Sombre", "Troisième personne", "Violent", "Gore", "Hack and Slash", "Post-apocalyptique", "Souls-like"]
 	}
 }, {
 	name: "Darkwood",
-	onDisk: true, size: 2.2,
+	onDisk: true, size: 2.37,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Action", "Horreur", "Survie"],
@@ -538,7 +538,7 @@ var GAMES = [
 	}
 }, {
 	name: "DARQ",
-	onDisk: true, size: 1.4,
+	onDisk: true, size: 1.49,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Action","Aventure","Horreur"],
@@ -546,27 +546,27 @@ var GAMES = [
 	}
 }, {
 	name: "Day of the Tentacle", fullname: "Day of the Tentacle Remastered",
-	onDisk: true, size: 4.7,
+	onDisk: true, size: 4.74,
 	date : "2026-04-14",
 	gog: {
 		genres: ["SF", "Aventure", "Point-and-click"],
 		tags: ["Aventure", "Histoire Riche", "2D", "Science fiction", "Classique", "Casse-tête", "Science", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point-and-click", "Familial", "Cartoonesque", "Remake"]
 	}
 }, {
-	name: "Deponia: The Complete Journey",
-	onDisk: true, size: 8.9,
-	date : "2026-08-23",
-}, {
 	name: "Death's Gambit: Afterlife",
-	onDisk: true, size: 0.571,
+	onDisk: true, size: 0.598,
 	date : "2026-08-17",
 	gog: {
 		genres: ["Action", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Graphismes Pixel", "Superbe bande-son", "Plateformes", "Difficile", "Metroidvania", "Souls-like"]
 	}
 }, {
+	name: "Deponia: The Complete Journey",
+	onDisk: true, size: 9.55,
+	date : "2026-08-23",
+}, {
 	name: "Deus Ex: Human Revolution", fullname: "Deus Ex: Human Revolution - Director's Cut",
-	onDisk: true, size: 16.5,
+	onDisk: true, size: 16.53,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -575,7 +575,7 @@ var GAMES = [
 	}
 }, {
 	name: "Dishonored", fullname: "Dishonored - Definitive Edition",
-	onDisk: true, size: 15.4,
+	onDisk: true, size: 15.44,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -584,7 +584,7 @@ var GAMES = [
 	}
 }, {
 	name: "Dragon Age: Origins", fullname: "Dragon Age: Origins - Ultimate Edition",
-	onDisk: true, size: 23.5,
+	onDisk: true, size: 25.23,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Jeu de rôle","Aventure","Fantasy"],
@@ -601,7 +601,7 @@ var GAMES = [
 	}
 }, {
 	name: "Duck Paradox",
-	onDisk: true, size: 0.226,
+	onDisk: true, size: 0.225,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -610,7 +610,7 @@ var GAMES = [
 	}
 }, {
 	name: "Duskers",
-	onDisk: true,size: 0.093,
+	onDisk: true,size: 0.096,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Stratégie","SF","Survie"],
@@ -618,7 +618,7 @@ var GAMES = [
 	}
 }, {
 	name: "Encased", fullname: "Encased: A Sci-Fi Post-Apocalyptic RPG",
-	onDisk: true, size: 13.5,
+	onDisk: true, size: 14.47,
 	date : "2026-08-23",
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","SF"],
@@ -626,7 +626,7 @@ var GAMES = [
 	}
 }, {
 	name: "Enter the Gungeon",
-	onDisk: true, size: 0.227,
+	onDisk: true, size: 0.238,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Tir","Action","SF"],
@@ -634,7 +634,7 @@ var GAMES = [
 	}
 }, {
 	name: "Epistory - Typing Chronicles",
-	onDisk: true, size: 0.682,
+	onDisk: true, size: 0.715,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Action","Aventure","Fantasy"],
@@ -642,18 +642,18 @@ var GAMES = [
 	}
 }, {
 	name: "Escape Academy",
-	onDisk: true, size: 4.4,
+	onDisk: true, size: 4.71,
 	date : "2026-08-23",
 },{
 	name: "Everspace",
-	onDisk: true, size: 3.7,
+	onDisk: true, size: 3.70,
 	gog: {
 		genres: ["Action", "Simulation", "SF"],
 		tags: ["Action", "Science fiction", "Classique", "Exploration", "Simulation", "Science", "Première personne", "Superbe bande-son", "Survie", "Difficile", "Roguelike", "Espace", "Roguelite", "Vol", "Réalité virtuelle"]
 	}
 }, {
 	name: "Evoland", fullname: "Evoland Legendary Edition",
-	onDisk: true, size: 0.522,
+	onDisk: true, size: 0.547,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Fantasy","Aventure","Jeu de rôle"],
@@ -661,10 +661,10 @@ var GAMES = [
 	}
 }, {
 	name: "Eximius: Seize the Frontline",
-	onDisk: true, size: 18.4,
+	onDisk: true, size: 19.73,
 },{
 	name: "Fallout", collection: "Fallout",
-	onDisk: true, size: 1.0,
+	onDisk: true, size: 1.03,
 	sources: ["GP", "Redloved"],
 	date : "2026-04-14",
 	gog: {
@@ -673,7 +673,7 @@ var GAMES = [
 	}
 }, {
 	name: "Fallout 2", collection: "Fallout",
-	onDisk: true, size: 1.5,
+	onDisk: true, size: 1.48,
 	sources: ["GP", "Redloved"],
 	date : "2026-04-14",
 	gog: {
@@ -682,7 +682,7 @@ var GAMES = [
 	}
 }, {
 	name: "Fallout 3", collection: "Fallout", fullname:"Fallout 3: Game of the Year Edition",
-	onDisk: true, size: 13.9,
+	onDisk: true, size: 14.95,
 	date : "2026-08-26",
 	gog: {
 		genres: ["Jeu de rôle","FPP","Monde ouvert"],
@@ -690,7 +690,7 @@ var GAMES = [
 	}
 }, {
 	name: "Fallout Tactics", collection: "Fallout",
-	onDisk: true, size: 3.5,
+	onDisk: true, size: 3.53,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -706,11 +706,11 @@ var GAMES = [
 	}
 }, {
 	name: "F.I.S.T.: Forged in Shadow Torch",
-	onDisk: true, size: 21.3,
+	onDisk: true, size: 22.88,
 	date : "2026-08-26",
 }, {
 	name: "First Racer",
-	onDisk: true, size: 0.462,
+	onDisk: true, size: 0.484,
 	date : "2026-08-26",
 	gog: {
 		genres: ["Course", "Arcade", "Touring"],
@@ -718,7 +718,7 @@ var GAMES = [
 	}
 }, {
 	name: "Flashback",
-	onDisk: true, size: 0.169,
+	onDisk: true, size: 0.176,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Action", "SF", "Aventure"],
@@ -726,7 +726,7 @@ var GAMES = [
 	}
 }, {
 	name: "FRAMED Collection",
-	onDisk: true, size: 0.860,
+	onDisk: true, size: 0.861,
 	date : "2026-08-27",
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
@@ -734,7 +734,7 @@ var GAMES = [
 	}
 }, {
 	name: "Frostpunk",
-	onDisk: true, size: 9.5,
+	onDisk: true, size: 9.54,
 	date : "2026-08-27",
 	gog: {
 		genres: ["Stratégie","Simulation","Survie"],
@@ -742,18 +742,18 @@ var GAMES = [
 	}
 }, {
 	name: "FTL: Faster than Light",
-	onDisk: true, size: 0.458,
+	onDisk: true, size: 0.459,
 	gog: {}
 }, {
 	name: "Full Throttle", fullname: "Full Throttle Remastered",
-	onDisk: true, size: 4.7,
+	onDisk: true, size: 4.73,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Superbe bande-son", "Graphismes Pixel", "Amusant", "Point-and-click", "Enquête", "Enquête-mystère", "Court", "Remake"]
 	}
 }, {
 	name: "Gamedec",  fullname: "Gamedec - Definitive Edition",
-	onDisk: true, size: 9.3,
+	onDisk: true, size: 9.350,
 	date : "2026-08-27",
 	gog: {
 		genres: ["Jeu de rôle","Aventure","SF"],
@@ -761,7 +761,7 @@ var GAMES = [
 	}
 }, {
 	name: "Geneforge 1 - Mutagen",
-	onDisk: true, size: 0.152,
+	onDisk: true, size: 0.158,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
@@ -769,7 +769,7 @@ var GAMES = [
 	}
 }, {
 	name: "Ghost of a Tale",
-	onDisk: true, size: 2.9,
+	onDisk: true, size: 2.949,
 	sources: ["Redloved"],
 	date : "2026-04-14",
 	gog: {
@@ -778,7 +778,7 @@ var GAMES = [
 	}
 }, {
 	name: "Ghost Song",
-	onDisk: true, size: 1.5,
+	onDisk: true, size: 1.468,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -787,7 +787,7 @@ var GAMES = [
 	}
 }, {
 	name: "Ghostrunner",
-	onDisk: true, size: 20.5,
+	onDisk: true, size: 20.471,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -796,7 +796,7 @@ var GAMES = [
 	}
 }, {
 	name: "Giants: Citizen Kabuto",
-	onDisk: true, size: 1.1,
+	onDisk: true, size: 1.148,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -808,13 +808,13 @@ var GAMES = [
 	onDisk: false, size: 0.0,
 }, {
 	name: "Grandia 2", fullname: "Grandia II Anniversary Edition",
-	onDisk: true, size: 2.0,
+	onDisk: true, size: 1.974,
 	gog: {
 		genre: ["Aventure", "RPG"]
 	}
 }, {
 	name: "GRIP",
-	onDisk: true, size: 5.2,
+	onDisk: true, size: 5.187,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -823,7 +823,7 @@ var GAMES = [
 	}
 }, {
 	name: "GRIS",
-	onDisk: true, size: 1.1,
+	onDisk: true, size: 1.195,
 	date : "2026-08-09",
 	gog: {
 		genres: ["Plateforme", "Aventure", "Réflexion"],
@@ -831,7 +831,7 @@ var GAMES = [
 	}
 }, {
 	name: "Guild of Dungeoneering",
-	onDisk: true, size: 0.508,
+	onDisk: true, size: 0.532,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
@@ -839,11 +839,11 @@ var GAMES = [
 	}
 }, {
 	name: "Hell is Other Demons",
-	onDisk: true, size: 0.149,
+	onDisk: true, size: 0.156,
 	date : "2026-08-16",
 }, {
 	name: "Hell Pie",
-	onDisk: true, size: 4.3,
+	onDisk: true, size: 4.285,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -861,7 +861,7 @@ var GAMES = [
 	}
 }, {
 	name: "Hive Jump 2: Survivors",
-	onDisk: true, size: 0.168,
+	onDisk: true, size: 0.167,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -870,14 +870,14 @@ var GAMES = [
 	}
 }, {
 	name: "Hiveswap Friendsim",
-	onDisk: true, size: 1.18,
+	onDisk: true, size: 1.184,
 	gog: {
 		genres: ["Aventure","Comédie","Roman visuel"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Casual", "Première personne", "Amusant", "Roman graphique", "Violent", "Horreur psychologique", "LGBTQ+", "Dating Sim", "Comédie"]
 	}
 }, {
 	name: "Horizon Chase Turbo",
-	onDisk: true, size: 0.552,
+	onDisk: true, size: 0.578,
 	date : "2026-08-16",
 }, {
 	name: "In Sound Mind",
@@ -888,7 +888,7 @@ var GAMES = [
 	}
 }, {
 	name: "Iratus: Lord of the Dead",
-	onDisk: true, size: 1.7,
+	onDisk: true, size: 1.861,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "Fantasy"],
@@ -896,7 +896,7 @@ var GAMES = [
 	}
 }, {
 	name: "Ironcast",
-	onDisk: true, size: 0.278,
+	onDisk: true, size: 0.291,
 	date: "2026-08-16",
 }, {
 	name: "Jotun", fullname: "Jotun: Valhalla Edition",
@@ -907,7 +907,7 @@ var GAMES = [
 	}
 }, {
 	name: "Kerbal Space Program",
-	onDisk: true, size: 4.3,
+	onDisk: true, size: 4.294,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -916,7 +916,7 @@ var GAMES = [
 	}
 }, {
 	name: "Kingdom: New Lands",
-	onDisk: false, size: 0.298,
+	onDisk: false, size: 0.312,
 	date: "2026-08-16",
 	gog: {
 		genres: ["Stratégie","Simulation","Fantasy"],
@@ -924,7 +924,7 @@ var GAMES = [
 	}
 }, {
 	name: "L'amazone Queen",
-	onDisk: true, size: 0.089,
+	onDisk: true, size: 0.093,
 	date : "2026-08-02",
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
@@ -932,7 +932,7 @@ var GAMES = [
 	}
 }, {
 	name: "Lacuna", fullname : "Lacuna A Sci-Fi Noir Adventure",
-	onDisk: true, size: 0.575,
+	onDisk: true, size: 0.603,
 	date : "2026-08-09",
 	gog: {
 		genres: ["Aventure", "Aventure","Enquête-mystère"],
@@ -940,7 +940,7 @@ var GAMES = [
 	}
 }, {
 	name: "Les Chevaliers de Baphomet", fullname: "Les Chevaliers de Baphomet : The Director's Cut", collection: "Broken Sword",
-	onDisk: true, size: 3.1,
+	onDisk: true, size: 3.094,
 	gog: {
 		name: "Broken Sword: Director's Cut!",
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
@@ -948,7 +948,7 @@ var GAMES = [
 	}
 }, {
 	name: "Les Chevaliers de Baphomet 2", fullname: " Les Chevaliers de Baphomet II : Les Boucliers de Quetzalcoatl", collection: "Broken Sword",
-	onDisk: true, size: 2.5,
+	onDisk: true, size: 2.469,
 	gog: {
 		name: "broken_sword_2__the_smoking_mirror!",
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
@@ -964,7 +964,7 @@ var GAMES = [
 	}
 }, {
 	name: "Leisure Suit Larry 8", fullname: "Leisure Suit Larry - Wet Dreams Don't Dry", collection: "Leisure Suit Larry",
-	onDisk: true, size: 1.1,
+	onDisk: true, size: 1.223,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Moderne", "Point-and-click", "Aventure"],
@@ -972,7 +972,7 @@ var GAMES = [
 	}
 }, {
 	name: "Leisure Suit Larry 9", fullname: "Leisure Suit Larry - Wet Dreams Dry Twice", collection: "Leisure Suit Larry",
-	onDisk: true, size: 1.2,
+	onDisk: true, size: 1.340,
 	date : "2026-08-05",
 	gog: {
 		genres: ["Moderne", "Point-and-click", "Aventure"],
@@ -980,11 +980,11 @@ var GAMES = [
 	}
 }, {
 	name: "Limbo",
-	onDisk: true, size: 0.162,
+	onDisk: true, size: 0.169,
 	date : "2026-08-18",
 }, {
 	name: "Lure of the Tempress",
-	onDisk: true, size: 0.070,
+	onDisk: true, size: 0.073,
 	date : "2026-08-02",
 	gog: {
 		genres: ["Fantasy","Aventure","Point-and-click"],
@@ -992,7 +992,7 @@ var GAMES = [
 	}
 }, {
 	name: "Mafia 2", fullname: "Mafia II: Definitive Edition",
-	onDisk: true, size: 46.6,
+	onDisk: true, size: 46.610,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1001,7 +1001,7 @@ var GAMES = [
 	}
 }, {
 	name: "Maytroid", fullname: "Maytroid. I swear it's a nice game too",
-	onDisk: true, size: 0.321,
+	onDisk: true, size: 0.336,
 	date : "2026-08-09",
 	gog: {
 		genres: ["Adventure", "Indie", "Platform"],
@@ -1009,14 +1009,14 @@ var GAMES = [
 	}
 }, {
 	name: "Might and Magic 7", fullname: "Might and Magic 7: For Blood and Honor",
-	onDisk: true, size: 1.1,
+	onDisk: true, size: 1.078,
 	gog: {
 		genres: ["Jeu de rôle", "FPP", "Fantasy"],
 		tags: ["Fantasy", "Jeu de rôle", "Classique", "Exploration", "Tour par tour", "Première personne", "Gestion", "Monde Ouvert", "Magie", "FPS", "cRPG"]
 	}
 }, {
 	name: "Minit",
-	onDisk: true, size: 0.101,
+	onDisk: true, size: 0.105,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Action","Aventure","Mystère"],
@@ -1057,11 +1057,11 @@ var GAMES = [
 	}
 }, {
 	name: "Mud Runner",
-	onDisk: true, size: 1.3,
+	onDisk: true, size: 1.448,
 	date : "2026-08-09",
 }, {
 	name: "Murder by Numbers",
-	onDisk: true, size: 0.511,
+	onDisk: true, size: 0.535,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Aventure","Mystère","Roman visuel"],
@@ -1076,7 +1076,7 @@ var GAMES = [
 	}
 }, {
 	name: "Never Alone",
-	onDisk: true, size: 1.1,
+	onDisk: true, size: 1.165,
 	date : "2026-08-17",
 	gog: {
 		name: "Never Alone Arctic Collection",
@@ -1092,18 +1092,18 @@ var GAMES = [
 	}
 }, {
 	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition", collection: "Ori",
-	onDisk: true, size: 4.9,
+	onDisk: true, size: 4.868,
 	gog: {
 		genres: ["Action", "Aventure", "Plateforme"],
 		tags: ["Aventure", "Action", "Fantasy", "Histoire Riche", "Atmosphère", "2D", "Classique", "Casse-tête", "Superbe bande-son", "Monde Ouvert", "Plateformes", "Difficile", "Familial", "Metroidvania"]
 	}
 }, {
 	name: "Ori and the Will of the Wisps", collection: "Ori",
-	onDisk: true, size: 4.4,
+	onDisk: true, size: 4.672,
 	date : "2026-08-09",
 }, {
 	name: "Out of Line",
-	onDisk: true, size: 0.336,
+	onDisk: true, size: 0.351,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Plateforme","Aventure","Réflexion"],
@@ -1111,14 +1111,14 @@ var GAMES = [
 	}
 }, {
 	name: "Outcast", fullname: "Outcast - Second Contact",
-	onDisk: true, size: 5.8,
+	onDisk: true, size: 5.830,
 	gog: {
 		genres: ["Action", "Aventure", "SF"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Exploration", "Science", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Remake"]
 	}
 }, {
 	name: "Overcooked!", fullname: "Overcooked: Gourmet Edition", collection :"Overcooked",
-	onDisk: true, size: 0.317,
+	onDisk: true, size: 0.316,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1134,7 +1134,7 @@ var GAMES = [
 	}
 }, {
 	name: "Paradigm",
-	onDisk: false, size: 1.5,
+	onDisk: false, size: 1.584,
 	date : "2026-08-17",
 	gog: {
 		genres: ["SF","Aventure","Réflexion"],
@@ -1142,7 +1142,7 @@ var GAMES = [
 	}
 }, {
 	name: "Phantasmagoria",
-	onDisk: true, size: 3.5,
+	onDisk: true, size: 3.523,
 	sources: ["DK"],
 	date : "2026-05-07",
 	gog: {
@@ -1151,7 +1151,7 @@ var GAMES = [
 	}
 }, {
 	name: "Phantasmagoria 2", fullname: "Phantasmagoria 2: A Puzzle of Flesh",
-	onDisk: true, size: 2.5,
+	onDisk: true, size: 2.485,
 	sources: ["DK"],
 	gog: {
 		name: "Phantasmagoria 2",
@@ -1160,7 +1160,7 @@ var GAMES = [
 	}
 },  {
 	name: "Pine",
-	onDisk: true, size : 2.2,
+	onDisk: true, size : 2.325,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Action","Aventure","Monde ouvert"],
@@ -1168,7 +1168,7 @@ var GAMES = [
 	}
 }, {
 	name: "Portal",
-	onDisk: true, size: 2.5,
+	onDisk: true, size: 2.734,
 	date : "2026-08-09"
 },  {
 	name: "Prey",
@@ -1179,7 +1179,7 @@ var GAMES = [
 	}
 }, {
 	name: "Prince of Persia 2003", fullname: "Prince of Persia : Les Sables du temps", collection: "Prince of Persia",
-	onDisk: true, size: 1.3,
+	onDisk: true, size: 1.396,
 	comment: "to update",
 	gog: {
 		name: "Prince of Persia: The Sands of Time",
@@ -1188,7 +1188,7 @@ var GAMES = [
 	}
 }, {
 	name: "Prince of Persia 2004", fullname: "Prince of Persia : L'Âme du guerrier", collection: "Prince of Persia",
-	onDisk: true, size: 3.3,
+	onDisk: true, size: 3.338,
 	gog: {
 		name: "Prince of Persia: Warrior Within",
 		genres: ["Action", "TPP", "Fantasy"],
@@ -1196,7 +1196,7 @@ var GAMES = [
 	}
 }, {
 	name: "Prince of Persia 2005", fullname: "Prince of Persia : Les Deux Royaumes", collection: "Prince of Persia",
-	onDisk: true, size: 1.4,
+	onDisk: true, size: 1.428,
 	gog: {
 		name: "Prince of Persia: The Two Thrones",
 		genres: ["Action", "TPP", "Fantasy"],
@@ -1204,7 +1204,7 @@ var GAMES = [
 	}
 }, {
 	name: "Prince of Persia 2008", fullname: "Prince of Persia", collection: "Prince of Persia",
-	onDisk: true, size: 4.3,
+	onDisk: true, size: 4.295,
 	gog: {
 		name: "Prince of Persia",
 		genres: ["Action", "TPP", "Fantasy"],
@@ -1212,7 +1212,7 @@ var GAMES = [
 	}
 }, {
 	name: "Prison Architect",
-	onDisk: true, size: 1.1,
+	onDisk: true, size: 1.078,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1221,7 +1221,7 @@ var GAMES = [
 	}
 }, {
 	name: "Pumpkin Jack",
-	onDisk: true, size: 2.2,
+	onDisk: true, size: 2.159,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1237,7 +1237,7 @@ var GAMES = [
 	}
 }, {
 	name: "Relicta",
-	onDisk: true, size: 13.4,
+	onDisk: true, size: 14.413,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Action", "Aventure", "Réflexion"],
@@ -1245,7 +1245,7 @@ var GAMES = [
 	}
 }, {
 	name: "Return of the Obra Dinn",
-	onDisk: true, size: 0.928,
+	onDisk: true, size: 0.927,
 	gog: {
 		genres: ["FPP", "Aventure", "Mystère"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Casse-tête", "Première personne", "Superbe bande-son", "Horreur", "Mystère", "Historique", "Violent", "Difficile", "Fins multiples", "FPS", "Simulation de marche", "Noir", "Pirates", "Naval"]
@@ -1259,7 +1259,7 @@ var GAMES = [
 	}
 }, {
 	name: "RIOT - Civil Unrest",
-	onDisk: true, size: 1.1,
+	onDisk: true, size: 1.100,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1268,7 +1268,7 @@ var GAMES = [
 	}
 }, {
 	name: "Rise of Industry",
-	onDisk: true, size: 0.866,
+	onDisk: true, size: 0.907,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Stratégie","Simulation","Gestion"],
@@ -1276,7 +1276,7 @@ var GAMES = [
 	}
 }, {
 	name: "Rising Hell",
-	onDisk: true, size: 0.148,
+	onDisk: true, size: 0.154,
 	date : "2026-08-16",
 	gog: {
 		genres: ["Action","Roguelike"],
@@ -1287,7 +1287,7 @@ var GAMES = [
 	onDisk: false,
 }, {
 	name: "Rogue Legacy",
-	onDisk: true, size: 0.154,
+	onDisk: true, size: 0.161,
 	date: "2026-08-16",
 	gog: {
 		genres: ["Action","Plateforme","Jeu de rôle"],
@@ -1295,28 +1295,28 @@ var GAMES = [
 	}
 }, {
 	name: "Runaway: A Road Adventure", collection: "Runaway",
-	onDisk: true, size: 1.6,
+	onDisk: true, size: 1.644,
 	gog: {
 		genres: ["Action", "Aventure", "Enquête-mystère"],
 		tags: ["Aventure", "Action", "Classique", "Enquête", "Enquête-mystère"]
 	}
 }, {
 	name: "Runaway 2: The Dream of the Turtle", collection: "Runaway",
-	onDisk: true, size: 3.6,
+	onDisk: true, size: 3.638,
 	gog: {
 		genres: ["Action", "Aventure", "Enquête-mystère"],
 		tags: ["Aventure", "Action", "Histoire Riche", "2D", "Classique", "Casse-tête", "Casual", "Superbe bande-son", "Amusant", "Point-and-click", "Mystère", "Cartoonesque", "Enquête", "Enquête-mystère"]
 	}
 }, {
 	name: "Runaway 3: A Twist of Fate", collection: "Runaway",
-	onDisk: true, size: 5.6,
+	onDisk: true, size: 5.633,
 	gog: {
 		genres: ["Action", "Aventure", "Enquête-mystère"],
 		tags: ["Aventure", "Action", "Classique", "Enquête", "Enquête-mystère"]
 	}
 }, {
 	name: "Saints Row: The Third", fullname: "Saints Row: The Third Remastered",
-	onDisk: true, size: 44.9,
+	onDisk: true, size: 44.887,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1332,7 +1332,7 @@ var GAMES = [
 	}
 }, {
 	name: "Sam & Max Save the World", collection: "Sam & Max",
-	onDisk: true, size: 0.927,
+	onDisk: true, size: 0.972,
 	date : "2026-08-09",
 	gog: {
 		genres: ["Aventure","Point-and-click","Enquête-mystère"],
@@ -1340,7 +1340,7 @@ var GAMES = [
 	}
 }, {
 	name: "Sam & Max: Beyond Time and Space", collection: "Sam & Max",
-	onDisk: true, size: 1.3,
+	onDisk: true, size: 1.378,
 	date : "2026-08-09",
 	gog: {
 		genres: ["Aventure","Point-and-click","Enquête-mystère"],
@@ -1355,7 +1355,7 @@ var GAMES = [
 	}
 }, {
 	name: "Scorn",
-	onDisk: true, size: 18.6,
+	onDisk: true, size: 18.625,
 	sources: ["GP", "Redloved"],
 	date : "2026-04-14",
 	gog: {
@@ -1367,7 +1367,7 @@ var GAMES = [
 	onDisk: false,
 }, {
 	name: "Secret Files 1", fullname: "Secret Files: Tunguska", collection: "Secret Files",
-	onDisk: true, size: 2.7,
+	onDisk: true, size: 2.687,
 	date : "2026-04-14",
 	gog: {
 		genres: [],
@@ -1375,7 +1375,7 @@ var GAMES = [
 	}
 }, {
 	name: "Secret Files 2", fullname: "Secret Files 2: Puritas Cordis", collection: "Secret Files",
-	onDisk: true, size: 2.1,
+	onDisk: true, size: 2.075,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
@@ -1383,7 +1383,7 @@ var GAMES = [
 	}
 }, {
 	name: "Secret Files 3", collection: "Secret Files",
-	onDisk: true, size: 2.3,
+	onDisk: true, size: 2.306,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Moderne", "Aventure", "Point-and-click"],
@@ -1415,7 +1415,7 @@ var GAMES = [
 	}
 }, {
 	name: "Showgunners",
-	onDisk: true, size: 10.8,
+	onDisk: true, size: 10.788,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1424,7 +1424,7 @@ var GAMES = [
 	}
 }, {
 	name: "Sir Whoopass: Immortal Death",
-	onDisk: true, size: 11.1,
+	onDisk: true, size: 11.106,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1432,19 +1432,35 @@ var GAMES = [
 		tags: ["Aventure", "Action", "Indé", "Fantasy", "Histoire Riche", "Exploration", "Amusant", "Troisième personne", "Hack and Slash", "Combat", "Loups-garous"]
 	}
 }, {
+	name: "Slipstream",
+	date : "2026-08-09",
+	onDisk: true, size: 0.166,
+	gog: {
+		genres: ["Course","Arcade", "Touring"],
+		tags: ["Indé", "Casual", "Graphismes Pixel", "Superbe bande-son", "Arcade", "Multijoueur local", "Course", "Touring"]
+	}
+}, {
 	name: "Snakebird Complete",
-	onDisk: true, size: 0.090,
+	onDisk: true, size: 0.094,
 	date : "2026-08-16",
 }, {
 	name: "SOMA",
-	onDisk: true, size: 24.5,
+	onDisk: true, size: 24.523,
 	gog: {
 		genres: ["FPP", "Horreur", "Aventure"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Science", "Première personne", "Sombre", "Horreur", "Mystère", "FPS", "Infiltration", "Horreur psychologique", "Horreur et survie", "Simulation de marche", "Robots", "Philosophique", "Sous l'eau"]
 	}
 }, {
+	name: "Sonic Adventure DX",
+	date : "2026-08-09",
+	onDisk: true, size: 1.0,
+	gog: {
+		genres: [],
+		tags: []
+	}
+}, {
 	name: "Space Grunts", collection: "Space Grunts",
-	onDisk: true, size: 0.082,
+	onDisk: true, size: 0.081,
 	date : "2026-08-26",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Roguelike"],
@@ -1460,27 +1476,19 @@ var GAMES = [
 	}
 }, {
 	name: "Space Quest 6",
-	onDisk: true, size: 1.2,
+	onDisk: true, size: 1.239,
 	sources: ["DK"],
 	gog: { genres: [], tags: [] }
 }, {
-	name: "Slipstream",
-	date : "2026-08-09",
-	onDisk: true, size: 0.159,
-	gog: {
-		genres: ["Course","Arcade", "Touring"],
-		tags: ["Indé", "Casual", "Graphismes Pixel", "Superbe bande-son", "Arcade", "Multijoueur local", "Course", "Touring"]
-	}
-}, {
 	name: "SPORE Collection",
-	onDisk: true, size: 5.6,
+	onDisk: true, size: 5.649,
 	gog: {
 		genres: ["Stratégie", "Temps réel", "Fantasy"],
 		tags: ["Fantasy", "Stratégie", "Classique", "Temps réél"]
 	}
 }, {
 	name: "STAR WARS: X-Wing Alliance",
-	onDisk: true, size: 0.581,
+	onDisk: true, size: 0.580,
 	sources: ["Redloved"],
 	date : "2026-04-14",
 	gog: {
@@ -1490,7 +1498,7 @@ var GAMES = [
 }, {
 	name: "Subnautica",
 	date : "2026-08-09",
-	onDisk: true, size: 3.6,
+	onDisk: true, size: 3.907,
 	gog: {
 		genres: [],
 		tags: []
@@ -1505,31 +1513,23 @@ var GAMES = [
 		genres: ["Stratégie","Gestion" , "Survie"],
 		tags: ["Stratégie", "Gestion", "Survie", "Guerre", "Construction de base", "Gestion", "Post-apocalyptique", "Construction de villes"]
 	}
-}, {
-	name: "Sonic Adventure DX",
-	date : "2026-08-09",
-	onDisk: true, size: 1.0,
-	gog: {
-		genres: [],
-		tags: []
-	}
-}, {
+},{
 	name: "Syberia", collection: "Syberia",
-	onDisk: true, size: 1.2,
+	onDisk: true, size: 1.161,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point-and-click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
 	}
 },  {
 	name: "Syberia 2", collection: "Syberia",
-	onDisk: true, size: 1.5,
+	onDisk: true, size: 1.484,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Enquête-mystère"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point-and-click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
 	}
 }, {
 	name: "Syberia 3", fullname: "Syberia 3: The Complete Journey",
-	onDisk: true, size: 20.6,
+	onDisk: true, size: 20.592,
 	gog: {
 		genres: ["TPP", "Fantasy", "Aventure"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Troisième personne", "Point-and-click", "Mystère", "Logique", "Émotionnel", "Enquête", "Objets cachés", "Steampunk"]
@@ -1543,7 +1543,7 @@ var GAMES = [
 	}
 }, {
 	name: "Terraforming Mars",
-	onDisk: true, size: 0.180,
+	onDisk: true, size: 0.188,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Stratégie", "Simulation", "SF"],
@@ -1551,7 +1551,7 @@ var GAMES = [
 	}
 }, {
 	name: "The Dungeon of Naheulbeuk: The Amulet of Chaos",
-	onDisk: true, size: 9.1,
+	onDisk: true, size: 9.734,
 	date: "2026-08-16",
 	gog: {
 		genres: ["Jeu de rôle","Tour par tour","Fantasy"],
@@ -1573,14 +1573,14 @@ var GAMES = [
 	}
 }, {
 	name: "The Elder Scrolls III: Morrowind", fullname: "The Elder Scrolls III: Morrowind GOTY Edition", collection: "The Elder Scrolls",
-	onDisk: true, size: 1.8,
+	onDisk: true, size: 1.832,
 	gog: {
 		genres: ["Jeu de rôle", "Aventure", "Monde ouvert"],
 		tags: ["Aventure", "Fantasy", "Jeu de rôle", "Classique", "Première personne", "Monde Ouvert", "Troisième personne", "Bac-à-sable", "Magie", "Médieval"]
 	}
 }, {
 	name: "The Elder Scrolls IV: Oblivion", fullname: "The Elder Scrolls IV: Oblivion - GOTY Edition Deluxe", collection: "The Elder Scrolls",
-	onDisk: true, size: 5.6,
+	onDisk: true, size: 5.626,
 	gog: {
 		name: "Elder Scrolls IV: Oblivion - Game of the Year Edition Deluxe The",
 		genres: ["Jeu de rôle", "Aventure", "Fantasy"],
@@ -1588,7 +1588,7 @@ var GAMES = [
 	}
 }, {
 	name: "The Evil Within 2",
-	onDisk: true, size: 32.8,
+	onDisk: true, size: 35.194,
 	date : "2026-08-23",
 	gog: {
 		genres: ["Action","Horror","Survival"],
@@ -1605,11 +1605,11 @@ var GAMES = [
 	}
 }, {
 	name: "The Forest Quartet",
-	onDisk: true, size: 0.862,
+	onDisk: true, size: 0.904,
 	date : "2026-08-16",
 }, {
 	name: "The Gunk",
-	onDisk: true, size: 6.6,
+	onDisk: true, size: 6.573,
 	sources: ["Shionn", "GP"],
 	gog: {
 		genres: ["Action", "Adventure", "Exploration"],
@@ -1617,7 +1617,7 @@ var GAMES = [
 	}
 }, {
 	name: "The Lion's Song",
-	onDisk: true, size: 0.358,
+	onDisk: true, size: 0.375,
 	date: "2026-08-16",
 	gog: {
 		genres: ["Aventure","Point-and-click","Narratif"],
@@ -1625,7 +1625,7 @@ var GAMES = [
 	}
 }, {
 	name: "The Operator",
-	onDisk: true, size: 0.730,
+	onDisk: true, size: 0.765,
 	date: "2026-08-16",
 	gog: {
 		genres: ["Simulation","Réflexion","Narratif"],
@@ -1633,7 +1633,7 @@ var GAMES = [
 	}
 }, {
 	name: "The Smurfs 2", fullname: "The Smurfs 2 - The Prisoner of the Green Stone",
-	onDisk: true, size: 9.4,
+	onDisk: true, size: 9.407,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1642,7 +1642,7 @@ var GAMES = [
 	}
 }, {
 	name: "The Spirit and the Mouse",
-	onDisk: true, size: 0.304,
+	onDisk: true, size: 0.318,
 	date: "2026-08-16",
 	gog: {
 		genres: ["Plateforme","Aventure","Réflexion"],
@@ -1650,7 +1650,7 @@ var GAMES = [
 	}
 }, {
 	name: "The Talos Principle", fullname: "The Talos Principle: Gold Edition",
-	onDisk: true, size: 6.9,
+	onDisk: true, size: 6.868,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1666,28 +1666,28 @@ var GAMES = [
 	}
 }, {
 	name: "The Witcher", fullname: "The Witcher: Enhanced Edition", collection: "The Witcher",
-	onDisk: true, size: 10.2,
+	onDisk: true, size: 10.180,
 	gog: {
 		genres: ["Jeu de rôle", "Action", "Fantasy"],
 		tags: ["Action", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Nudité", "Fins multiples", "Magie", "Médieval"]
 	}
 }, {
 	name: "The Witcher 3", fullname: "The Witcher 3: Wild Hunt - Complete Edition", collection: "The Witcher",
-	onDisk: true, size: 86.0,
+	onDisk: true, size: 85.964,
 	gog: {
 		genres: ["Jeu de rôle", "Aventure", "Fantasy"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Classique", "Exploration", "Superbe bande-son", "Choix multiples", "Monde Ouvert", "Troisième personne", "Mature", "Contenu à caractère sexuel", "Nudité", "Violent", "Fins multiples", "Gore", "Magie", "Médieval", "Vampire", "Loups-garous"]
 	}
 }, {
 	name: "The Witness",
-	onDisk: true, size: 4.0,
+	onDisk: true, size: 3.677,
 	gog: {
 		genres: ["Aventure", "Réflexion", "Monde ouvert"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Casual", "Première personne", "Superbe bande-son", "Monde Ouvert", "Mystère", "Bac-à-sable", "Difficile", "Logique", "Relaxant", "Surréaliste", "Simulation de marche", "Cozy", "Philosophique"]
 	}
 }, {
 	name: "The X-Files",
-	onDisk: true, size: 3.5,
+	onDisk: true, size: 3.272,
 	date: "2026-05-07"
 }, {
 	name: "Theme Hospital",
@@ -1705,7 +1705,7 @@ var GAMES = [
 	}
 }, {
 	name: "Thimbleweed Park",
-	onDisk: true, size: 0.913,
+	onDisk: true, size: 0.957,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Aventure","Point-and-click","Enquête-mystère"],
@@ -1713,18 +1713,18 @@ var GAMES = [
 	}
 }, {
 	name: "Timberborn",
-	onDisk: true, size: 1.3,
+	onDisk: true, size: 1.329,
 	gog: {
 		genres: ["Simulation", "Building", "Survival"],
 		tags: ["Science fiction", "Simulation", "Gestion", "Bac-à-sable", "Survie", "Gestion des resources", "Vue du dessus", "Construction", "Construction de base", "Post-apocalyptique", "Construction de villes", "Editeur de niveaux"]
 	}
 }, {
 	name: "ToeJam & Earl: Back in the Groove!",
-	onDisk: false, size: 0.720,
+	onDisk: false, size: 0.754,
 	date: "2026-08-16",
 }, {
 	name: "TOEM",
-	onDisk: true, size: 0.240,
+	onDisk: true, size: 0.251,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Aventure","Réflexion","Exploration"],
@@ -1732,7 +1732,7 @@ var GAMES = [
 	}
 }, {
 	name: "Tomb Raider 1/2/3", fullname: "Tomb Raider I-III Remastered Starring Lara Croft", collection: "Tomb Raider",
-	onDisk: true, size: 4.1,
+	onDisk: true, size: 4.364,
 	date: "2026-08-26",
 	gog: {
 		name: "Tomb Raider I to III Remastered",
@@ -1741,7 +1741,7 @@ var GAMES = [
 	}
 }, {
 	name: "Tomb Raider 4/5/6", fullname: "Tomb Raider IV-VI Remastered", collection: "Tomb Raider",
-	onDisk: true, size: 8.2,
+	onDisk: true, size: 8.229,
 	gog: {
 		name: "Tomb Raider IV VI Remastered",
 		genres: ["Action", "Aventure", "Exploration"],
@@ -1749,7 +1749,7 @@ var GAMES = [
 	}
 }, {
 	name: "Tomb Raider 7", fullname: "Tomb Raider: Legend", collection: "Tomb Raider",
-	onDisk: true, size: 5.0,
+	onDisk: true, size: 5.324,
 	date : "2026-08-02",
 	gog: {
 		name : "Tomb Raider: Legend",
@@ -1758,7 +1758,7 @@ var GAMES = [
 	}
 }, {
 	name: "Tomb Raider 8", fullname: "Tomb Raider: Anniversary", collection: "Tomb Raider",
-	onDisk: true, size: 3.1,
+	onDisk: true, size: 3.101,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -1767,27 +1767,27 @@ var GAMES = [
 	}
 }, {
 	name: "Tomb Raider 10", fullname: "Tomb Raider GOTY", collection: "Tomb Raider",
-	onDisk: true, size: 17.8,
+	onDisk: true, size: 17.848,
 	gog: {
 		genres: ["Action", "Aventure", "Survie"],
 	}
 }, {
 	name: "Tomb Raider 11", fullname: "Rise of the Tomb Raider: 20 Year Celebration", collection: "Tomb Raider",
-	onDisk: true, size: 33.8,
+	onDisk: true, size: 33.801,
 	gog: {
 		genres: ["Action", "Aventure", "Survie"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Survie", "Violent", "Gore", "Infiltration"]
 	}
 }, {
 	name: "Tomb Raider 12", fullname: "Shadow of the Tomb Raider: Definitive Edition", collection: "Tomb Raider",
-	onDisk: true, size: 36.3,
+	onDisk: true, size: 38.284,
 	gog: {
 		genres: ["Action", "Aventure", "Survie"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Monde Ouvert", "Troisième personne", "Multijoueur", "Survie", "Violent", "Gore", "Infiltration"]
 	}
 }, {
 	name: "Toonstruck",
-	onDisk: true, size: 2.0,
+	onDisk: true, size: 2.002,
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Histoire Riche", "2D", "Classique", "Exploration", "Casse-tête", "Amusant", "Troisième personne", "Point-and-click", "Logique", "Cartoonesque", "Humour noir", "Objets cachés", "FMV"]
@@ -1801,14 +1801,14 @@ var GAMES = [
 	}
 }, {
 	name: "Torchlight 2", fullname: "Torchlight II", collection: "Torchlight",
-	onDisk: true, size: 3.4,
+	onDisk: true, size: 3.421,
 	gog: {
 		genres: ["Jeu de rôle", "Action", "Fantasy"],
 		tags: ["Action", "Indé", "Fantasy", "Atmosphère", "Jeu de rôle", "Classique", "Multijoueur", "Isométrique", "Hack and Slash", "Dungeon Crawler", "Steampunk"]
 	}
 }, {
 	name: "Tower Hunter: Erza's Trial", fullname: "Tower Hunter: Erza's Trial",
-	onDisk: true, size: 1.1,
+	onDisk: true, size: 1.114,
 	gog: {
 		genres: ["Action", "Roguelike", "Metroidvania"],
 		tags: ["Action", "2D", "Casual", "Protagoniste féminine", "Superbe bande-son", "Nudité", "Difficile", "Roguelike", "Roguelite", "Hack and Slash", "Metroidvania", "Souls-like", "Perma Death"]
@@ -1823,7 +1823,7 @@ var GAMES = [
 	}
 }, {
 	name: "Train Valley 2", collection: "Train Valley",
-	onDisk: true, size: 0.406,
+	onDisk: true, size: 0.425,
 	date : "2026-08-17",
 	gog: {
 		genres: ["Simulation", "Construction", "Gestion"],
@@ -1831,14 +1831,14 @@ var GAMES = [
 	}
 }, {
 	name: "Treasure Adventure Game",
-	onDisk: true, size: 0.116,
+	onDisk: true, size: 0.115,
 	gog: {
 		genres: ["Plateforme", "Aventure", "Jeu de rôle"],
 		tags: ["Aventure", "Indé", "Fantasy", "Jeu de rôle", "2D", "Classique", "Plateformes", "Familial", "Cartoonesque", "Casse-tête et plateformes", "Metroidvania"]
 	}
 }, {
 	name: "Turnip Boy Commits Tax Evasion",
-	onDisk: true, size: 0.096,
+	onDisk: true, size: 0.100,
 	date : "2026-08-17",
 	gog: {
 		genres: ["Action","Aventure","Réflexion"],
@@ -1846,7 +1846,7 @@ var GAMES = [
 	}
 }, {
 	name: "Two Point Hospital",
-	onDisk: true, size: 4.5,
+	onDisk: true, size: 4.432,
 	gog: {
 		genres: ["Simulation", "Construction", "Gestion"],
 		tags: ["Simulation", "Casual", "Tactique", "Amusant", "Gestion", "Bac-à-sable", "Isométrique", "Familial", "Rétro", "Construction", "Cartoonesque", "Gestion"]
@@ -1859,14 +1859,6 @@ var GAMES = [
 		tags: ["Action", "Science fiction", "Classique", "Science", "Tir"]
 	}
 }, {
-	name: "Unepic",
-	onDisk: true, size: 0.696,
-	date: "2026-08-15",
-	gog: {
-		genres: ["Action", "Plateforme", "Jeu de rôle"],
-		tags: ["Action", "Indé", "Jeu de rôle", "2D", "Classique", "Plateformes"]
-	}
-}, {
 	name: "Ultima 4", fullname: "Ultima IV: Quest of the Avatar", collection: "Ultima",
 	onDisk: true, size: 0.054,
 	gog: {
@@ -1875,7 +1867,7 @@ var GAMES = [
 	}
 }, {
 	name: "Ultima Underworld 1", collection: "Ultima",
-	onDisk: true, size: 0.076,
+	onDisk: true, size: 0.079,
 	date: "2026-08-15",
 	gog: {
 		genres: ["Jeu de rôle", "FPP", "Fantasy"],
@@ -1883,7 +1875,7 @@ var GAMES = [
 	}
 }, {
 	name: "Ultima Underworld 2", collection: "Ultima",
-	onDisk: true, size: 0.076,
+	onDisk: true, size: 0.079,
 	date: "2026-08-15",
 	gog: {
 		genres: ["Jeu de rôle", "FPP", "Fantasy"],
@@ -1891,11 +1883,19 @@ var GAMES = [
 	}
 }, {
 	name: "Ultima Worlds of Adventure 2", fullname: "Ultima Worlds of Adventure 2: Martian Dreams", collection: "Ultima",
-	onDisk: true, size: 0.190,
+	onDisk: true, size: 0.198,
 	date: "2026-08-02",
 	gog: {
 		genres: ["Jeu de rôle", "Adventure", "SF"],
 		tags: ["Aventure", "Jeu de rôle", "Science fiction", "Classique", "Science"]
+	}
+}, {
+	name: "Unepic",
+	onDisk: true, size: 0.729,
+	date: "2026-08-15",
+	gog: {
+		genres: ["Action", "Plateforme", "Jeu de rôle"],
+		tags: ["Action", "Indé", "Jeu de rôle", "2D", "Classique", "Plateformes"]
 	}
 }, {
 	name: "Unreal", fullname: "Unreal Gold",
@@ -1929,7 +1929,7 @@ var GAMES = [
 	}
 }, {
 	name: "Warpips",
-	onDisk: true, size: 0.345,
+	onDisk: true, size: 0.361,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Stratégie", "Temps réel", "Tactique"],
@@ -1946,14 +1946,14 @@ var GAMES = [
 	}
 }, {
 	name: "Wavetale",
-	onDisk: true, size: 2.4,
+	onDisk: true, size: 2.440,
 	gog: {
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Exploration", "Protagoniste féminine", "Troisième personne", "Plateformes", "Relaxant", "Cartoonesque", "Nature"]
 	}
 }, {
 	name: "Weakless",
-	onDisk: true, size: 3.26,
+	onDisk: true, size: 3.261,
 	date: "2026-08-27",
 	gog: {
 		genres: ["Plateforme", "Aventure", "Réflexion"],
@@ -1968,7 +1968,7 @@ var GAMES = [
 	}
 }, {
 	name: "While True: learn()",
-	onDisk: true, size: 0.147,
+	onDisk: true, size: 0.153,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Simulation","Réflexion","Programmation"],
@@ -1976,7 +1976,7 @@ var GAMES = [
 	}
 }, {
 	name: "Wildcat Gun Machine",
-	onDisk: true, size: 0.695,
+	onDisk: true, size: 0.728,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Action","Temps réel","Shoot 'em Up"],
@@ -1991,7 +1991,7 @@ var GAMES = [
 	}
 }, {
 	name: "Wonder Boy: The Dragon's Trap",
-	onDisk: true, size: 0.955,
+	onDisk: true, size: 1.001,
 	date: "2026-08-17",
 	gog: {
 		genres: ["Action","Aventure","Plateforme"],
@@ -2013,7 +2013,8 @@ var GAMES = [
 	}
 }, {
 	name: "XCOM: Chimera Squad",
-	onDisk: false, size: 0,
+	onDisk: true, size: 15.570,
+	date : "2026-08-27",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "SF"],
 		tags: ["Stratégie", "Science fiction", "Tour par tour", "Science"]
@@ -2029,7 +2030,8 @@ var GAMES = [
 	}
 }, {
 	name: "Zoria: Age of Shattering",
-	onDisk: false, size: 0,
+	onDisk: true, size: 12.782,
+	date : "2026-08-27",
 	gog: {
 		genres: ["Jeu de rôle", "Tour par tour", "Fantasy"],
 		tags: ["Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Exploration", "Tour par tour", "Tactique", "Construction de base", "Dungeon Crawler", "cRPG"]
