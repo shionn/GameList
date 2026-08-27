@@ -121,7 +121,10 @@ q(function() {
 		});
 		size = size.toFixed(1);
 
-		q("#size").clearChildren().append(q("<p>").append(q("<strong>").text("Taille totale : ")).append(q("<span>").text(size+ " Go")));
+		q("#size").clearChildren().append(q("<p>")
+			.append(q("<strong>").text("Taille totale : "))
+			.append(q("<span>").text(size+ " Go ("+GAMES.length+" jeux)"))
+		);
 
 	}
 

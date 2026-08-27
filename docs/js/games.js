@@ -98,17 +98,7 @@ var skel = {
 };
 
 /* TODO /  TOTEST
-Hiveswap Friendsim (GoG)
-Pyramids and Aliens: Escape Room (GoG)
-Right and Down (GoG)
-Zoria: Age of Shattering (GOG)
-Mystic Academy: Escape Room (GoG)
 Poly Vita (legacygames)
-Escape Academy (EGS)
-FRAMED Collection (GoG)
-Space Grunts (GoG)
-Space Grunts 2 (GoG)
-XCOM: Chimera Squad (GoG)
 Royal Romances: Forbidden Magic. (legacygames)
 Spray Paint Simulator (Luna)
 */
@@ -116,7 +106,7 @@ Spray Paint Simulator (Luna)
 var GAMES = [
 {
 	name: "112 Operator",
-	onDisk: true, size: 1.6,
+	onDisk: true, size: 1.71,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Strategy", "Indie", "Puzzle","Simulator"],
@@ -124,7 +114,7 @@ var GAMES = [
 	}
 }, {
 	name: "9 Years of Shadows",
-	onDisk: true, size: 1.4,
+	onDisk: true, size: 1.45,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -133,7 +123,7 @@ var GAMES = [
 	}
 }, {
 	name: "A Game of Thrones: The Board Game",
-	onDisk: false, size: 0.147,
+	onDisk: false, size: 0.154,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Stratégie", "Fantasy", "Jeu de cartes"],
@@ -141,7 +131,7 @@ var GAMES = [
 	}
 }, {
 	name: "A Plague Tale: Innocence",
-	onDisk: true, size: 38.0,
+	onDisk: true, size: 38.03,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -150,23 +140,15 @@ var GAMES = [
 	}
 }, {
 	name: "Adios",
-	onDisk: true, size: 2.2,
+	onDisk: true, size: 2.40,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Simulation", "FPP", "Narratif"],
 		tags: ["Indé", "Histoire Riche", "Simulation", "Première personne", "Sombre", "Mystère", "FPS", "Narratif", "Émotionnel", "Simulation de marche", "Thriller", "Crime", "Philosophique"]
 	}
 }, {
-	name: "Alba: A Wildlife Adventure",
-	onDisk: true, size: 0.303,
-	date : "2026-08-13",
-	gog: {
-		genres: ["Aventure", "Exploration"],
-		tags: ["Aventure", "Indé", "Exploration", "Protagoniste féminine", "Familial", "Relaxant", "Cartoonesque", "Nature", "Cozy"]
-	}
-}, {
 	name: "Alan Wake", collection: "Remedy",
-	onDisk: true, size: 8.4,
+	onDisk: true, size: 8.36,
 	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Horreur"],
@@ -174,38 +156,46 @@ var GAMES = [
 	}
 }, {
 	name: "Alan Wake 2", collection: "Remedy",
-	onDisk: true, size: 99.1,
+	onDisk: true, size: 106.46,
 	date: "2026-08-20",
 	gog: {
 		genres: ["Adventure", "Shooter"],
 		tags: ["Action", "Horror", "Thriller", "Survival", "Mystery"]
 	}
 }, {
+	name: "Alba: A Wildlife Adventure",
+	onDisk: true, size: 0.318,
+	date : "2026-08-13",
+	gog: {
+		genres: ["Aventure", "Exploration"],
+		tags: ["Aventure", "Indé", "Exploration", "Protagoniste féminine", "Familial", "Relaxant", "Cartoonesque", "Nature", "Cozy"]
+	}
+}, {
 	name: "Amnesia: Rebirth",
-	onDisk: true, size: 18.3,
+	onDisk: true, size: 19.65,
 	date: "2026-08-14",
 	gog: {
 		genres: ["FPP", "Horreur", "Aventure"],
 		tags: ["Aventure", "Indé", "Première personne", "Sombre", "Horreur", "FPS"]
 	}
 }, {
-	name: "Anno 1404", fullname: "Anno 1404: Gold Edition",
-	onDisk: true, size: 3.4,
-	gog: {
-		genres: ["Simulation", "Historique", "Stratégie"],
-		tags: ["Stratégie", "Classique", "Simulation", "Superbe bande-son", "Gestion", "Bac-à-sable", "Historique", "Temps réél", "Gestion des resources", "Relaxant", "Médieval", "Construction de villes", "Commerce", "Transport"]
-	}
-}, {
 	name: "Ancient Enemy",
-	onDisk: true, size: 0.127,
+	onDisk: true, size: 0.132,
 	date: "2026-08-14",
 	gog: {
 		genres: ["Jeu de rôle", "Fantasy", "Jeu de cartes"],
 		tags: ["Indé", "Fantasy", "Jeu de rôle", "Classique", "Tour par tour", "Sombre", "Historique", "Magie", "Relaxant", "Post-apocalyptique", "cRPG", "Jeu de cartes"]
 	}
 }, {
+	name: "Anno 1404", fullname: "Anno 1404: Gold Edition",
+	onDisk: true, size: 3.41,
+	gog: {
+		genres: ["Simulation", "Historique", "Stratégie"],
+		tags: ["Stratégie", "Classique", "Simulation", "Superbe bande-son", "Gestion", "Bac-à-sable", "Historique", "Temps réél", "Gestion des resources", "Relaxant", "Médieval", "Construction de villes", "Commerce", "Transport"]
+	}
+}, {
 	name: "Aven Colony",
-	onDisk: true, size: 12.2,
+	onDisk: true, size: 13.13,
 	date: "2026-08-20",
 	gog: {
 		genres: ["Strategy","Simulation","Sci-fi"],
@@ -710,7 +700,6 @@ var GAMES = [
 }, {
 	name: "Fantasy General",
 	onDisk: true, size: 0.412,
-	comment: "to update",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Fantasy"],
 		tags: ["Fantasy", "Stratégie", "2D", "Classique", "Tour par tour", "Magie", "Guerre"]
@@ -722,8 +711,7 @@ var GAMES = [
 }, {
 	name: "First Racer",
 	onDisk: true, size: 0.462,
-	date : "2026-08-15",
-	comment: "to update",
+	date : "2026-08-26",
 	gog: {
 		genres: ["Course", "Arcade", "Touring"],
 		tags: ["Indé", "Atmosphère", "Casual", "Troisième personne", "Familial", "Relaxant", "Rétro", "Arcade", "Multijoueur local", "Course", "Touring"]
@@ -738,14 +726,16 @@ var GAMES = [
 	}
 }, {
 	name: "FRAMED Collection",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 0.860,
+	date : "2026-08-27",
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
 		tags: ["Aventure", "Indé", "2D", "Casse-tête", "Casual", "Superbe bande-son", "Plateformes", "Point&Click", "Familial", "Noir"]
 	}
 }, {
 	name: "Frostpunk",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 9.5,
+	date : "2026-08-27",
 	gog: {
 		genres: ["Stratégie","Simulation","Survie"],
 		tags: ["Indé", "Atmosphère", "Stratégie", "Simulation", "Sombre", "Superbe bande-son", "Choix multiples", "Gestion", "Survie", "Gestion des resources", "Difficile", "Construction de base", "Post-apocalyptique", "Construction de villes", "Horreur et survie", "Steampunk"]
@@ -763,7 +753,8 @@ var GAMES = [
 	}
 }, {
 	name: "Gamedec",  fullname: "Gamedec - Definitive Edition",
-	onDisk: false,
+	onDisk: true, size: 9.3,
+	date : "2026-08-27",
 	gog: {
 		genres: ["Jeu de rôle","Aventure","SF"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Exploration", "Science", "Choix multiples", "Mystère", "Fins multiples", "Isométrique", "Enquête", "Vous êtes le héro", "Cyberpunk", "cRPG", "Noir", "Basé sur du texte"]
@@ -879,7 +870,7 @@ var GAMES = [
 	}
 }, {
 	name: "Hiveswap Friendsim",
-	onDisk: false, size: 0,
+	onDisk: true, size: 1.18,
 	gog: {
 		genres: ["Aventure","Comédie","Roman visuel"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Casual", "Première personne", "Amusant", "Roman graphique", "Violent", "Horreur psychologique", "LGBTQ+", "Dating Sim", "Comédie"]
@@ -1453,14 +1444,16 @@ var GAMES = [
 	}
 }, {
 	name: "Space Grunts", collection: "Space Grunts",
-	onDisk: false, size: 0,
+	onDisk: true, size: 0.082,
+	date : "2026-08-26",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Roguelike"],
 		tags: ["Action", "Indé", "Stratégie", "Jeu de rôle", "Science fiction", "Classique", "Tour par tour", "Graphismes Pixel", "Roguelike", "Rétro", "Espace", "Vue du dessus", "Roguelite", "Perma Death"]
 	}
 }, {
 	name: "Space Grunts 2", collection: "Space Grunts",
-	onDisk: false, size: 0,
+	onDisk: true, size: 0.097,
+	date : "2026-08-26",
 	gog: {
 		genres: ["Stratégie", "Arcade", "Roguelike"],
 		tags: ["Action", "Indé", "Stratégie", "Jeu de rôle", "2D", "Science fiction", "Tour par tour", "Graphismes Pixel", "Roguelike", "Espace", "Roguelite", "Génération procédurale", "Dungeon Crawler", "Arcade", "Jeu de cartes"]
@@ -1739,8 +1732,8 @@ var GAMES = [
 	}
 }, {
 	name: "Tomb Raider 1/2/3", fullname: "Tomb Raider I-III Remastered Starring Lara Croft", collection: "Tomb Raider",
-	onDisk: true, size: 4.3,
-	comment: "to update",
+	onDisk: true, size: 4.1,
+	date: "2026-08-26",
 	gog: {
 		name: "Tomb Raider I to III Remastered",
 		genres: ["Action", "Aventure", "Exploration"],
@@ -1957,6 +1950,14 @@ var GAMES = [
 	gog: {
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Exploration", "Protagoniste féminine", "Troisième personne", "Plateformes", "Relaxant", "Cartoonesque", "Nature"]
+	}
+}, {
+	name: "Weakless",
+	onDisk: true, size: 3.26,
+	date: "2026-08-27",
+	gog: {
+		genres: ["Plateforme", "Aventure", "Réflexion"],
+		tags: ["Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Casse-tête", "Casual", "Familial", "Relaxant", "Émotionnel", "Court"]
 	}
 }, {
 	name: "What Remains of Edith Finch",
