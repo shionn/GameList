@@ -804,8 +804,14 @@ var GAMES = [
 		tags: ["Action", "Fantasy", "Science fiction", "Classique", "Science", "Amusant", "Monde Ouvert", "Troisième personne", "Multijoueur", "Nudité", "Violent", "Gestion des resources", "FPS", "Construction de base", "Réaliste", "Stratégie en temps réél"]
 	}
 }, {
+	name: "GigaBash",
+	onDisk: true, size: 12.269,
+	date : "2026-08-28",
+
+},{
 	name: "Golden Light",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 3.530,
+	date : "2026-08-28",
 }, {
 	name: "Grandia 2", fullname: "Grandia II Anniversary Edition",
 	onDisk: true, size: 1.974,
@@ -881,7 +887,8 @@ var GAMES = [
 	date : "2026-08-16",
 }, {
 	name: "In Sound Mind",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 9.695,
+	date : "2026-08-28",
 	gog: {
 		genres: ["Horreur", "Aventure" ,"Survie"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Première personne", "Sombre", "Horreur", "Plateformes", "Survie", "FPS", "Horreur psychologique", "Casse-tête et plateformes", "Objets cachés", "Chats"]
@@ -900,10 +907,18 @@ var GAMES = [
 	date: "2026-08-16",
 }, {
 	name: "Jotun", fullname: "Jotun: Valhalla Edition",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 1.483,
 	gog: {
 		genres: ["Jeu de rôle","Action","Fantasy"],
 		tags: ["Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "2D", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Difficile", "Isométrique", "Souls-like", "Mythologie", "Vikings"]
+	}
+}, {
+	name: "Kardboard Kings: Card Shop Simulator",
+	onDisk: true, size: 0.915,
+	date : "2026-08-28",
+	gog: {
+		genres: ["Simulation", "Stratégie", "Gestion"],
+		tags: ["Indé", "Stratégie", "Simulation", "Gestion", "Roman graphique", "Gestion des resources", "Gestion", "LGBTQ+", "Commerce"]
 	}
 }, {
 	name: "Kerbal Space Program",
@@ -1615,6 +1630,10 @@ var GAMES = [
 		genres: ["Action", "Adventure", "Exploration"],
 		tags: ["Adventure", "Action", "Story Rich", "Atmospheric", "Sci-fi", "Exploration", "Female Protagonist", "Third Person", "Family Friendly", "Relaxing", "LGBTQ+", "Metroidvania", "Nature"]
 	}
+}, {
+	name: "The Jackbox Party Pack",
+	onDisk: true, size: 1.241,
+	date : "2026-08-28",
 }, {
 	name: "The Lion's Song",
 	onDisk: true, size: 0.375,
