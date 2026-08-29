@@ -14,6 +14,10 @@ class Game {
 		return this.json.fullname;
 	}
 
+	get simplifiedname() {
+		return this.name.replace(/the /i,"");
+	}
+
 	get collection() {
 		return this.json.collection;
 	}
@@ -48,7 +52,7 @@ class Game {
 	}
 
 	get letter() {
-		return this.name.charAt(0).replace(/\d/,"#");
+		return this.simplifiedname.charAt(0).replace(/\d/,"#");
 	}
 
 	get isNew() {
@@ -2062,5 +2066,5 @@ var GAMES = [
 		genres: ["Jeu de rôle", "Tour par tour", "Fantasy"],
 		tags: ["Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Exploration", "Tour par tour", "Tactique", "Construction de base", "Dungeon Crawler", "cRPG"]
 	}
-}].map(json => new Game(json));
+}].map(json => new Game(json)).sort((a,b)=>a.simplifiedname.localeCompare(b.simplifiedname));
 
