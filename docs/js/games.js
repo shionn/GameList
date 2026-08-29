@@ -101,6 +101,7 @@ var skel = {
 Poly Vita (legacygames)
 Royal Romances: Forbidden Magic. (legacygames)
 Spray Paint Simulator (Luna)
+
 */
 
 var GAMES = [
@@ -908,6 +909,7 @@ var GAMES = [
 }, {
 	name: "Jotun", fullname: "Jotun: Valhalla Edition",
 	onDisk: true, size: 1.483,
+	date: "2026-08-27",
 	gog: {
 		genres: ["Jeu de rôle","Action","Fantasy"],
 		tags: ["Action", "Indé", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "2D", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Difficile", "Isométrique", "Souls-like", "Mythologie", "Vikings"]
@@ -929,6 +931,10 @@ var GAMES = [
 		genres: ["Simulation", "SF", "Construction"],
 		tags: ["Indé", "Science fiction", "Exploration", "Simulation", "Science", "Amusant", "Monde Ouvert", "Bac-à-sable", "Difficile", "Espace", "Construction", "Physique", "Éducation"]
 	}
+}, {
+	name: "Kid A Mnesia Exhibition",
+	onDisk: true, size: 9.853,
+	date: "2026-08-29",
 }, {
 	name: "Kingdom: New Lands",
 	onDisk: false, size: 0.312,
@@ -1044,7 +1050,8 @@ var GAMES = [
 	gog: { genres: [], tags: [] }
 }, {
 	name: "Model Builder",
-	onDisk: false,
+	onDisk: true, size: 16.228,
+	date : "2026-08-29",
 }, {
 	name: "Monster Train",
 	onDisk: true, size: 0.684,
