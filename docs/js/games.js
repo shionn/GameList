@@ -1076,7 +1076,8 @@ var GAMES = [
 	}
 }, {
 	name: "Mothergunship",
-	onDisk: false,
+	onDisk: true, size: 5.531,
+	date : "2026-08-30",
 	gog: {
 		genres: ["Action","FPP","Roguelike"],
 		tags: ["Action", "Science", "Première personne", "Difficile", "Roguelike", "FPS", "Roguelite", "Crafting", "Génération procédurale", "Bullet Hell", "Perma Death"]
@@ -1097,7 +1098,7 @@ var GAMES = [
 	name: "Mystic Academy: Escape Room",
 	onDisk: false, size: 0,
 	gog: {
-		genres: ["Aventure - Point-and-click - Réflexion"],
+		genres: ["Aventure","Point-and-click","Réflexion"],
 		tags: ["Fantasy", "Exploration", "Casse-tête", "Casual", "Première personne", "Mystère", "Familial", "Magie", "Médieval", "Réaliste", "Simulation de marche", "Objets cachés"]
 	}
 }, {
@@ -1111,7 +1112,8 @@ var GAMES = [
 	}
 }, {
 	name: "Obduction",
-	onDisk: false,
+	onDisk: true, size: 5.023,
+	date : "2026-08-30",
 	gog: {
 		genres: ["FPP","Aventure","Réflexion"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Casse-tête", "Casual", "Science", "Première personne", "Choix multiples", "Monde Ouvert", "Mystère", "Point&Click", "Survie", "FPS", "Logique", "Surréaliste", "Simulation de marche", "FMV", "Réalité virtuelle"]
@@ -1153,7 +1155,8 @@ var GAMES = [
 	}
 }, {
 	name: "Overcooked! 2", collection :"Overcooked",
-	onDisk: false,
+	onDisk: true, size: 7.243,
+	date : "2026-08-30",
 	gog: {
 		genres: ["Simulation", "Action", "Comédie"],
 		tags: ["Action", "Simulation", "Casual", "Superbe bande-son", "Amusant", "Multijoueur", "Difficile", "Familial", "Coop locale", "Multijoueur local", "Comédie", "Cuisine"]
@@ -1198,7 +1201,8 @@ var GAMES = [
 	date : "2026-08-09"
 },  {
 	name: "Prey",
-	onDisk: false,
+	onDisk: true, size: 41.748,
+	date : "2026-08-31",
 	gog: {
 		genres: ["Action","FPP","SF"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Science fiction", "Exploration", "Science", "Première personne", "Superbe bande-son", "Horreur", "Monde Ouvert", "FPS", "Espace", "Infiltration", "Horreur et survie", "Horreur psychologique"]
@@ -1310,7 +1314,8 @@ var GAMES = [
 	}
 }, {
 	name: "Road Redemption",
-	onDisk: false,
+	onDisk: true, size: 3.201,
+	date: "2026-08-31",
 }, {
 	name: "Rogue Legacy",
 	onDisk: true, size: 0.161,
@@ -1351,7 +1356,8 @@ var GAMES = [
 	}
 }, {
 	name: "Saints Row IV: Re-Elected",
-	onDisk: false,
+	onDisk: true, size: 13.138,
+	date: "2026-09-01",
 	gog: {
 		genres: ["Action","TPP","Monde ouvert"],
 		tags: ["Action", "Classique", "Troisième personne", "Monde Ouvert"]
@@ -1374,7 +1380,8 @@ var GAMES = [
 	}
 }, {
 	name: "Saturnalia",
-	onDisk: false,
+	onDisk: true, size: 2.688,
+	date: "2026-09-01",
 	gog: {
 		genres: ["Horreur","Aventure","Survie"],
 		tags: ["Aventure", "Atmosphère", "Exploration", "Horreur", "Troisième personne", "Monde Ouvert", "Mystère", "Survie", "Fins multiples", "Enquête", "Horreur et survie", "Enquête-mystère", "Lovecraft", "Thriller"]
@@ -1390,7 +1397,8 @@ var GAMES = [
 	}
 }, {
 	name: "Second Extinction",
-	onDisk: false,
+	onDisk: true, size: 9.412,
+	date: "2026-09-01",
 }, {
 	name: "Secret Files 1", fullname: "Secret Files: Tunguska", collection: "Secret Files",
 	onDisk: true, size: 2.687,
@@ -1425,7 +1433,8 @@ var GAMES = [
 	}
 }, {
 	name: "Shadow Tactics: Blades of the Shogun - Aiko's Choice",
-	onDisk: false,
+	onDisk: true, size: 2.696,
+	date : "2026-09-01",
 	gog: {
 		genres: ["Stratégie","Temps réel","Infiltration"],
 		tags: ["Indé", "Atmosphère", "Stratégie", "Casse-tête", "Superbe bande-son", "Tactique", "Troisième personne", "Historique", "Survie", "Violent", "Temps réél", "Difficile", "Isométrique", "Stratégie en temps réél", "Infiltration", "Ninja"]
@@ -1522,6 +1531,10 @@ var GAMES = [
 		tags: ["Science fiction", "Classique", "Simulation", "Science", "Espace", "Tir", "Vol"]
 	}
 }, {
+	name: "Submerged: Hidden Depths",
+	onDisk: true, size: 6.379,
+	date: "2026-09-01",
+}, {
 	name: "Subnautica",
 	date : "2026-08-09",
 	onDisk: true, size: 3.907,
@@ -1531,10 +1544,12 @@ var GAMES = [
 	}
 }, {
 	name: "Supraland",
-	onDisk: false,
+	onDisk: true, size: 4.389,
+	date: "2026-09-01",
 }, {
 	name: "Surviving the Aftermath",
-	onDisk: false,
+	onDisk: true, size: 2.528,
+	date: "2026-09-01",
 	gog: {
 		genres: ["Stratégie","Gestion" , "Survie"],
 		tags: ["Stratégie", "Gestion", "Survie", "Guerre", "Construction de base", "Gestion", "Post-apocalyptique", "Construction de villes"]
@@ -1670,6 +1685,10 @@ var GAMES = [
 		genres: ["Action", "Aventure", "Exploration"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Exploration", "Amusant", "Plateformes", "Coop locale", "Nature"]
 	}
+}, {
+	name: "The Spectrum Retreat",
+	onDisk: true, size: 3.048,
+	date : "2026-09-01",
 }, {
 	name: "The Spirit and the Mouse",
 	onDisk: true, size: 0.318,
