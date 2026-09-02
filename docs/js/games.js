@@ -1577,7 +1577,8 @@ var GAMES = [
 	}
 }, {
 	name: "Tandem: A Tale of Shadows",
-	onDisk: false,
+	onDisk: true, size: 8.117,
+	date: "2026-09-02",
 	gog: {
 		genres: ["Plateforme","Aventure","Réflexion"],
 		tags: ["Aventure", "Indé", "Fantasy", "2D", "Casse-tête", "Protagoniste féminine", "Mystère", "Plateformes", "Vue du dessus", "Logique", "Enquête", "Casse-tête et plateformes"]
@@ -1738,6 +1739,10 @@ var GAMES = [
 	name: "The X-Files",
 	onDisk: true, size: 3.272,
 	date: "2026-05-07"
+}, {
+	name: "Them's Fightin' Herds",
+	onDisk: true, size: 4.317,
+	date: "2026-08-02"
 }, {
 	name: "Theme Hospital",
 	onDisk: true, size: 0.176,
