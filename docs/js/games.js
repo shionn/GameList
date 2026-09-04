@@ -105,13 +105,13 @@ var skel = {
 Poly Vita (legacygames)
 Royal Romances: Forbidden Magic. (legacygames)
 Spray Paint Simulator (Luna)
-
+Havendock sera (Luna)
 */
 
 var GAMES = [
 {
 	name: "112 Operator",
-	onDisk: true, size: 1.71,
+	onDisk: true, size: 1.707,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Strategy", "Indie", "Puzzle","Simulator"],
@@ -119,7 +119,7 @@ var GAMES = [
 	}
 }, {
 	name: "9 Years of Shadows",
-	onDisk: true, size: 1.45,
+	onDisk: true, size: 1.447,
 	sources: ["GP"],
 	date : "2026-04-14",
 	gog: {
@@ -128,7 +128,7 @@ var GAMES = [
 	}
 }, {
 	name: "A Game of Thrones: The Board Game",
-	onDisk: false, size: 0.154,
+	onDisk: true, size: 0.154,
 	date : "2026-08-14",
 	gog: {
 		genres: ["Stratégie", "Fantasy", "Jeu de cartes"],
@@ -941,7 +941,7 @@ var GAMES = [
 	date: "2026-08-29",
 }, {
 	name: "Kingdom: New Lands",
-	onDisk: false, size: 0.312,
+	onDisk: true, size: 0.312,
 	date: "2026-08-16",
 	gog: {
 		genres: ["Stratégie","Simulation","Fantasy"],
@@ -1163,7 +1163,7 @@ var GAMES = [
 	}
 }, {
 	name: "Paradigm",
-	onDisk: false, size: 1.584,
+	onDisk: true, size: 1.584,
 	date : "2026-08-17",
 	gog: {
 		genres: ["SF","Aventure","Réflexion"],
@@ -1282,7 +1282,8 @@ var GAMES = [
 	}
 }, {
 	name: "Right and Down",
-	onDisk: false, size: 0,
+	onDisk: true, size: 0.246,
+	date : "2026-09-04",
 	gog: {
 		genres: ["Stratégie", "Roguelike", "Jeu de cartes"],
 		tags: ["Fantasy", "2D", "Exploration", "Tour par tour", "Casse-tête", "Casual", "Roguelike", "Magie", "Roguelite", "Génération procédurale", "Dungeon Crawler", "Jeu de cartes", "Deckbuilding", "Jeu de plateau"]
@@ -1709,7 +1710,7 @@ var GAMES = [
 	}
 }, {
 	name: "The Vanishing of Ethan Carter",
-	onDisk: false,
+	onDisk: true, size: 9.193,
 	gog: {
 		genres: ["Action","Aventure","Horreur"],
 		tags: ["Aventure", "Action", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Casse-tête", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Monde Ouvert", "Mystère", "Point&Click", "Horreur psychologique", "Simulation de marche", "Surnaturel", "Lovecraft", "Court"]
@@ -1774,7 +1775,7 @@ var GAMES = [
 	}
 }, {
 	name: "ToeJam & Earl: Back in the Groove!",
-	onDisk: false, size: 0.754,
+	onDisk: true, size: 0.754,
 	date: "2026-08-16",
 }, {
 	name: "TOEM",
@@ -1959,24 +1960,28 @@ var GAMES = [
 	}
 }, {
 	name: "Vampyr",
-	onDisk: false,
+	onDisk: true, size: 15.044,
+	date: "2026-09-03",
 	gog: {
 		genres: ["Action","Horreur","Jeu de rôle"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Sombre", "Superbe bande-son", "Horreur", "Choix multiples", "Troisième personne", "Monde Ouvert", "Contenu à caractère sexuel", "Nudité", "Violent", "Gore", "Infiltration", "Souls-like", "Vampire"]
 	}
 }, {
 	name: "Void Bastards",
-	onDisk: false,
+	onDisk: true, size: 1.450,
+	date: "2026-09-03",
 }, {
 	name: "Warhammer 40,000: Gladius - Relics of War",
-	onDisk: false,
+	onDisk: true, size: 5.521,
+	date: "2026-09-03",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "SF"],
 		tags: ["Stratégie", "Science fiction", "Tour par tour", "Science", "Superbe bande-son", "Tactique", "Multijoueur", "Guerre", "Militaire", "Stratégie complexe", "4X"]
 	}
 }, {
 	name: "Warhammer 40,000: Mechanicus",
-	onDisk: false,
+	onDisk: true, size: 5.286,
+	date: "2026-09-03",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "SF"],
 		tags: ["Histoire Riche", "Atmosphère", "Stratégie", "Science fiction", "Tour par tour", "Science", "Tactique", "Difficile", "Dungeon Crawler", "Robots", "Jeu de plateau"]
@@ -2015,7 +2020,8 @@ var GAMES = [
 	}
 }, {
 	name: "What Remains of Edith Finch",
-	onDisk: false,
+	onDisk: true, size: 2.423,
+	date: "2026-09-03",
 	gog: {
 		genres: ["FPP", "Aventure", "Narratif"],
 		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Première personne", "Protagoniste féminine", "Sombre", "Superbe bande-son", "Horreur", "Mystère", "Roman graphique", "Narratif", "Horreur psychologique", "Simulation de marche", "Lovecraft", "Cozy", "Court"]
@@ -2038,7 +2044,8 @@ var GAMES = [
 	}
 }, {
 	name: "Wolfenstein: The New Order",
-	onDisk: false,
+	onDisk: true, size: 44.860,
+	date: "2026-09-04",
 	gog: {
 		genres: ["Tir","FPP","SF"],
 		tags: ["Science fiction","Classique", "Science", "Première personne", "Gore", "FPS", "Tir"]
