@@ -1096,7 +1096,8 @@ var GAMES = [
 	}
 }, {
 	name: "Mystic Academy: Escape Room",
-	onDisk: false, size: 0,
+	onDisk: true, size: 4.762,
+	date : "2026-09-06",
 	gog: {
 		genres: ["Aventure","Point-and-click","Réflexion"],
 		tags: ["Fantasy", "Exploration", "Casse-tête", "Casual", "Première personne", "Mystère", "Familial", "Magie", "Médieval", "Réaliste", "Simulation de marche", "Objets cachés"]
@@ -1260,7 +1261,8 @@ var GAMES = [
 	}
 }, {
 	name: "Pyramids and Aliens: Escape Room",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 4.160,
+	date : "2026-09-06",
 	gog: {
 		genres: ["Aventure","Point-and-click","Réflexion"],
 		tags: ["Science fiction", "Casse-tête", "Casual", "Mystère", "Historique", "Familial", "Logique", "Enquête", "Simulation de marche", "Objets cachés"]
