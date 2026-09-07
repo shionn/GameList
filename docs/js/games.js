@@ -491,7 +491,7 @@ var GAMES = [
 	date: "2026-08-16",
 	gog: {
 		name: "Dark Deity: Complete Edition",
-		genres: ["Stratégie - Aventure - JRPG"],
+		genres: ["Stratégie", "Aventure", "JRPG"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Stratégie", "2D", "Tour par tour", "Graphismes Pixel", "JRPG"]
 	}
 }, {
