@@ -370,7 +370,7 @@ var GAMES = [
 	onDisk: true, size: 10.34,
 	date : "2026-08-21",
 	gog: {
-		genres: ["Simulation - Temps réel - Exploration"],
+		genres: ["Simulation", "Temps réel", "Exploration"],
 		tags: ["Exploration", "Simulation", "Première personne", "Gestion", "Troisième personne", "Monde Ouvert", "Multijoueur", "Temps réél", "Familial", "Relaxant", "Réaliste", "Moderne"]
 	}
 }, {
@@ -735,7 +735,7 @@ var GAMES = [
 	date : "2026-08-27",
 	gog: {
 		genres: ["Aventure", "Point-and-click", "Réflexion"],
-		tags: ["Aventure", "Indé", "2D", "Casse-tête", "Casual", "Superbe bande-son", "Plateformes", "Point&Click", "Familial", "Noir"]
+		tags: ["Aventure", "Indé", "2D", "Casse-tête", "Casual", "Superbe bande-son", "Plateformes", "Point-and-Click", "Familial", "Noir"]
 	}
 }, {
 	name: "Frostpunk",
@@ -1117,7 +1117,7 @@ var GAMES = [
 	date : "2026-08-30",
 	gog: {
 		genres: ["FPP","Aventure","Réflexion"],
-		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Casse-tête", "Casual", "Science", "Première personne", "Choix multiples", "Monde Ouvert", "Mystère", "Point&Click", "Survie", "FPS", "Logique", "Surréaliste", "Simulation de marche", "FMV", "Réalité virtuelle"]
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Casse-tête", "Casual", "Science", "Première personne", "Choix multiples", "Monde Ouvert", "Mystère", "Point-and-Click", "Survie", "FPS", "Logique", "Surréaliste", "Simulation de marche", "FMV", "Réalité virtuelle"]
 	}
 }, {
 	name: "Ori and the Blind Forest", fullname: "Ori and the Blind Forest: Definitive Edition", collection: "Ori",
@@ -1168,7 +1168,7 @@ var GAMES = [
 	date : "2026-08-17",
 	gog: {
 		genres: ["SF","Aventure","Réflexion"],
-		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Science fiction", "Casse-tête", "Science", "Superbe bande-son", "Amusant", "Point&Click", "Logique", "Surréaliste"]
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Science fiction", "Casse-tête", "Science", "Superbe bande-son", "Amusant", "Point-and-Click", "Logique", "Surréaliste"]
 	}
 }, {
 	name: "Phantasmagoria",
@@ -1670,7 +1670,7 @@ var GAMES = [
 	date: "2026-08-16",
 	gog: {
 		genres: ["Aventure","Point-and-click","Narratif"],
-		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Casual", "Protagoniste féminine", "Graphismes Pixel", "Superbe bande-son", "Choix multiples", "Roman graphique", "Point&Click", "Narratif"]
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Casual", "Protagoniste féminine", "Graphismes Pixel", "Superbe bande-son", "Choix multiples", "Roman graphique", "Point-and-Click", "Narratif"]
 	}
 }, {
 	name: "The Operator",
@@ -1715,7 +1715,7 @@ var GAMES = [
 	onDisk: true, size: 9.193,
 	gog: {
 		genres: ["Action","Aventure","Horreur"],
-		tags: ["Aventure", "Action", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Casse-tête", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Monde Ouvert", "Mystère", "Point&Click", "Horreur psychologique", "Simulation de marche", "Surnaturel", "Lovecraft", "Court"]
+		tags: ["Aventure", "Action", "Indé", "Histoire Riche", "Atmosphère", "Exploration", "Classique", "Casse-tête", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Monde Ouvert", "Mystère", "Point-and-Click", "Horreur psychologique", "Simulation de marche", "Surnaturel", "Lovecraft", "Court"]
 	}
 }, {
 	name: "The Witcher", fullname: "The Witcher: Enhanced Edition", collection: "The Witcher",
@@ -1766,7 +1766,7 @@ var GAMES = [
 	date: "2026-08-17",
 	gog: {
 		genres: ["Aventure","Point-and-click","Enquête-mystère"],
-		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Casse-tête", "Protagoniste féminine", "Graphismes Pixel", "Superbe bande-son", "Amusant", "Mystère", "Point&Click", "Enquête", "Enquête-mystère", "Remake"]
+		tags: ["Aventure", "Indé", "Histoire Riche", "Atmosphère", "2D", "Casse-tête", "Protagoniste féminine", "Graphismes Pixel", "Superbe bande-son", "Amusant", "Mystère", "Point-and-Click", "Enquête", "Enquête-mystère", "Remake"]
 	}
 }, {
 	name: "Timberborn",
