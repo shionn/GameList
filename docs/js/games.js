@@ -1641,6 +1641,7 @@ var GAMES = [
 }, {
 	name: "The Elder Scrolls V: Skyrim", fullname: "The Elder Scrolls V: Skyrim Special Edition", collection: "The Elder Scrolls",
 	onDisk: true, size: 28.675,
+	date : "2026-09-10",
 	gog: {
 		genres: ["Jeu de rôle","Aventure","Fantasy"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Exploration", "Classique", "Première personne", "Superbe bande-son", "Troisième personne", "Monde Ouvert", "Magie", "Crafting", "Vous êtes le héro"]
