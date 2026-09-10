@@ -1008,6 +1008,13 @@ var GAMES = [
 	onDisk: true, size: 0.169,
 	date : "2026-08-18",
 }, {
+	name: "Luftrausers",
+	onDisk: false,
+	gog: {
+		genres: ["Action","Arcade","Historique"],
+		tags: ["Action", "Indé", "2D", "Classique", "Graphismes Pixel", "Superbe bande-son", "Historique", "Difficile", "Roguelike", "Arcade", "Shoot'EmUp", "Bullet Hell", "Seconde guerre mondiale", "Vol"]
+	}
+}, {
 	name: "Lure of the Tempress",
 	onDisk: true, size: 0.073,
 	date : "2026-08-02",
