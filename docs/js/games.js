@@ -113,6 +113,7 @@ var GAMES = [
 	name: "112 Operator",
 	onDisk: true, size: 1.707,
 	date : "2026-08-14",
+	sources: ["LK", "EGS"],
 	gog: {
 		genres: ["Stratégie", "Indie", "Puzzle","Simulation"],
 		tags: []
@@ -120,7 +121,7 @@ var GAMES = [
 }, {
 	name: "9 Years of Shadows",
 	onDisk: true, size: 1.447,
-	sources: ["GP"],
+	sources: ["GP", "GOG"],
 	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Metroidvania"],
@@ -129,6 +130,7 @@ var GAMES = [
 }, {
 	name: "A Game of Thrones: The Board Game",
 	onDisk: true, size: 0.154,
+	sources: ["LK", "EGS"],
 	date : "2026-08-14",
 	gog: {
 		genres: ["Stratégie", "Fantasy", "Jeu de cartes"],
@@ -137,7 +139,7 @@ var GAMES = [
 }, {
 	name: "A Plague Tale: Innocence",
 	onDisk: true, size: 38.03,
-	sources: ["GP"],
+	sources: ["GP", "GOG"],
 	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Infiltration"],
@@ -146,6 +148,7 @@ var GAMES = [
 }, {
 	name: "Adios",
 	onDisk: true, size: 2.40,
+	sources: ["LK", "EGS"],
 	date : "2026-08-14",
 	gog: {
 		genres: ["Simulation", "FPP", "Narratif"],
@@ -154,6 +157,7 @@ var GAMES = [
 }, {
 	name: "Alan Wake", collection: "Remedy",
 	onDisk: true, size: 8.36,
+	sources: ["LK", "GOG"],
 	date : "2026-04-14",
 	gog: {
 		genres: ["Action", "Aventure", "Horreur"],
@@ -162,6 +166,7 @@ var GAMES = [
 }, {
 	name: "Alan Wake 2", collection: "Remedy",
 	onDisk: true, size: 106.46,
+	sources: ["LK", "EGS"],
 	date: "2026-08-20",
 	gog: {
 		genres: ["Aventure", "Shooter"],
@@ -170,6 +175,7 @@ var GAMES = [
 }, {
 	name: "Alba: A Wildlife Adventure",
 	onDisk: true, size: 0.318,
+	sources: ["LK", "EGS"],
 	date : "2026-08-13",
 	gog: {
 		genres: ["Aventure", "Exploration"],
@@ -178,6 +184,7 @@ var GAMES = [
 }, {
 	name: "Amnesia: Rebirth",
 	onDisk: true, size: 19.65,
+	sources: ["LK", "EGS"],
 	date: "2026-08-14",
 	gog: {
 		genres: ["FPP", "Horreur", "Aventure"],
@@ -186,6 +193,7 @@ var GAMES = [
 }, {
 	name: "Ancient Enemy",
 	onDisk: true, size: 0.132,
+	sources: ["LK", "EGS"],
 	date: "2026-08-14",
 	gog: {
 		genres: ["Jeu de rôle", "Fantasy", "Jeu de cartes"],
@@ -194,6 +202,7 @@ var GAMES = [
 }, {
 	name: "Anno 1404", fullname: "Anno 1404: Gold Edition",
 	onDisk: true, size: 3.41,
+	sources: ["ELECTRE", "GOG"],
 	gog: {
 		genres: ["Simulation", "Historique", "Stratégie"],
 		tags: ["Stratégie", "Classique", "Simulation", "Superbe bande-son", "Gestion", "Bac-à-sable", "Historique", "Temps réel", "Gestion des resources", "Relaxant", "Médieval", "Construction de villes", "Commerce", "Transport"]
@@ -202,6 +211,7 @@ var GAMES = [
 	name: "Aven Colony",
 	onDisk: true, size: 13.13,
 	date: "2026-08-20",
+	sources: ["LK", "EGS"],
 	gog: {
 		genres: ["Stratégie","Simulation","Science fiction"],
 		tags: ["Indie", "Stratégie", "Science fiction", "Simulation", "Science", "Management", "Sandbox", "Survie", "Resource Management", "Espace", "Base Building", "City builder"]
@@ -209,10 +219,12 @@ var GAMES = [
 }, {
 	name: "Axiom Verge",
 	onDisk: true, size: 0.103,
+	date: "2026-08-14",
+	sources: ["LK", "EGS"],
 }, {
 	name: "Baldur's Gate", fullname: "Baldur's Gate: Enhanced Edition",
 	onDisk: true, size: 5.83,
-	sources: ["Redloved", "Faran"],
+	sources: ["Redloved", "Faran", "GOG"],
 	date : "2026-04-14",
 	gog: {
 		genres: ["Jeu de rôle","Temps réel", "Fantasy"],
@@ -326,6 +338,14 @@ var GAMES = [
 		tags: ["Action", "Jeu de rôle", "2D", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Multijoueur", "Plateforme", "Contenu à caractère sexuel", "Nudité", "Difficile", "Crafting", "Metroidvania", "Vampire"]
 	}
 }, {
+	name: "Breathedge",
+	onDisk: true, size: 0.148,
+	date : "2026-09-12",
+	gog: {
+		genres: ["FPP","Aventure","Survie"],
+		tags: ["Aventure", "Indé", "Atmosphère", "Exploration", "Science", "Première personne", "Monde Ouvert", "Bac-à-sable", "Survie", "FPS", "Espace", "Crafting", "Construction de base"]
+	}
+}, {
 	name: "Bridge Constructor: The Walking Dead",
 	onDisk: true, size: 0.148,
 	date : "2026-08-14",
@@ -384,6 +404,15 @@ var GAMES = [
 }, {
 	name: "Car Mechanic Simulator 2018",
 	onDisk: true, size: 6.39,
+	date: "2026-08-20",
+}, {
+	name: "Cardpocalypse",
+	onDisk: true, size: 1.109,
+	date: "2026-09-12",
+	gog: {
+		genres: ["Jeu de rôle","Narratif","Jeu de cartes"],
+		tags: ["Indé", "Histoire Riche", "Jeu de rôle", "Protagoniste féminine", "Familial", "Cartoonesque", "Narratif", "Jeu de cartes", "Deckbuilding", "Jeu de table"]
+	}
 }, {
 	name: "Cave Story+",
 	onDisk: true, size: 0.089,
@@ -1009,7 +1038,8 @@ var GAMES = [
 	date : "2026-08-18",
 }, {
 	name: "Luftrausers",
-	onDisk: false,
+	onDisk: true, size: 0.109,
+	date : "2026-09-12",
 	gog: {
 		genres: ["Action","Arcade","Historique"],
 		tags: ["Action", "Indé", "2D", "Classique", "Graphismes Pixel", "Superbe bande-son", "Historique", "Difficile", "Roguelike", "Arcade", "Shoot'EmUp", "Bullet Hell", "Seconde guerre mondiale", "Vol"]
