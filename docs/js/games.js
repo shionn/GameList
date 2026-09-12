@@ -338,9 +338,16 @@ var GAMES = [
 		tags: ["Action", "Jeu de rôle", "2D", "Exploration", "Protagoniste féminine", "Superbe bande-son", "Multijoueur", "Plateforme", "Contenu à caractère sexuel", "Nudité", "Difficile", "Crafting", "Metroidvania", "Vampire"]
 	}
 }, {
+	name: "Botany Manor",
+	onDisk: true, size: 0.978,
+	sources: ["LK", "EGS"],
+	date : "2026-09-12",
+	gog: {}
+}, {
 	name: "Breathedge",
 	onDisk: true, size: 0.148,
 	date : "2026-09-12",
+	sources: ["LK", "EGS"],
 	gog: {
 		genres: ["FPP","Aventure","Survie"],
 		tags: ["Aventure", "Indé", "Atmosphère", "Exploration", "Science", "Première personne", "Monde Ouvert", "Bac-à-sable", "Survie", "FPS", "Espace", "Crafting", "Construction de base"]
@@ -615,6 +622,42 @@ var GAMES = [
 	gog: {
 		genres: ["Action", "FPP", "Infiltration"],
 		tags: ["Action", "Histoire Riche", "Atmosphère", "Classique", "Première personne", "Sombre", "Superbe bande-son", "Choix multiples", "Violent", "Gore", "Magie", "FPS", "Infiltration", "Surnaturel", "Steampunk"]
+	}
+}, {
+	name: "DOOM I + DOOM II", collection: "Doom",
+	onDisk: true, size: 1.031,
+	date : "2026-09-12",
+	sources: ["LK", "GOG"],
+	gog: {
+		genres: ["Tir","FPP","SF"],
+		tags: ["Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Violent", "Difficile", "Gore", "FPS", "Espace", "Tir", "Horreur et survie", "Zombies"]
+	}
+}, {
+	name: "DOOM I Enhanced", collection: "Doom",
+	onDisk: true, size: 0.332,
+	date : "2026-09-12",
+	sources: ["LK", "GOG"],
+	gog: {
+		genres: ["Tir","FPP","SF"],
+		tags: ["Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Violent", "Difficile", "Gore", "FPS", "Espace", "Tir", "Horreur et survie", "Zombies"]
+	}
+}, {
+	name: "DOOM II + Master Levels", collection: "Doom",
+	onDisk: true, size: 0.022,
+	date : "2026-09-12",
+	sources: ["LK", "GOG"],
+	gog: {
+		genres: ["Tir","FPP","SF"],
+		tags: ["Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Violent", "Difficile", "Gore", "FPS", "Espace", "Tir", "Horreur et survie", "Zombies"]
+	}
+}, {
+	name: "DOOM II Enhanced", collection: "Doom",
+	onDisk: true, size: 0.331,
+	date : "2026-09-12",
+	sources: ["LK", "GOG"],
+	gog: {
+		genres: ["Tir","FPP","SF"],
+		tags: ["Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Violent", "Difficile", "Gore", "FPS", "Espace", "Tir", "Horreur et survie", "Zombies"]
 	}
 }, {
 	name: "Dragon Age: Origins", fullname: "Dragon Age: Origins - Ultimate Edition",
