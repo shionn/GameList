@@ -1652,7 +1652,7 @@ var GAMES = [
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Classique", "Exploration", "Casse-tête", "Protagoniste féminine", "Superbe bande-son", "Troisième personne", "Point & Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Enquête-mystère", "Objets cachés", "Steampunk"]
 	}
 }, {
-	name: "Syberia 3", fullname: "Syberia 3: The Complete Journey",
+	name: "Syberia 3", fullname: "Syberia 3: The Complete Journey", collection: "Syberia",
 	onDisk: true, size: 20.592,
 	gog: {
 		genres: ["TPP", "Fantasy", "Aventure"],
