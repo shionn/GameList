@@ -979,7 +979,7 @@ var GAMES = [
 	date : "2026-08-16",
 }, {
 	name: "Hue",
-	onDisk: fale, size: 0.0,
+	onDisk: false, size: 0.0
 }, {
 	name: "In Sound Mind",
 	onDisk: true, size: 9.695,
