@@ -476,6 +476,13 @@ var GAMES = [
 		tags: ["Aventure", "Action", "Atmosphère", "Casual", "Superbe bande-son", "Graphismes Pixel", "Violent", "Gore", "Roguelike", "Roguelite", "Génération procédurale", "Coop locale"]
 	}
 }, {
+	name: "Conarium",
+	onDisk: false, size: 0.0,
+	gog: {
+		genres: ["Horreur","Aventure","Réflexion"],
+		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Casse-tête", "Première personne", "Science", "Sombre", "Superbe bande-son", "Horreur", "Logique", "Horreur psychologique", "Simulation de marche", "Lovecraft"]
+	}
+},{
 	name: "Control", fullname: "Control Ultimate Edition", collection: "Remedy",
 	onDisk: true, size: 28.45,
 	sources: ["GP"],
@@ -943,6 +950,14 @@ var GAMES = [
 		tags: ["Indé", "Fantasy", "Atmosphère", "Jeu de rôle", "2D", "Tour par tour", "Graphismes Pixel", "Tactique", "Gestion", "Gestion des resources", "Génération procédurale", "Coop locale", "Stratégie complexe", "4X", "Auto Battler"]
 	}
 }, {
+	name: "High On Life",
+	onDisk: false, size: 0.0,
+	gog: {
+		genres: ["Action","Aventure","SF"],
+		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Première personne", "Amusant", "Monde Ouvert", "Violent", "Gore", "FPS", "Tir", "Combat", "Comédie", "Humour noir"]
+	}
+	
+}, {
 	name: "Hive Jump 2: Survivors",
 	onDisk: true, size: 0.167,
 	sources: ["GP"],
@@ -962,6 +977,9 @@ var GAMES = [
 	name: "Horizon Chase Turbo",
 	onDisk: true, size: 0.578,
 	date : "2026-08-16",
+}, {
+	name: "Hue",
+	onDisk: fale, size: 0.0,
 }, {
 	name: "In Sound Mind",
 	onDisk: true, size: 9.695,
@@ -1525,7 +1543,7 @@ var GAMES = [
 }, {
 	name: "Shogun Showdown",
 	onDisk: true, size: 0.238,
-	sources: ["GP"],
+	sources: ["GP", "LK"],
 	date : "2026-04-14",
 	gog: {
 		genres: ["Stratégie", "Tour par tour", "Roguelike"],
@@ -1657,6 +1675,13 @@ var GAMES = [
 	gog: {
 		genres: ["TPP", "Fantasy", "Aventure"],
 		tags: ["Aventure", "Fantasy", "Histoire Riche", "Atmosphère", "Exploration", "Casse-tête", "Protagoniste féminine", "Troisième personne", "Point & Click", "Mystère", "Logique", "Émotionnel", "Enquête", "Objets cachés", "Steampunk"]
+	}
+}, {
+	name: "System Shock 2", fullname: "System Shock 2: 25th Anniversary Remaster",
+	onDisk: true, size: 0.0,
+	gog: {
+		genres: ["Action","Aventure","SF"],
+		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Première personne", "Horreur", "Rétro", "Tir", "Infiltration", "Horreur et survie", "Cyberpunk", "Shoot'EmUp"]
 	}
 }, {
 	name: "Tandem: A Tale of Shadows",
