@@ -72,7 +72,7 @@ class Game {
 	}
 
 	get gogUrl() {
-		let url = this.json.gog.name || this.displayName;
+		let url = this.json.gog?.name || this.displayName;
 		url = url.toLowerCase();
 		url = url.replaceAll(" - ", " ");
 		url = url.replaceAll(":", "");
