@@ -477,7 +477,8 @@ var GAMES = [
 	}
 }, {
 	name: "Conarium",
-	onDisk: false, size: 0.0,
+	onDisk: true, size: 3.123,
+	date : "2026-10-2026",
 	gog: {
 		genres: ["Horreur","Aventure","Réflexion"],
 		tags: ["Aventure", "Histoire Riche", "Atmosphère", "Casse-tête", "Première personne", "Science", "Sombre", "Superbe bande-son", "Horreur", "Logique", "Horreur psychologique", "Simulation de marche", "Lovecraft"]
@@ -649,6 +650,24 @@ var GAMES = [
 		tags: ["Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Violent", "Difficile", "Gore", "FPS", "Espace", "Tir", "Horreur et survie", "Zombies"]
 	}
 }, {
+	name: "DOOM (The Ultimate)", fullname: "The Ultimate Doom", collection: "Doom",
+	onDisk: true, size: 0.021,
+	date : "2026-10-24",
+	sources: ["LK", "GOG"],
+	gog: {
+		genres: ["Tir","FPP","SF"],
+		tags: ["Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Violent", "Difficile", "Gore", "FPS", "Espace", "Tir", "Horreur et survie", "Zombies"]
+	}
+}, {
+	name: "DOOM (Final)", fullname: "Final Doom", collection: "Doom",
+	onDisk: true, size: 0.030,
+	date : "2026-10-24",
+	sources: ["LK", "GOG"],
+	gog: {
+		genres: ["Tir","FPP","SF"],
+		tags: ["Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Violent", "Difficile", "Gore", "FPS", "Espace", "Tir", "Horreur et survie", "Zombies"]
+	}
+}, {
 	name: "DOOM II + Master Levels", collection: "Doom",
 	onDisk: true, size: 0.022,
 	date : "2026-09-12",
@@ -665,6 +684,15 @@ var GAMES = [
 	gog: {
 		genres: ["Tir","FPP","SF"],
 		tags: ["Atmosphère", "Science fiction", "Classique", "Science", "Première personne", "Sombre", "Superbe bande-son", "Horreur", "Violent", "Difficile", "Gore", "FPS", "Espace", "Tir", "Horreur et survie", "Zombies"]
+	}
+}, {
+	name: "DOOM (2016)", collection: "Doom",
+	onDisk: true, size: 66.531,
+	date : "2026-10-24",
+	gog: {
+		name: "doom_2016_ost_bundle",
+		genres: ["Tir","FPP","SF"],
+		tags: ["Atmosphère", "Science fiction", "Première personne", "Science", "Horreur", "Superbe bande-son", "OST", "Multijoueur", "Violent", "Difficile", "Gore", "FPS", "Tir", "Remake"]
 	}
 }, {
 	name: "Dragon Age: Origins", fullname: "Dragon Age: Origins - Ultimate Edition",
@@ -950,8 +978,9 @@ var GAMES = [
 		tags: ["Indé", "Fantasy", "Atmosphère", "Jeu de rôle", "2D", "Tour par tour", "Graphismes Pixel", "Tactique", "Gestion", "Gestion des resources", "Génération procédurale", "Coop locale", "Stratégie complexe", "4X", "Auto Battler"]
 	}
 }, {
-	name: "High On Life",
-	onDisk: false, size: 0.0,
+	name: "High on Life",
+	onDisk: true, size: 60.864,
+	date : "2026-10-24",
 	gog: {
 		genres: ["Action","Aventure","SF"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Science fiction", "Première personne", "Amusant", "Monde Ouvert", "Violent", "Gore", "FPS", "Tir", "Combat", "Comédie", "Humour noir"]
@@ -979,7 +1008,8 @@ var GAMES = [
 	date : "2026-08-16",
 }, {
 	name: "Hue",
-	onDisk: false, size: 0.0
+	onDisk: true, size: 0.153,
+	date : "2026-10-24"
 }, {
 	name: "In Sound Mind",
 	onDisk: true, size: 9.695,
