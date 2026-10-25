@@ -1708,7 +1708,8 @@ var GAMES = [
 	}
 }, {
 	name: "System Shock 2", fullname: "System Shock 2: 25th Anniversary Remaster",
-	onDisk: true, size: 0.0,
+	onDisk: true, size: 3.096,
+	date: "2026-10-24",
 	gog: {
 		genres: ["Action","Aventure","SF"],
 		tags: ["Aventure", "Action", "Histoire Riche", "Atmosphère", "Jeu de rôle", "Science fiction", "Classique", "Première personne", "Horreur", "Rétro", "Tir", "Infiltration", "Horreur et survie", "Cyberpunk", "Shoot'EmUp"]
